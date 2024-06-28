@@ -30,7 +30,7 @@
             // Hitung nilai $i
             $i = 1 + (10 * ($page - 1));
             ?>
-            <?php foreach ($ta as $row): ?>
+            <?php foreach ($ta as $row) : ?>
                 <tr class="text-center">
                     <td scope="row">
                         <?= $i++; ?>
@@ -46,12 +46,10 @@
                         <?= $row['status']; ?>
                     </td>
                     <td>
-                        <?php if ($row['status'] == 'TIDAK'): ?>
-                            <a href="<?= route_to('admin.toggleStatus', $row['id_thn']); ?>"
-                                class="btn btn-success">Aktifkan</a>
-                        <?php else: ?>
-                            <a href="<?= route_to('admin.toggleStatus', $row['id_thn']); ?>"
-                                class="btn btn-danger">Nonaktifkan</a>
+                        <?php if ($row['status'] == 'TIDAK') : ?>
+                            <a href="<?= route_to('admin.toggleStatus', $row['id_thn']); ?>" class="btn btn-success">Aktifkan</a>
+                        <?php else : ?>
+                            <a href="<?= route_to('admin.toggleStatus', $row['id_thn']); ?>" class="btn btn-danger">Nonaktifkan</a>
                         <?php endif; ?>
                     </td>
                 </tr>
@@ -64,9 +62,14 @@
         <div class="col">
             <a href="/admin/add_data_ta" class="btn btn-primary">Tambah Data Tahun Ajaran</a>
             <a href="/admin/ta_export" class="btn btn-warning">Export PDF</a>
+            <button id="previewPdfBtn" class="btn btn-info">Preview PDF</button>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col">
+            <iframe id="pdfPreviewFrame" style="width: 100%; height: 500px; display: none;"></iframe>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <?= $pager->links('ta', 'my_pagination'); ?>
@@ -78,7 +81,6 @@
 
 <?= $this->section('scripts'); ?>
 <script>
-
     const swalElement = document.querySelector('.swal'); // Mengambil elemen dengan kelas '.swal'
     const swalData = swalElement.dataset.swal; // Mengambil data dari atribut data HTML 'data-swal'
 
@@ -91,5 +93,11 @@
             timer: 1900
         });
     }
+
+    document.getElementById('previewPdfBtn').addEventListener('click', function() {
+        var iframe = document.getElementById('pdfPreviewFrame');
+        iframe.style.display = 'block';
+        iframe.src = '<?= route_to('preview.ta'); ?>';
+    });
 </script>
 <?= $this->endSection(); ?>

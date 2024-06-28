@@ -17,8 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/backend/vendors/styles/core.css" />
     <link rel="stylesheet" type="text/css" href="/backend/vendors/styles/icon-font.min.css" />
@@ -31,7 +30,7 @@
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="brand-logo">
                 <a href="login.html">
-                    <img src="/backend/vendors/images/polban3.png" alt="" width="50px"/>
+                    <img src="/backend/vendors/images/polban3.png" alt="" width="50px" />
                     <h2 class="mx-2">POLITEKNIK NEGERI BANDUNG</h2>
                 </a>
             </div>
@@ -46,7 +45,7 @@
                     <img src="/backend/vendors/images/login-page-img.png" alt="" />
                 </div>
                 <div class="col-md-6 col-lg-5">
-                   <?= $this->renderSection('content'); ?>
+                    <?= $this->renderSection('content'); ?>
                 </div>
             </div>
         </div>

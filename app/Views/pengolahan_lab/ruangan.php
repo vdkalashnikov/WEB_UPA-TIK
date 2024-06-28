@@ -5,7 +5,7 @@
 
 
 <body>
-    <h1 class="my-3">Ruangan</h1>
+    <h1 class="my-3 text-center">Ruangan</h1>
     <table class="table table-bordered">
         <thead class="thead-dark">
             <tr class="text-center">
@@ -29,7 +29,7 @@
 
             // Hitung nilai $i
             $i = 1 + (10 * ($page - 1)); ?>
-            <?php foreach ($ruangan as $fasilitas): ?>
+            <?php foreach ($ruangan as $fasilitas) : ?>
                 <tr class="text-center">
                     <td scope="row-1">
                         <?= $i++; ?>
@@ -47,8 +47,7 @@
                         <?= $fasilitas['lokasi']; ?>
                     </td>
                     <td>
-                        <a href="/admin/hapus_data_ruangan/<?= $fasilitas['id_ruangan']; ?>"
-                            onclick="return confirm('apakah anda yakin');" class="btn btn-danger">Delete</a>
+                        <a href="/admin/hapus_data_ruangan/<?= $fasilitas['id_ruangan']; ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');" class="btn btn-danger">Delete</a>
 
                         <a href="/admin/edit_data_ruangan/<?= $fasilitas['id_ruangan']; ?>" class="btn btn-success">Edit</a>
                     </td>
@@ -60,9 +59,13 @@
     <div class="row my-3">
         <div class="col">
             <a href="/admin/add_data_ruangan/" class="btn btn-primary">Tambah Data Ruangan</a>
-        </div>
-        <div class="col">
             <a href="<?= route_to('ruangan.export.pdf'); ?>" target="_blank" class="btn btn-warning">Export PDF</a>
+            <button id="previewPdfBtn" class="btn btn-info">Preview PDF</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <iframe id="pdfPreviewFrame" style="width: 100%; height: 500px; display: none;"></iframe>
         </div>
     </div>
     <div class="row">
@@ -76,7 +79,6 @@
 
 <?= $this->section('scripts'); ?>
 <script>
-
     const swalElement = document.querySelector('.swal'); // Mengambil elemen dengan kelas '.swal'
     const swalData = swalElement.dataset.swal; // Mengambil data dari atribut data HTML 'data-swal'
 
@@ -89,5 +91,10 @@
             timer: 1900
         });
     }
+    document.getElementById('previewPdfBtn').addEventListener('click', function() {
+        var iframe = document.getElementById('pdfPreviewFrame');
+        iframe.style.display = 'block';
+        iframe.src = '<?= route_to('preview.ruangan'); ?>';
+    });
 </script>
 <?= $this->endSection(); ?>

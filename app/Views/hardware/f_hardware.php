@@ -6,7 +6,7 @@
 
 
 <body>
-    <h1>Fasilitas Hardware Lab
+    <h1 class="text-center">Fasilitas Hardware Lab
         <?= ($id_ruangan - 8); ?>
     </h1>
     <div class="container">
@@ -15,8 +15,7 @@
                 <div class="form-group mb-0">
                     <div class="input-group-prepend">
                         <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Cari</button>
-                        <input type="text" class="form-control search-input" placeholder="Cari Software"
-                            name="keyword" />
+                        <input type="text" class="form-control search-input" placeholder="Cari Software" name="keyword" />
                     </div>
 
                 </div>
@@ -48,7 +47,7 @@
             // Hitung nilai $i
             $i = 1 + (10 * ($page - 1));
             ?>
-            <?php foreach ($fasilitas as $fasilitas): ?>
+            <?php foreach ($fasilitas as $fasilitas) : ?>
                 <tr class="text-center">
                     <td scope="row">
                         <?= $i++; ?>
@@ -66,8 +65,7 @@
                         <?= $fasilitas['nama_ruangan']; ?>
                     </td>
                     <td>
-                        <a href="/admin/hapus_data_hardware/<?= $fasilitas['id']; ?>"
-                            onclick="return confirm('apakah anda yakin');" class="btn btn-danger">Delete</a>
+                        <a href="/admin/hapus_data_hardware/<?= $fasilitas['id']; ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');" class="btn btn-danger">Delete</a>
                         <a href="/admin/edit_data_hardware/<?= $fasilitas['id']; ?>" class="btn btn-success">Edit</a>
                     </td>
                 </tr>
@@ -78,9 +76,14 @@
         <div class="col">
             <a href="<?= route_to('admin.data.hardware', $id_ruangan); ?>" class="btn btn-primary">Tambah Data
                 Hardware</a>
-        </div>
-        <div class="col">
             <a href="/admin/hardware_export/<?= $id_ruangan ?>" target="_blank" class="btn btn-warning">Export PDF</a>
+            <a href="<?= route_to('export.hardware.excel', $id_ruangan); ?>" class="btn btn-success">Export Excel</a>
+            <button id="previewPdfBtn" class="btn btn-info">Preview PDF</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <iframe id="pdfPreviewFrame" style="width: 100%; height: 500px; display: none;"></iframe>
         </div>
     </div>
     <div class="row">
@@ -94,7 +97,6 @@
 
 <?= $this->section('scripts'); ?>
 <script>
-
     const swalElement = document.querySelector('.swal'); // Mengambil elemen dengan kelas '.swal'
     const swalData = swalElement.dataset.swal; // Mengambil data dari atribut data HTML 'data-swal'
 
@@ -107,5 +109,11 @@
             timer: 1900
         });
     }
+
+    document.getElementById('previewPdfBtn').addEventListener('click', function() {
+        var iframe = document.getElementById('pdfPreviewFrame');
+        iframe.style.display = 'block';
+        iframe.src = '/admin/hardware_preview/<?= $id_ruangan ?>';
+    });
 </script>
 <?= $this->endSection(); ?>

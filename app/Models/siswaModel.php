@@ -14,10 +14,19 @@ class SiswaModel extends Model
         'nama_lengkap',
         'jenis_kelamin',
         'juruusan_pkl',
-        'asal_sekolah'
+        'asal_sekolah',
+        'id_ruangan'
     ];
 
     protected bool $allowEmptyInserts = false;
+
+    public function joinRuangan()
+    {
+        $pegawai = new RuanganModel();
+        return $this->join('ruangan', 'ruangan.id_ruangan = siswa.id_ruangan', 'left');
+    }
+    
+}
 
     // Dates
     // protected $useTimestamps = false;
@@ -42,4 +51,4 @@ class SiswaModel extends Model
     // protected $afterFind      = [];
     // protected $beforeDelete   = [];
     // protected $afterDelete    = [];
-}
+

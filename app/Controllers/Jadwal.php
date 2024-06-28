@@ -9,6 +9,8 @@ use App\Models\RuanganModel;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\JadwalModel;
 use App\Models\th_ajarModel;
+use App\Models\NotifModel;
+use App\Models\PengajuanModel;
 
 
 class Jadwal extends BaseController
@@ -35,7 +37,7 @@ class Jadwal extends BaseController
         $hari = $jadwalModel->getHari();
         $jam = $jadwalModel->getJam();
         $ruangan = $jadwalModel->getRuangan();
-        $jadwal = $jadwalModel->getJadwal();
+        $jadwal = $jadwalModel->getJadwal('REGULER');
 
         // Calculate the number of rooms
         $jumlahLab = count($ruangan);
@@ -48,7 +50,7 @@ class Jadwal extends BaseController
             'ruangan' => $ruangan,
             'jadwal' => $jadwal,
             'jumlahLab' => $jumlahLab,
-            'semester' => $semester// Pass the calculated value to the view
+            'semester' => $semester // Pass the calculated value to the view
         ];
 
         return view('users-jadwal/v_jadwal', $data);
@@ -64,17 +66,18 @@ class Jadwal extends BaseController
         // Fetch required data from the model
         $thn_awal = $jadwalModel->getTahunAwal();
         $thn_akhir = $jadwalModel->getTahunAkhir();
+        $semester = $jadwalModel->getSemester();
         $hari = $jadwalModel->getHari();
         $jam = $jadwalModel->getJam();
         $ruangan = $jadwalModel->getRuangan();
-        $jadwal = $jadwalModel->getJadwalNonReguler();
-
+        $jadwal = $jadwalModel->getJadwal('NONREGULER');
         // Calculate the number of rooms
         $jumlahLab = count($ruangan);
 
         $data = [
             'thn_awal' => $thn_awal,
             'thn_akhir' => $thn_akhir,
+            'semester' => $semester,
             'hari' => $hari,
             'jam' => $jam,
             'ruangan' => $ruangan,
@@ -93,10 +96,11 @@ class Jadwal extends BaseController
         // Fetch required data from the model
         $thn_awal = $jadwalModel->getTahunAwal();
         $thn_akhir = $jadwalModel->getTahunAkhir();
+        $semester = $jadwalModel->getSemester();
         $hari = $jadwalModel->getHari();
         $jam = $jadwalModel->getJam();
         $ruangan = $jadwalModel->getRuangan();
-        $jadwal = $jadwalModel->getJadwalUAS();
+        $jadwal = $jadwalModel->getJadwal('UAS');
 
         // Calculate the number of rooms
         $jumlahLab = count($ruangan);
@@ -104,6 +108,7 @@ class Jadwal extends BaseController
         $data = [
             'thn_awal' => $thn_awal,
             'thn_akhir' => $thn_akhir,
+            'semester' => $semester,
             'hari' => $hari,
             'jam' => $jam,
             'ruangan' => $ruangan,
@@ -121,17 +126,18 @@ class Jadwal extends BaseController
         // Fetch required data from the model
         $thn_awal = $jadwalModel->getTahunAwal();
         $thn_akhir = $jadwalModel->getTahunAkhir();
+        $semester = $jadwalModel->getSemester();
         $hari = $jadwalModel->getHari();
         $jam = $jadwalModel->getJam();
         $ruangan = $jadwalModel->getRuangan();
-        $jadwal = $jadwalModel->getJadwalUTS();
-
+        $jadwal = $jadwalModel->getJadwal('UTS');
         // Calculate the number of rooms
         $jumlahLab = count($ruangan);
 
         $data = [
             'thn_awal' => $thn_awal,
             'thn_akhir' => $thn_akhir,
+            'semester' => $semester,
             'hari' => $hari,
             'jam' => $jam,
             'ruangan' => $ruangan,
@@ -155,7 +161,7 @@ class Jadwal extends BaseController
         $thn_akhir = $jadwalModel->getTahunAkhir();
         $idProdi1 = $idProdi;
         $tahun = $jadwalModel->data_thn();
-
+        $semester = $jadwalModel->getSemester();
 
         $data = [
             'ruangan' => $ruangan->findAll(),
@@ -164,7 +170,8 @@ class Jadwal extends BaseController
             'jam' => $jam->findAll(),
             'idProdi' => $idProdi1,
             'thn_awal' => $thn_awal,
-            'thn_akhir' => $thn_akhir
+            'thn_akhir' => $thn_akhir,
+            'semester' => $semester
         ];
 
         return view('users-jadwal/add_jadwal', $data);
@@ -181,6 +188,7 @@ class Jadwal extends BaseController
         $thn_akhir = $jadwalModel->getTahunAkhir();
         $idProdi1 = $idProdi;
         $tahun = $jadwalModel->data_thn();
+        $semester = $jadwalModel->getSemester();
 
 
 
@@ -191,7 +199,8 @@ class Jadwal extends BaseController
             'jam' => $jam->findAll(),
             'idProdi' => $idProdi1,
             'thn_awal' => $thn_awal,
-            'thn_akhir' => $thn_akhir
+            'thn_akhir' => $thn_akhir,
+            'semester' => $semester
         ];
 
         return view('users-jadwal/add_nonreguler', $data);
@@ -206,6 +215,7 @@ class Jadwal extends BaseController
         $thn_akhir = $jadwalModel->getTahunAkhir();
         $idProdi1 = $idProdi;
         $tahun = $jadwalModel->data_thn();
+        $semester = $jadwalModel->getSemester();
 
 
         $data = [
@@ -215,7 +225,8 @@ class Jadwal extends BaseController
             'jam' => $jam->findAll(),
             'idProdi' => $idProdi1,
             'thn_awal' => $thn_awal,
-            'thn_akhir' => $thn_akhir
+            'thn_akhir' => $thn_akhir,
+            'semester' => $semester
         ];
 
         return view('users-jadwal/add_uas', $data);
@@ -231,6 +242,7 @@ class Jadwal extends BaseController
         $thn_akhir = $jadwalModel->getTahunAkhir();
         $idProdi1 = $idProdi;
         $tahun = $jadwalModel->data_thn();
+        $semester = $jadwalModel->getSemester();
 
 
         $data = [
@@ -240,7 +252,8 @@ class Jadwal extends BaseController
             'jam' => $jam->findAll(),
             'idProdi' => $idProdi1,
             'thn_awal' => $thn_awal,
-            'thn_akhir' => $thn_akhir
+            'thn_akhir' => $thn_akhir,
+            'semester' => $semester
         ];
 
         return view('users-jadwal/add_uts', $data);
@@ -256,6 +269,7 @@ class Jadwal extends BaseController
         $hari = $this->request->getPost('hari');
         $id_ruangan = $this->request->getPost('nama_ruangan');
         $jam = $this->request->getPost('jam');
+        $notif = $this->request->getPost('notif');
         $nama_dosen = $this->request->getPost('dosen');
         $jenis = "NONREGULER";
         $id_thn = $this->request->getPost('tahun');
@@ -275,28 +289,16 @@ class Jadwal extends BaseController
             return redirect()->back()->withInput()->with('fail', $this->validator->getErrors());
         }
 
-        // Join tabel jadwal dan jadwal_detail
-        $cekKelas = $db->table('jadwal')
-            ->join('jadwal_detail', 'jadwal.id_jadwal = jadwal_detail.id_jadwal')
-            ->where('jadwal.hari', $hari)
-            ->where('jadwal.id_ruangan', $id_ruangan)
-            ->where('jadwal.id_thn', $id_thn)
-            ->whereIn('jadwal_detail.id_jam', $jam)
-            ->where('jadwal.jenis', 'NONREGULER')
-            ->get()
-            ->getResult();
-
-        // Jika ada kelas di jam dan ruangan yang sama, tampilkan pesan error
-        if (!empty ($cekKelas)) {
-            return redirect()->back()->with('errors', 'Ruangan dan jam tersebut sudah terisi kelas lain.')->withInput();
-        }
+        $modelNotif = new NotifModel();
+        $modelNotif->notifSimpan($notif, $id_prodi, $jenis);
 
         // Panggil metode di model untuk menyimpan jadwal
         $modelJadwal = new JadwalModel();
-        $modelJadwal->simpan_jadwalnonreguler($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
+        $modelpengajuan = new PengajuanModel();
+        $modelpengajuan->simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
 
         // Data berhasil disimpan
-        return redirect()->to('user/jadwal-nonreguler');
+        return redirect()->to('user/jadwal-prodi-nonreguler/' . $id_prodi)->with('success', 'Data jadwal berhasil di ajukan');
     }
 
 
@@ -309,6 +311,7 @@ class Jadwal extends BaseController
         $mk = $this->request->getPost('mk');
         $kelas = $this->request->getPost('kelas');
         $hari = $this->request->getPost('hari');
+        $notif = $this->request->getPost('notif');
         $id_ruangan = $this->request->getPost('nama_ruangan');
         $jam = $this->request->getPost('jam');
         $nama_dosen = $this->request->getPost('dosen');
@@ -330,28 +333,16 @@ class Jadwal extends BaseController
             return redirect()->back()->withInput()->with('fail', $this->validator->getErrors());
         }
 
-        // Join tabel jadwal dan jadwal_detail
-        $cekKelas = $db->table('jadwal')
-            ->join('jadwal_detail', 'jadwal.id_jadwal = jadwal_detail.id_jadwal')
-            ->where('jadwal.hari', $hari)
-            ->where('jadwal.id_ruangan', $id_ruangan)
-            ->where('jadwal.id_thn', $id_thn)
-            ->whereIn('jadwal_detail.id_jam', $jam)
-            ->where('jadwal.jenis', 'REGULER')
-            ->get()
-            ->getResult();
-
-        // Jika ada kelas di jam dan ruangan yang sama, tampilkan pesan error
-        if (!empty ($cekKelas)) {
-            return redirect()->back()->with('errors', 'Ruangan dan jam tersebut sudah terisi kelas lain.')->withInput();
-        }
+        $modelNotif = new NotifModel();
+        $modelNotif->notifSimpan($notif, $id_prodi, $jenis);
 
         // Panggil metode di model untuk menyimpan jadwal
         $modelJadwal = new JadwalModel();
-        $modelJadwal->simpan_jadwalreguler($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
+        $modelpengajuan = new PengajuanModel();
+        $modelpengajuan->simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
 
         // Data berhasil disimpan
-        return redirect()->to('user/jadwal-user');
+        return redirect()->to('user/jadwal-prodi-reguler/' . $id_prodi)->with('success', 'Data jadwal berhasil di ajukan');
     }
 
 
@@ -365,6 +356,7 @@ class Jadwal extends BaseController
         $hari = $this->request->getPost('hari');
         $id_ruangan = $this->request->getPost('nama_ruangan');
         $jam = $this->request->getPost('jam');
+        $notif = $this->request->getPost('notif');
         $nama_dosen = $this->request->getPost('dosen');
         $jenis = "UAS";
         $id_thn = $this->request->getPost('tahun');
@@ -384,28 +376,17 @@ class Jadwal extends BaseController
             return redirect()->back()->withInput()->with('fail', $this->validator->getErrors());
         }
 
-        // Join tabel jadwal dan jadwal_detail
-        $cekKelas = $db->table('jadwal')
-            ->join('jadwal_detail', 'jadwal.id_jadwal = jadwal_detail.id_jadwal')
-            ->where('jadwal.hari', $hari)
-            ->where('jadwal.id_ruangan', $id_ruangan)
-            ->where('jadwal.id_thn', $id_thn)
-            ->whereIn('jadwal_detail.id_jam', $jam)
-            ->where('jadwal.jenis', 'UAS')
-            ->get()
-            ->getResult();
-
-        // Jika ada kelas di jam dan ruangan yang sama, tampilkan pesan error
-        if (!empty ($cekKelas)) {
-            return redirect()->back()->with('errors', 'Ruangan dan jam tersebut sudah terisi kelas lain.')->withInput();
-        }
+        $modelNotif = new NotifModel();
+        $modelNotif->notifSimpan($notif, $id_prodi, $jenis);
 
         // Panggil metode di model untuk menyimpan jadwal
         $modelJadwal = new JadwalModel();
-        $modelJadwal->simpan_jadwaluas($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
+
+        $modelpengajuan = new PengajuanModel();
+        $modelpengajuan->simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
 
         // Data berhasil disimpan
-        return redirect()->to('user/jadwal-uas');
+        return redirect()->to('user/jadwal-prodi-uas/' . $id_prodi)->with('success', 'Data jadwal berhasil di ajukan');
     }
 
 
@@ -419,6 +400,7 @@ class Jadwal extends BaseController
         $hari = $this->request->getPost('hari');
         $id_ruangan = $this->request->getPost('nama_ruangan');
         $jam = $this->request->getPost('jam');
+        $notif = $this->request->getPost('notif');
         $nama_dosen = $this->request->getPost('dosen');
         $jenis = "UTS";
         $id_thn = $this->request->getPost('tahun');
@@ -438,28 +420,16 @@ class Jadwal extends BaseController
             return redirect()->back()->withInput()->with('fail', $this->validator->getErrors());
         }
 
-        // Join tabel jadwal dan jadwal_detail
-        $cekKelas = $db->table('jadwal')
-            ->join('jadwal_detail', 'jadwal.id_jadwal = jadwal_detail.id_jadwal')
-            ->where('jadwal.hari', $hari)
-            ->where('jadwal.id_ruangan', $id_ruangan)
-            ->where('jadwal.id_thn', $id_thn)
-            ->whereIn('jadwal_detail.id_jam', $jam)
-            ->where('jadwal.jenis', 'UTS')
-            ->get()
-            ->getResult();
-
-        // Jika ada kelas di jam dan ruangan yang sama, tampilkan pesan error
-        if (!empty ($cekKelas)) {
-            return redirect()->back()->with('errors', 'Ruangan dan jam tersebut sudah terisi kelas lain.')->withInput();
-        }
+        $modelNotif = new NotifModel();
+        $modelNotif->notifSimpan($notif, $id_prodi, $jenis);
 
         // Panggil metode di model untuk menyimpan jadwal
         $modelJadwal = new JadwalModel();
-        $modelJadwal->simpan_jadwaluts($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
+        $modelpengajuan = new PengajuanModel();
+        $modelpengajuan->simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
 
         // Data berhasil disimpan
-        return redirect()->to('user/jadwal-uts');
+        return redirect()->to('user/jadwal-prodi-uts/' . $id_prodi)->with('success', 'Data jadwal berhasil di ajukan');
     }
 
 
@@ -634,7 +604,15 @@ class Jadwal extends BaseController
     public function tabelReguler($idProdi)
     {
         $jadwal = new JadwalModel();
+
+        // Fetch required data from the model
+        $thn_awal = $jadwal->getTahunAwal();
+        $thn_akhir = $jadwal->getTahunAkhir();
+        $semester = $jadwal->getSemester();
         $jadwalProdi = $jadwal->joinRuangan()->joinTA()->joinJam()->where('jadwal.id_prodi', $idProdi)->where('jenis', 'REGULER')->findAll();
+
+        // Tetap tangkap nilai jenis dari POST
+        $jenis = 'REGULER';
 
         $prodi = new prodiModel();
         $prodiNama = $prodi->find($idProdi);
@@ -642,37 +620,128 @@ class Jadwal extends BaseController
         $data = [
             'jadwalProdi' => $jadwalProdi,
             'idProdi' => $idProdi,
-            'namaProdi' => $prodiNama['nama_prodi']
+            'namaProdi' => $prodiNama['nama_prodi'],
+            'thn_awal' => $thn_awal,
+            'thn_akhir' => $thn_akhir,
+            'semester' => $semester,
+            'jenis' => $jenis // Sertakan nilai jenis dalam array data
         ];
 
         return view('pengajuan/delete-jadwal-reguler', $data);
     }
+
+    public function saveNotif()
+    {
+        $notifModel = new NotifModel();
+        $jenis = 'REGULER'; // Anda bisa mengatur ini secara langsung atau dari input form
+        $notif = $this->request->getPost('notif');
+        $id_prodi = $this->request->getPost('id_prodi');
+        $data = [
+            'notif' => $notif,
+            'id_prodi' => $id_prodi,
+            'jenis' => $jenis
+        ];
+
+        if (
+            $notifModel->insert($data)
+        ) {
+            return $this->response->setJSON(['status' => 'success', 'message' => 'Notifikasi berhasil dikirimkan.']);
+        } else {
+            return $this->response->setJSON(['status' => 'error', 'message' => 'Gagal mengirim notifikasi.']);
+        }
+    }
+
+    public function getDataFromServer($idProdi, $jenis)
+    {
+        $model = new NotifModel();
+        $data = $model->where('id_prodi', $idProdi)->where('jenis', $jenis)->findAll(); // Misalnya, mengambil semua data dari database
+
+        // Mengembalikan data sebagai respons JSON
+        return $this->response->setJSON($data);
+    }
+
+    public function deleteNotif($id, $jenis)
+    {
+        $notifModel = new NotifModel();
+        $notif = $notifModel->where('id_prodi', $id)->where('jenis', $jenis)->delete();
+        return redirect()->to($_SERVER['HTTP_REFERER'])->with('success', 'Notifikasi berhasil dihapus.');
+    }
+
     public function tabelNonReguler($idProdi)
     {
         $jadwal = new JadwalModel();
+        $thn_awal = $jadwal->getTahunAwal();
+        $thn_akhir = $jadwal->getTahunAkhir();
+        $semester = $jadwal->getSemester();
         $jadwalProdi = $jadwal->joinRuangan()->joinTA()->joinJam()->where('id_prodi', $idProdi)->where('jenis', 'NONREGULER')->findAll();
+
+        // Tetap tangkap nilai jenis dari POST
+        $jenis = 'NONREGULER';
+        // Pastikan $jenis memiliki nilai sebelum menyimpannya
+        if ($jenis !== null) {
+            $notif = $this->request->getPost('notif');
+
+            // Jika $jenis sudah ada, simpan notifikasi
+            if ($notif !== null) {
+                $notifModel = new NotifModel();
+                $notifModel->insert([
+                    'notif' => $notif,
+                    'id_prodi' => $idProdi,
+                    'jenis' => $jenis
+                ]);
+            }
+        }
 
         $prodi = new prodiModel();
         $prodiNama = $prodi->find($idProdi);
+
         $data = [
             'jadwalProdi' => $jadwalProdi,
             'idProdi' => $idProdi,
-            'namaProdi' => $prodiNama['nama_prodi']
+            'namaProdi' => $prodiNama['nama_prodi'],
+            'thn_awal' => $thn_awal,
+            'thn_akhir' => $thn_akhir,
+            'semester' => $semester,
+            'jenis' => $jenis // Sertakan nilai jenis dalam array data
         ];
-
         return view('pengajuan/delete-jadwal-nonreguler', $data);
     }
     public function tabelUAS($idProdi)
     {
         $jadwal = new JadwalModel();
+        $thn_awal = $jadwal->getTahunAwal();
+        $thn_akhir = $jadwal->getTahunAkhir();
+        $semester = $jadwal->getSemester();
         $jadwalProdi = $jadwal->joinRuangan()->joinTA()->joinJam()->where('id_prodi', $idProdi)->where('jenis', 'UAS')->findAll();
+
+        // Tetap tangkap nilai jenis dari POST
+        $jenis = 'UAS';
+        // Pastikan $jenis memiliki nilai sebelum menyimpannya
+        if ($jenis !== null) {
+            $notif = $this->request->getPost('notif');
+
+            // Jika $jenis sudah ada, simpan notifikasi
+            if ($notif !== null) {
+                $notifModel = new NotifModel();
+                $notifModel->insert([
+                    'notif' => $notif,
+                    'id_prodi' => $idProdi,
+                    'jenis' => $jenis
+                ]);
+            }
+        }
 
         $prodi = new prodiModel();
         $prodiNama = $prodi->find($idProdi);
+
         $data = [
             'jadwalProdi' => $jadwalProdi,
             'idProdi' => $idProdi,
-            'namaProdi' => $prodiNama['nama_prodi']
+            'namaProdi' => $prodiNama['nama_prodi'],
+            'thn_awal' => $thn_awal,
+            'thn_akhir' => $thn_akhir,
+            'semester' => $semester,
+            'jenis' => $jenis // Sertakan nilai jenis dalam array data
         ];
 
         return view('pengajuan/delete-jadwal-uas', $data);
@@ -680,14 +749,39 @@ class Jadwal extends BaseController
     public function tabelUTS($idProdi)
     {
         $jadwal = new JadwalModel();
+        $thn_awal = $jadwal->getTahunAwal();
+        $thn_akhir = $jadwal->getTahunAkhir();
+        $semester = $jadwal->getSemester();
         $jadwalProdi = $jadwal->joinRuangan()->joinTA()->joinJam()->where('id_prodi', $idProdi)->where('jenis', 'UTS')->findAll();
+
+        // Tetap tangkap nilai jenis dari POST
+        $jenis = 'UTS';
+        // Pastikan $jenis memiliki nilai sebelum menyimpannya
+        if ($jenis !== null) {
+            $notif = $this->request->getPost('notif');
+
+            // Jika $jenis sudah ada, simpan notifikasi
+            if ($notif !== null) {
+                $notifModel = new NotifModel();
+                $notifModel->insert([
+                    'notif' => $notif,
+                    'id_prodi' => $idProdi,
+                    'jenis' => $jenis
+                ]);
+            }
+        }
 
         $prodi = new prodiModel();
         $prodiNama = $prodi->find($idProdi);
+
         $data = [
             'jadwalProdi' => $jadwalProdi,
             'idProdi' => $idProdi,
-            'namaProdi' => $prodiNama['nama_prodi']
+            'namaProdi' => $prodiNama['nama_prodi'],
+            'thn_awal' => $thn_awal,
+            'thn_akhir' => $thn_akhir,
+            'semester' => $semester,
+            'jenis' => $jenis // Sertakan nilai jenis dalam array data
         ];
 
         return view('pengajuan/delete-jadwal-uts', $data);
@@ -711,7 +805,7 @@ class Jadwal extends BaseController
         $ruanganModel->delete(['id_prodi' => $idProdi]);
         return redirect()->to($_SERVER['HTTP_REFERER'])->with('success', 'Data berhasil dihapus.');
     }
-    public function deleteProdiUTSS($idProdi)
+    public function deleteProdiUTS($idProdi)
     {
         $ruanganModel = new JadwalModel();
         $ruanganModel->delete(['id_prodi' => $idProdi]);

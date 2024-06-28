@@ -14,8 +14,8 @@
                 <th scope="col">No</th>
                 <th scope="col">Kode Prodi</th>
                 <th scope="col">Jurusan</th>
-                <th scope="col">Nama Prodi</th>
                 <th scope="col">Program</th>
+                <th scope="col">Nama Program Studi</th>
                 <th scope="col">Aksi</th>
 
 
@@ -32,7 +32,7 @@
             // Hitung nilai $i
             $i = 1 + (10 * ($page - 1));
             ?>
-            <?php foreach ($prodi as $ta): ?>
+            <?php foreach ($prodi as $ta) : ?>
                 <tr class="text-center">
                     <td scope="row-1">
                         <?= $i++; ?>
@@ -50,9 +50,8 @@
                         <?= $ta['nama_prodi']; ?>
                     </td>
                     <td>
+                        <a href="/admin/hapus_data_prodi/<?= $ta['id_prodi']; ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');" class="btn btn-danger">Delete</a>
                         <a href="/admin/edit_data_prodi/<?= $ta['id_prodi']; ?>" class="btn btn-success">Edit</a>
-                        <a href="/admin/hapus_data_prodi/<?= $ta['id_prodi']; ?>"
-                            onclick="return confirm('apakah anda yakin');" class="btn btn-danger">Delete</a>
                     </td>
 
 
@@ -63,11 +62,16 @@
 
     <div class="row my-3">
         <div class="col">
-            <a href="<?= route_to('admin.add.prodi') ?>" class="btn btn-primary">Tambah Data prodi</a>
+            <a href="<?= route_to('admin.add.prodi') ?>" class="btn btn-primary">Tambah Data Prodi</a>
             <a href="<?= route_to('prodi.export.pdf') ?>" class="btn btn-warning">Export PDF</a>
+            <button id="previewPdfBtn" class="btn btn-info">Preview PDF</button>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col">
+            <iframe id="pdfPreviewFrame" style="width: 100%; height: 500px; display: none;"></iframe>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <?= $pager->links('prodi', 'my_pagination'); ?>
@@ -79,7 +83,6 @@
 
 <?= $this->section('scripts'); ?>
 <script>
-
     const swalElement = document.querySelector('.swal'); // Mengambil elemen dengan kelas '.swal'
     const swalData = swalElement.dataset.swal; // Mengambil data dari atribut data HTML 'data-swal'
 
@@ -92,5 +95,11 @@
             timer: 1900
         });
     }
+
+    document.getElementById('previewPdfBtn').addEventListener('click', function() {
+        var iframe = document.getElementById('pdfPreviewFrame');
+        iframe.style.display = 'block';
+        iframe.src = '<?= route_to('preview.prodi'); ?>';
+    });
 </script>
 <?= $this->endSection(); ?>

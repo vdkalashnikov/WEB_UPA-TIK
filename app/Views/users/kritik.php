@@ -33,7 +33,7 @@
             // Hitung nilai $i
             $i = 1 + (10 * ($page - 1));
             ?>
-            <?php foreach ($kritik as $user): ?>
+            <?php foreach ($kritik as $user) : ?>
                 <tr class="text-center">
                     <td scope="row-1">
                         <?= $i++; ?>
@@ -51,8 +51,7 @@
                         <?= $user['komentar']; ?>
                     </td>
                     <td>
-                        <a href="/admin/hapus_data_kritik/<?= $user['id_kontak']; ?>"
-                            onclick="return confirm('apakah anda yakin');" class="btn btn-danger">Delete</a>
+                        <a href="/admin/hapus_data_kritik/<?= $user['id_kontak']; ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
@@ -62,9 +61,14 @@
     <div class="row my-3">
         <div class="col">
             <a href="/admin/kritik_export" class="btn btn-warning">Export PDF</a>
+            <button id="previewPdfBtn" class="btn btn-info">Preview PDF</button>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col">
+            <iframe id="pdfPreviewFrame" style="width: 100%; height: 500px; display: none;"></iframe>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <?= $pager->links('kritik', 'my_pagination'); ?>
@@ -76,7 +80,6 @@
 
 <?= $this->section('scripts'); ?>
 <script>
-
     const swalElement = document.querySelector('.swal'); // Mengambil elemen dengan kelas '.swal'
     const swalData = swalElement.dataset.swal; // Mengambil data dari atribut data HTML 'data-swal'
 
@@ -89,5 +92,11 @@
             timer: 1900
         });
     }
+
+    document.getElementById('previewPdfBtn').addEventListener('click', function() {
+        var iframe = document.getElementById('pdfPreviewFrame');
+        iframe.style.display = 'block';
+        iframe.src = '/admin/kritik_preview';
+    });
 </script>
 <?= $this->endSection(); ?>

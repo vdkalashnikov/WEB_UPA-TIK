@@ -4,7 +4,7 @@
 <div class="hero-area hero-bg">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 offset-lg-2 text-center">
+            <div class="text-center">
                 <div class="hero-text">
                     <div class="hero-text-tablecell">
                         <p class="subtitle">UPA-TIK</p>
@@ -32,31 +32,35 @@
             <th scope="col">Jenis Kelamin</th>
             <th scope="col">Jurusan</th>
             <th scope="col">Asal Sekolah</th>
+            <th scope="col">Ruangan</th>
             
         </tr>
 
-    <tbody>
-    <?php $i = 1; // Initialize counter ?>
-        <?php foreach ($siswa as $fasilitas): ?>
-            <tr class="text-center">
-                <td scope="row">
-                    <?= $i++; ?>
-                </td>
-                <td>
-                    <?= $fasilitas['nama_lengkap']; ?>
-                </td>
-                <td>
-                    <?= $fasilitas['jenis_kelamin']; ?>
-                </td>
-                <td>
-                    <?= $fasilitas['juruusan_pkl']; ?>
-                </td>
-                <td>
-                    <?= $fasilitas['asal_sekolah']; ?>
-                </td>
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
+        <tbody>
+            <?php $i = 1; // Initialize counter ?>
+            <?php foreach ($siswa as $fasilitas): ?>
+                <tr class="text-center">
+                    <td scope="row">
+                        <?= $i++; ?>
+                    </td>
+                    <td>
+                        <?= $fasilitas['nama_lengkap']; ?>
+                    </td>
+                    <td>
+                        <?= $fasilitas['jenis_kelamin']; ?>
+                    </td>
+                    <td>
+                        <?= $fasilitas['juruusan_pkl']; ?>
+                    </td>
+                    <td>
+                        <?= $fasilitas['asal_sekolah']; ?>
+                    </td>
+                    <td>
+                        <?= $fasilitas['nama_ruangan']; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
 </table>
         </section>
 

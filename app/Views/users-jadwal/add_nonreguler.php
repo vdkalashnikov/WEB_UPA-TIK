@@ -9,9 +9,9 @@
             <div class="col-lg-8 offset-lg-2 text-center">
                 <div class="breadcrumb-text">
                     <p>Lab UPA-TIK</p>
-                    <h2>Form Pengajuan Jadwal <br> Non Reguler Tahun <br>
+                    <h2 class="text-white">Form Pengajuan Jadwal Nonreguler<br> Tahun Ajaran
                         <?= $thn_awal; ?> -
-                        <?= $thn_akhir; ?>
+                        <?= $thn_akhir; ?> Semester <?= $semester; ?>
                     </h2>
                 </div>
             </div>
@@ -20,7 +20,7 @@
 </div>
 
 
-<?php if (!empty(session()->getFlashdata('errors'))): ?>
+<?php if (!empty(session()->getFlashdata('errors'))) : ?>
     <div class="alert alert-danger">
         <?= session()->getFlashdata('errors'); ?>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -34,11 +34,17 @@
             <h2 class="mt-3">Form Pengajuan Jadwal Non Reguler</h2>
             <form action="/user/jadwal-save-nonreguler" method="POST">
 
+                <input type="hidden" class="form-control" id="notif" name="notif" value="Jadwal berhasil diajukan dan sedang diproses oleh admin">
+
                 <div class="row mb-3">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Mata Kuliah</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="mk " name="mk">
                     </div>
+                </div>
+
+                <div class="d-block text-danger " style="margin-top:-10px;margin-bottom:15px;margin-left:180px;">
+                    <?= session('fail.mk') ?>
                 </div>
                 <div class="row mb-3">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Kelas</label>
@@ -46,12 +52,26 @@
                         <input type="text" class="form-control" id="kelas" name="kelas">
                     </div>
                 </div>
+                <div class="d-block text-danger " style="margin-top:-10px;margin-bottom:15px;margin-left:180px;">
+                    <?= session('fail.kelas') ?>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Nama Dosen</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="dosen" name="dosen">
+                    </div>
+                </div>
+                <div class="d-block text-danger " style="margin-top:-10px;margin-bottom:15px;margin-left:180px;">
+                    <?= session('fail.dosen') ?>
+                </div>
+
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Ruangan Lab</label>
                     <div class="col-sm-10">
                         <select name="nama_ruangan" id="nama_ruangan" class="form-control" onchange="getJamByRuangan()">
                             <option value="">Pilih Ruangan</option>
-                            <?php foreach ($ruangan as $row): ?>
+                            <?php foreach ($ruangan as $row) : ?>
                                 <option value=" <?= $row['id_ruangan'] ?>">
                                     <?= $row['nama_ruangan'] ?>
                                 </option>
@@ -59,12 +79,15 @@
                         </select>
                     </div>
                 </div>
+                <div class="d-block text-danger " style="margin-top:-10px;margin-bottom:15px;margin-left:180px;">
+                    <?= session('fail.nama_ruangan') ?>
+                </div>
                 <div class="row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Hari</label>
                     <div class="col-sm-10">
                         <select class="form-control" id="hari" name="hari" onchange="getJamByRuangan()">
                             <option value="">Pilih Hari</option>
-                            <?php foreach ($hari as $h): ?>
+                            <?php foreach ($hari as $h) : ?>
                                 <option value="<?= $h ?>">
                                     <?= $h ?>
                                 </option>
@@ -72,16 +95,13 @@
                         </select>
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Nama Dosen</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="dosen" name="dosen">
-                    </div>
+                <div class="d-block text-danger " style="margin-top:-10px;margin-bottom:15px;margin-left:180px;">
+                    <?= session('fail.hari') ?>
                 </div>
+
 
                 <input type="hidden" class="form-control" id="prodi" name="prodi" value="<?= $idProdi; ?>">
                 <input type="hidden" class="form-control" id="tahun" name="tahun" value="<?= $tahun; ?>">
-
 
                 <div id="jam-container" style="display:none;">
                     <div class="form-check">
@@ -114,13 +134,13 @@
                     tahun: tahun,
                 },
                 dataType: "JSON",
-                success: function (response) {
+                success: function(response) {
                     console.log(response);
                     if (response.length > 0) {
                         $('#jam-container').show();
                         $('#jam-container').html(''); // Bersihkan konten sebelumnya
 
-                        response.forEach(function (jam) {
+                        response.forEach(function(jam) {
                             const checkboxHtml = `
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="${jam.id}" id="jam${jam.id}" name="jam[]" ${jam.sudah_dipilih ? 'disabled' : ''}>
@@ -138,7 +158,7 @@
                     }
                 },
 
-                error: function (xhr, status, error) {
+                error: function(xhr, status, error) {
                     console.error('AJAX Error:');
                     console.error('Status:', status);
                     console.error('Error:', error);

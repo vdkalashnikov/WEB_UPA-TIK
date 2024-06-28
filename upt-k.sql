@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 03 Apr 2024 pada 09.41
+-- Waktu pembuatan: 30 Bulan Mei 2024 pada 11.18
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -44,13 +44,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `username`, `email`, `password`, `picture`, `bio`, `created_at`, `update_at`) VALUES
-(1, 'adminn', 'admin1', 'admincontoh@gmail.com', '$2y$10$DlsoykfGOdkczHMmMh5UW.2eL30flBz1Rl37ceDduc.DR0coHrCCi', NULL, NULL, '2024-02-04 05:34:24', '2024-03-21 02:11:14'),
-(2, '', 'hitagi01', 'azizmfadli.04@gmail.com', '$2y$10$EIgbwTyfQjmbFzI1nfYv0uvf9WqMeZKk7JhnQYkAxUDSVlXx.mUMa', NULL, NULL, '2024-02-04 12:21:33', '2024-02-04 12:21:33'),
-(3, '', 'ujang', 'azismuhammadf06@gmail.com', '$2y$10$eVv6/aair8vOm.PUPxNPe.vlC188mlItj345ck8Bvs2Pf9DKSWbGe', NULL, NULL, '2024-02-04 12:24:43', '2024-02-04 12:24:43'),
-(4, '', 'admin3', 'unar66@gmail.com', '$2y$10$4RULj8HnT7tymJiU5.CcHuIny4OOsA6krg4mySbhvzj9oeJgAMdKO', NULL, NULL, '2024-02-07 07:27:51', '2024-02-07 07:27:51'),
-(5, '', 'admin2', 'admin2@gmail.com', '$2y$10$iJU4VxcBVtNcY/zfQnqBQOny3PQg0F47EsoP6JIQN29hj1LWga3UK', NULL, NULL, '2024-03-22 01:50:55', '2024-03-22 01:50:55'),
-(7, '', 'sozin', 'sozin@gmail.com', '$2y$10$WuZKIdMFCB7xiQIZ8qXXGOsqAnZ2Pvs2UYWxJDmB/.8s2R7XiOTAu', NULL, NULL, '2024-03-22 06:06:33', '2024-03-22 06:52:05'),
-(8, '', 'kara', 'kara@gmail.com', '$2y$10$Az7D1MW4c3jfu1qq5V/9A.hOb2GgnjPAPMJ5zq0rIm8kxGX2Jl55G', NULL, NULL, '2024-03-22 06:27:35', '2024-03-22 07:35:41');
+(1, 'Yeti Nugraheni', 'admin1', 'upt.komputer@polban.ac.id', '$2y$10$vsmdGOKFiHvtIPzMR1s1D.wniDT3.V3szWWeGYmfCmXICdi3KIBt6', NULL, NULL, '2024-04-29 04:18:41', '2024-04-29 04:18:41');
 
 -- --------------------------------------------------------
 
@@ -175,7 +169,39 @@ INSERT INTO `aset` (`id_aset`, `deskripsi`, `serialnumber`, `supplier`, `brand`,
 (831, '2 Buah A.C. Split', '-', '-', '-', '-', '-', NULL, 20),
 (832, '2 Buah Vertikal Blind', '-', '-', '-', '-', '-', NULL, 20),
 (833, '1 Buah Kursi Dorong', '-', '-', '-', '-', '-', NULL, 20),
-(834, '34 Buah P.C. Unit', '-', '-', '-', '-', '-', NULL, 20);
+(834, '34 Buah P.C. Unit', '-', '-', '-', '-', '-', NULL, 20),
+(835, '1 Buah Lemari Besi/Metal', '-', '-', '-', '-', '-', NULL, 19),
+(836, '1 Buah White Board', '-', '-', '-', '-', '-', NULL, 19),
+(837, '1 Buah LCD Projector/Infocus', '-', '-', '-', '-', '-', NULL, 19),
+(838, '1 Buah Focusing Screen/Layar LCD Projector', '-', '-', '-', '-', '-', NULL, 19),
+(839, '1 Buah Meja Kerja Kayu', '-', '-', '-', '-', '-', NULL, 19),
+(840, '33 Buah Kursi Besi/Metal', '-', '-', '-', '-', '-', NULL, 19),
+(841, '12 Buah Meja Komputer', '-', '-', '-', '-', '-', NULL, 19),
+(842, '2 Buah A.C. Split', '-', '-', '-', '-', '-', NULL, 19),
+(843, '2 Buah Vertikal Blind', '-', '-', '-', '-', '-', NULL, 19),
+(844, '1 Buah Kursi Dorong', '-', '-', '-', '-', '-', NULL, 19),
+(845, '34 Buah P.C. Unit', '-', '-', '-', '-', '-', NULL, 19),
+(846, '1 Buah Lemari Besi/Metal', '-', '-', '-', '-', '-', NULL, 21),
+(847, '1 Buah White Board', '-', '-', '-', '-', '-', NULL, 21),
+(848, '1 Buah LCD Projector/Infocus', '-', '-', '-', '-', '-', NULL, 21),
+(849, '1 Buah Focusing Screen/Layar LCD Projector', '-', '-', '-', '-', '-', NULL, 21),
+(850, '1 Buah Meja Kerja Kayu', '-', '-', '-', '-', '-', NULL, 21),
+(851, '33 Buah Kursi Besi/Metal', '-', '-', '-', '-', '-', NULL, 21),
+(852, '12 Buah Meja Komputer', '-', '-', '-', '-', '-', NULL, 21),
+(853, '2 Buah A.C. Split', '-', '-', '-', '-', '-', NULL, 21),
+(854, '2 Buah Vertikal Blind', '-', '-', '-', '-', '-', NULL, 21),
+(855, '34 Buah P.C. Unit', '-', '-', '-', '-', '-', NULL, 21),
+(856, '1 Buah Lemari Besi/Metal', '-', '-', '-', '-', '-', NULL, 22),
+(857, '1 Buah White Board', '-', '-', '-', '-', '-', NULL, 22),
+(858, '1 Buah LCD Projector/Infocus', '-', '-', '-', '-', '-', NULL, 22),
+(859, '1 Buah Focusing Screen/Layar LCD Projector', '-', '-', '-', '-', '-', NULL, 22),
+(860, '1 Buah Meja Kerja Kayu', '-', '-', '-', '-', '-', NULL, 22),
+(861, '33 Buah Kursi Besi/Metal', '-', '-', '-', '-', '-', NULL, 22),
+(862, '11 Buah Meja Komputer', '-', '-', '-', '-', '-', NULL, 22),
+(863, '2 Buah A.C. Split', '-', '-', '-', '-', '-', NULL, 22),
+(864, '2 Buah Vertikal Blind', '-', '-', '-', '-', '-', NULL, 22),
+(865, '1 Buah Kursi Dorong', '-', '-', '-', '-', '-', NULL, 22),
+(866, '34 Buah P.C. Unit', '-', '-', '-', '-', '-', NULL, 22);
 
 -- --------------------------------------------------------
 
@@ -214,71 +240,6 @@ INSERT INTO `berita` (`id_berita`, `judul_berita`, `tgl_berita`, `gambar`, `isi_
 (16, '7 Layer OSI', '27-02-2017', 'osi.jpg', '<p>Pengertian OSI Layer</p>\r\n\r\n<p>OSI adalah standar komunikasi yang diterapkan di dalam jaringan komputer. Standar itulah yang menyebabkan seluruh alat komunikasi dapat saling berkomunikasi melalui jaringan .</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Terdapat 7 layer pada model OSI. Setiap layer bertanggungjawab secara khusus pada proses komunikasi data. Misalnya, satu layer bertanggungjawab untuk membentuk koneksi antar perangkat, sementara layer lainnya bertanggungjawab untuk mengoreksi terjadinya &ldquo;error&rdquo; selama proses transfer data berlangsung.</p>\r\n\r\n<ol>\r\n	<li>Model Layer OSI</li>\r\n</ol>\r\n\r\n<ol>\r\n	<li>Upper layer&rdquo; fokus pada applikasi pengguna dan bagaimana file direpresentasikan di komputer .</li>\r\n	<li>Lower layer adalah intisari komunikasi data melalui jaringan actual .</li>\r\n	<li>Model OSI</li>\r\n</ol>\r\n\r\n<p>Tujuan utama penggunaan model OSI adalah untuk membantu desainer jaringan memahami fungsi dari tiap-tiap layer yang berhubungan dengan aliran komunikasi data. Termasuk jenis-jenis protokol jaringan dan metode transmisi.</p>\r\n\r\n<p>Fungsi 7 layer OSI :</p>\r\n\r\n<ol>\r\n	<li>Physical Layer</li>\r\n</ol>\r\n\r\n<p>Berfungsi untuk mendefinisikan media transmisi jaringan, metode pensinyalan, sinkronisasi bit, arsitektur jaringan, topologi jaringan dan pengabelan.</p>\r\n\r\n<ol>\r\n	<li>DataLink Layer</li>\r\n</ol>\r\n\r\n<p>Befungsi untuk menentukan bagaimana bit-bit data dikelompokkan menjadi format yangdisebut sebagai frame.</p>\r\n\r\n<ol>\r\n	<li>Network Layer</li>\r\n</ol>\r\n\r\n<p>Berfungsi untuk mendefinisikan alamat-alamat IP, membuat header untuk paket-paket, dan kemudian melakukan routing melalui internetworking dengan menggunakan Router dan Switch layer-3 (Switch Manage).</p>\r\n\r\n<ol>\r\n	<li>Transport Layer</li>\r\n</ol>\r\n\r\n<p>Berfungsi untuk memecah data ke dalam paket-paket data serta memberikan nomor urut ke paket-paket tersebut sehingga dapat disusun kembali pada sisi tujuan setelah diterima .</p>\r\n\r\n<ol>\r\n	<li>Session Layer</li>\r\n</ol>\r\n\r\n<p>Berfungsi untuk mendefinisikan bagaimana koneksi dapat dibuat, dipelihara, atau dihancurkan. Selain itu, di layer ini juga dilakukan resolusi nama.</p>\r\n\r\n<ol>\r\n	<li>Presentation Layer</li>\r\n</ol>\r\n\r\n<p>Berfungsi untuk mentranslasikan data yang hendak ditransmisikan oleh aplikasi ke dalam format yang dapat ditransmisikan melalui jaringan.</p>\r\n\r\n<ol>\r\n	<li>Application Layer</li>\r\n</ol>\r\n\r\n<p>Berfungsi sebagai antarmuka dengan aplikasi dengan fungsionalitas jaringan, mengatur bagaimana aplikasi dapat mengakses jaringan, dan kemudian membuat pesan-pesan kesalahan.</p>\r\n\r\n<ol>\r\n	<li>Manfaat OSI Layer</li>\r\n</ol>\r\n\r\n<ol>\r\n	<li>Membuat peralatan vendor yang berbeda dapat saling bekerja sama .</li>\r\n	<li>Membuat standarisasi yang dapat di pakai vendor untuk mengurangi kerumitan</li>\r\n	<li>Standarisasi interfaces</li>\r\n	<li>Modular engineering</li>\r\n	<li>Kerjasama dan komunikasi tekhnologi yang berbeda</li>\r\n	<li>Memudahkan pelatihan network</li>\r\n</ol>\r\n\r\n<p>Sumber :</p>\r\n\r\n<ul>\r\n	<li><a href=\"http://www.diarypc.com/2014/01/pengertian-7-osi-layer-dan-tcpip.html\">://www.diarypc.com/2014/01/pengertian-7-osi-layer-dan-tcpip.html</a></li>\r\n	<li><a href=\"http://imchunkz.blogspot.co.id/2015/12/pengertian-dan-fungsi-dari-7-layer-osi.html\">://imchunkz.blogspot.co.id/2015/12/pengertian-dan-fungsi-dari-7-layer-osi.html</a></li>\r\n	<li><a href=\"https://www.google.com/search?q=cara+kerja+osi+layer&amp;client=firefox-b&amp;sa=X&amp;biw=1440&amp;bih=789&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;ved=0ahUKEwiZyK73n_DRAhUBNI8KHSYQBPUQsAQIIQ\">www.google.com/search?q=cara+kerja+osi+layer&amp;client=firefox-b&amp;sa=X&amp;biw=1440&amp;bih=789&amp;tbm=isch&amp;tbo=u&amp;source=univ&amp;ved=0ahUKEwiZyK73n_DRAhUBNI8KHSYQBPUQsAQIIQ#imgrc=lrEdk9jivFbulM</a><a href=\"https://waktuku.com/osi-layer-7/\">/</a></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Tanggal Akses : 01-Februari-2017</p>\r\n', 0, 1),
 (17, 'Physical La•	Repeater •	Modem yer', '27-02-2017', '', '<p>Physical Layer&nbsp; adalah lapisan pertama dalam&nbsp;<a href=\"https://id.wikipedia.org/wiki/OSI_Reference_Model\">model referensi jaringan OSI</a>&nbsp;(lapisan ini merupakan lapisan terendah) dari tujuh lapisan lainnya. Lapisan ini mendefinisikan antarmuka dan mekanisme untuk meletakkan&nbsp;<em>bit-bit</em>&nbsp;<a href=\"https://id.wikipedia.org/wiki/Data\">data</a>&nbsp;di atas media jaringan (<a href=\"https://id.wikipedia.org/wiki/Kabel\">kabel</a>,&nbsp;<a href=\"https://id.wikipedia.org/wiki/Radio\">radio</a>, atau&nbsp;<a href=\"https://id.wikipedia.org/wiki/Cahaya\">cahaya</a>). Selain itu, lapisan ini juga mendefinisikan&nbsp;<a href=\"https://id.wikipedia.org/wiki/Tegangan_listrik\">tegangan listrik</a>,&nbsp;<a href=\"https://id.wikipedia.org/wiki/Arus_listrik\">arus listrik</a>,&nbsp;<a href=\"https://id.wikipedia.org/wiki/Modulasi\">modulasi</a>, sinkronisasi antar bit, pengaktifan koneksi dan pemutusannya, dan beberapa karakteristik kelistrikan untuk media transmisi (seperti halnya kabel&nbsp;<a href=\"https://id.wikipedia.org/wiki/Unshielded_twisted_pair\">UTP</a>/<a href=\"https://id.wikipedia.org/w/index.php?title=Shielded_twisted_pair&amp;action=edit&amp;redlink=1\">STP</a>,&nbsp;<a href=\"https://id.wikipedia.org/wiki/Kabel_koaksial\">kabel koaksial</a>, atau kabel&nbsp;<em>fiber-optic</em>). Protokol-protokol pada level PHY mencakup&nbsp;<a href=\"https://id.wikipedia.org/wiki/IEEE_802.3\">IEEE 802.3</a>,&nbsp;<a href=\"https://id.wikipedia.org/wiki/RS-232\">RS-232C</a>, dan&nbsp;<a href=\"https://id.wikipedia.org/w/index.php?title=X.21&amp;action=edit&amp;redlink=1\">X.21</a>.&nbsp;<em><a href=\"https://id.wikipedia.org/w/index.php?title=Repeater&amp;action=edit&amp;redlink=1\">Repeater</a></em>,&nbsp;<a href=\"https://id.wikipedia.org/wiki/Transceiver\"><em>transceiver</em></a>,&nbsp;<a href=\"https://id.wikipedia.org/wiki/Kartu_jaringan\">kartu jaringan</a>/<a href=\"https://id.wikipedia.org/wiki/Network_Interface_Card\"><em>network interface card</em></a>&nbsp;(NIC), dan pengabelan beroperasi di dalam lapisan ini.</p>\r\n\r\n<p><a href=\"https://id.wikipedia.org/wiki/Lapisan_fisik%2021-02-2017\">sumber: https://id.wikipedia.org/wiki/Lapisan_fisik 21-02-2017</a></p>\r\n\r\n<p>Pada lapisan ini&nbsp;berfungsi dalam pengiriman raw bit ke channel komunikasi. Masalah desain yang harus diperhatikan disini adalah memastikan bahwa bila satu sisi mengirim data 1 bit, data tersebut harus diterima oleh sisi lainnya sebagai 1 bit pula, dan bukan 0 bit. Lapisan ini memiliki tugas&nbsp;&nbsp;untuk mengatur sinkronisasi pengiriman dan penerimaan data, spesifikasi mekanis dan elektris, menerapkan prosedur untuk membangun , mengirimkan data/informasi dalam bentuk digit biner, memelihara dan memutuskan hubungan komunikasi. Pada&nbsp;physical layer&nbsp;terdapat&nbsp;&nbsp;perangkat keras dasar jaringan yang terdiri atas&nbsp;Repeater,&nbsp;Multiplexer, Hubs(Passive and Active),&nbsp;Oscilloscope dan&nbsp;Amplifier.</p>\r\n\r\n<p>Repeater (satelit) memiliki tugas sebagai penerima sinyal dan mengirimkannya kembali k&nbsp;receiver.&nbsp;</p>\r\n\r\n<p>Multiplexer merupakan media untuk menjalankan multipleks yaitu menggabungkan beberapa sinyal untuk dikirim secara bersamaan dalam suatu kanal tranmisi.</p>\r\n\r\n<p>Osiloskop adalah sebuah alat untuk menampilkan bentuk gelombang atau sinyal pada sebuah monitor.</p>\r\n\r\n<p>Hubs&nbsp;berfungsi untuk menggabungkan beberapa komputer menjadi satu buah kelompok jaringan.</p>\r\n\r\n<p>Amplifier adalah perangkat yang berfungsi sebagai penguat sinyal.</p>\r\n\r\n<p>Media-media fisik tersebut terjadi perpindahan arus bit yang melibatkan sinyal-sinyal digital. &nbsp;Dalam pengirimannya harus terjadi kesamaan dalam nilai bit. Apabilamengirim data 1 bit, data tersebut harus diterima oleh sisi lainnya sebagai 1 bit pula, dan bukan 0 bit. Oleh karena level tegangan dalam pengiriman harus tetap sama dan terjaga hingga pengiriman selesai.&nbsp;</p>\r\n\r\n<p>Perangkat yang digunakan pada layer ini adalah :</p>\r\n\r\n<ul>\r\n	<li>Network Adapter</li>\r\n	<li>Repeater</li>\r\n	<li>Modem</li>\r\n	<li>Fiber Media Converter</li>\r\n</ul>\r\n\r\n<p>Pada lapisan pertama inilah terjadi hubungan secara fisik antara satu terminal dengan terminal lain atau server atau peripheral lainnya.&nbsp;Pada sisi pengirim, lapisan phisik menerapkan fungsi elektris mekanis dan prosedur untuk membangun, memelihara dan melepaskan sirkuit kommunikasi guna mentransmisikan informasi dalam bentuk digit biner ke sisi penerima, sedangkan lapisan fisik pada penerima akan menerima data dan mentransmisikan data ke lapisan di atasnya.</p>\r\n\r\n<p><strong>Media Tranmisi pada&nbsp;Physical Layer</strong></p>\r\n\r\n<ol>\r\n	<li><strong>Kabel (wire)</strong></li>\r\n</ol>\r\n\r\n<p><strong>Kabel UTP&nbsp;Category 3&nbsp;(Cat3) :</strong>&nbsp;&nbsp;kabel UTP dengan kualitas transmisi yang lebih baik dibandingkan dengan kabel UTP Category 2 (Cat2), yang didesain untuk mendukung komunikasi data dan suara pada kecepatan hingga 10 megabit per detik.</p>\r\n\r\n<p><strong>Kabel UTP&nbsp;&nbsp;Category&nbsp;5&nbsp;(Cat5)</strong> <strong>:&nbsp;</strong>kabel dengan kualitas transmisi yang jauh lebih baik dibandingkan dengan kabel UTP Category 4 (Cat4), yang didesain untuk mendukung komunikasi data serta suara pada kecepatan hingga 100 megabit per detik.</p>\r\n\r\n<p><strong>Kabel Coaxial :</strong>&nbsp;suatu jenis kabel yang menggunakan dua buah konduktor. Kabel ini banyak digunakan untuk mentransmisikan&nbsp;sinyal&nbsp;frekuensi&nbsp;tinggi mulai 300 kHz keatas. Karena kemampuannya dalam menyalurkan frekuensi tinggi tersebut, maka sistem transmisi dengan menggunakan kabel koaksial memiliki kapasitas&nbsp;kanal&nbsp;yang cukup besar.</p>\r\n\r\n<p><strong>Kabel Fiber Optik :</strong>&nbsp;saluran transmisi yang terbuat dari&nbsp;kaca&nbsp;atau&nbsp;plastik&nbsp;yang digunakan untuk mentransmisikan sinyal&nbsp;cahaya&nbsp;dari suatu tempat ke tempat lain. Berdasarkan mode transmisi yang digunakan serat optik terdiri atas Multimode Step Index, Multimode Graded Index, dan Singlemode Step Index.</p>\r\n\r\n<p>sumber: <a href=\"https://agungborn91.wordpress.com/2013/05/23/physical-layer-lapisan-fisik-pada-model-osi/\">https://agungborn91.wordpress.com/2013/05/23/physical-layer-lapisan-fisik-pada-model-osi/</a> 21-02-2017</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n', 0, 1),
 (18, 'WIFI', '27-02-2017', '', '<p>Wifi merupakan kependekan dari Wireless Fidelity yaitu sebuah media penghantar komunikasi data tanpa kabel yang bisa digunakan untuk komunikasi atau mentransfer program dan data dengan kemampuan yang sangat cepat. Kenapa bisa cepat? Karena media penghantarnya menggunakan sinyal radio yang bekerja pada frekuensi tertentu.</p>\r\n\r\n<p>Wifi bisa juga difungsikan sebagai jaringan tanpa kabel (nirkabel) seperti di perusahaan-perusahaan besar dan juga di warnet. Jaringan nirkabel tersebut biasa diistilahkan dengan LAN (local area network). Sehingga antara komputer dilokasi satu bisa saling berhubungan dengan komputer lain yang letaknya berbeda.</p>\r\n\r\n<p>Sedangkan untuk penggunaan internet, wifi memerlukan sebuah titik akses yang biasa disebut dengan hotspot untuk menghubungkan dan mengontrol&nbsp; antara pengguna wifi dengan jaringan internet pusat.</p>\r\n\r\n<ul>\r\n	<li>Berdasarkan bentuk fisiknya, wi-fi dibedakan menjadi dua yaitu :</li>\r\n</ul>\r\n\r\n<ol>\r\n	<li>Bentuk PCI</li>\r\n</ol>\r\n\r\n<p>Jenis PCI biasanya digunakan pada sebuah PC (personal computer)</p>\r\n\r\n<ol>\r\n	<li>Bentuk USB</li>\r\n</ol>\r\n\r\n<p>Jenis USB penggunaannya lebih portabel bisa untuk laptop ataupun PC. Hal ini dikarenakan didesain dengan jenis colokan USB. Sehingga lebih memudahkan pengguna.</p>\r\n\r\n<p>Sumber : <a href=\"http://www.indraservicelaptop.com/2014/04/pengertian-wifi-dan-fungsinya.html\">http://www.indraservicelaptop.com/2014/04/pengertian-wifi-dan-fungsinya.html</a></p>\r\n\r\n<p>Tanggal akses : 16 Februari 2017</p>\r\n\r\n<ul style=\"list-style-type:circle\">\r\n	<li>Mengenal Wireless LAN</li>\r\n</ul>\r\n\r\n<p>Wireless Local Area Network (WLAN) adalah jaringan komputer yang menggunakan gelombang radio sebagai media transmisi data. Informasi (data) ditransfer dari satu komputer ke komputer lain menggunakan gelombang radio. WLAN sering disebut sebagai Jaringan Nirkabel atau jaringan wireless.</p>\r\n\r\n<p>Proses komunikasi tanpa kabel ini dimulai dengan bermunculannya peralatan berbasis gelombang radio seperti walkie talkie, remote control, cordless phone, ponsel, dan peralatan radio lainnya. Lalu adanya kebutuhan untuk menjadikan komputer sebagai barang yang mudah dibawa (mobile) dan mudah digabungkan dengan jaringan yang sudah ada.</p>\r\n\r\n<ul>\r\n	<li>Pada tahun 1997, sebuah lembaga independen bernama IEEE membuat spesifikasi/standar WLAN pertama yang diberi kode 802.11. Peralatan yang sesuai standar 802.11 dapat bekerja pada frekuensi 2,4GHz, dan kecepatan transfer data (throughput) teoritis maksimal 2Mbps. Sayangnya peralatan yang mengikuti spesifikasi 802.11 kurang diterima dipasar. Througput sebesar ini dianggap kurang memadai untuk aplikasi multimedia dan aplikasi kelas berat lainnya.</li>\r\n	<li>Pada bulan Juli 1999, IEEE kembali mengeluarkan spesifikasi baru bernama 802.11b. Kecepatan transfer data teoritis maksimal yang dapat dicapai adalah 11 Mbps. Kecepatan tranfer data sebesar ini sebanding dengan Ethernet tradisional (IEEE 802.3 10Mbps atau 10Base-T). Peralatan yang menggunakan standar 802.11b juga bekerja pada frekuensi 2,4Ghz. Salah satu kekurangan peralatan wireless yang bekerja pada frekuensi ini adalah kemungkinan terjadinya interferensi dengan cordless phone, microwave oven, atau peralatan lain yang menggunakan gelombang radio pada frekuensi sama.</li>\r\n	<li>Pada tahun 2002, IEEE membuat spesifikasi baru yang dapat menggabungkan kelebihan 802.11b dan 802.11a. Spesifikasi yang diberi kode 802.11g ini bekerja pada frekuensi 2,4Ghz dengan kecepatan transfer data teoritis maksimal 54Mbps. Peralatan 802.11g kompatibel dengan 802.11b, sehingga dapat saling dipertukarkan. Misalkan saja sebuah komputer yang menggunakan kartu jaringan 802.11g dapat memanfaatkan access point 802.11b, dan sebaliknya.</li>\r\n</ul>\r\n\r\n<p>Ada beberapa istilah yang cukup popular berkaitan dengan wireless. Beberapa di antaranya yaitu:</p>\r\n\r\n<p>1. Wi-Fi atau WiFi</p>\r\n\r\n<p>Wi-Fi atau Wireless Fidelity adalah nama lain yang diberikan untuk produk yang mengikuti spesifikasi 802.11. Sebagian besar pengguna komputer lebih mengenal istilah Wi-Fi card/adapter dibandingkan dengan 802.11 card/adapter. Wi-Fi merupakan merek dagang, dan lebih popular dibandingkan kata &ldquo;IEEE 802.11&rdquo;.</p>\r\n\r\n<p>2. Channel</p>\r\n\r\n<p>Bayangkanlah pita frekuensi seperti sebuah jalan, dan channel seperti jalur-jalur pemisah pada jalan tersebut. Peralatan 802.11a bekerja pada frekuensi 5,15 &ndash; 5,875 GHz, sedangkan peralatan 802.11b dan 802.11g bekerja pada frekuansi 2,4 &ndash; 2,497 GHz. Jadi , 802.11a menggunakan pita frekuensi lebih besar dibandingkan 802.11b atau 802.11g. Semakin lebar pita frekuensi, semakin banyak channel yang tersedia. Setiap channel dapat digunakan untuk mengangkut informasi secara penuh. Pada 802.11a tersedia sampai 8 non-overlapping channel. Masing-masing dapat &ldquo;dibebani&rdquo; throughput sebesar 54Mbps, atau total throughput 432Mbps. Sedangkan pada 802.11b/g tersedia 3 non-overlapping channel yang masing-masing dapat &ldquo;dibebani&rdquo; throughput sampai 11Mbps, atau total throughput 33Mbps. Agar dapat saling berkomunikasi, setiap peralatan wireless harus menggunakan channel yang sama. Pengguna dapat mengatur nomor channel saat melakukan instalasi driver atau melalui utility bantu yang disediakan masing-masing vendor.</p>\r\n\r\n<p>3. MIMO</p>\r\n\r\n<p>MIMO (Multiple Input Multiple Output) merupakan teknologi Wi-Fi terbaru. MIMO dibuat berdasarkan spesifikasi Pre-802.11n. Kata &rdquo;Pre-&rdquo; menyatakan &ldquo;Prestandard versions of 802.11n&rdquo;. MIMO menawarkan peningkatan throughput, keunggulan reabilitas, dan peningkatan jumlah klien yg terkoneksi. Daya tembus MIMO terhadap penghalang lebih baik, selain itu jangkauannya lebih luas sehingga anda dapat menempatkan laptop atau client Wi-Fi sesuka hati. Access Point MIMO dapat menjangkau berbagai perlatan Wi-Fi yg ada disetiap sudut ruangan.</p>\r\n\r\n<p>Secara teknis MIMO lebih unggul dibandingkan saudara tuanya 802.11a/b/g. Access Point MIMO dapat mengenali gelombang radio yang dipancarkan oleh adapter Wi-Fi 802.11a/b/g. MIMO mendukung kompatibilitas mundur dengan 802.11 a/b/g. Peralatan Wi-Fi MIMO dapat menghasilkan kecepatan transfer data sebesar 108Mbps.</p>\r\n\r\n<p>4. WEP</p>\r\n\r\n<p>WEP (Wired Equivalent Privacy) merupakan salah satu fitur keamanan/security yang bersifat build-in pada peralatan Wi-Fi. Keamanan merupakan masalah yang serius bagi pengguna Wi-Fi akibat gelombang radio yang dipancarkan adapter Wi-Fi dapat diterima oleh semua peralatan Wi-Fi yang ada di sekitarnya (atau gedung di sebelahnya). Tentu saja kondisi semacam ini sangat rawan karena informasi dapat &ldquo;ditangkap&rdquo; dengan mudah. Oleh sebab itu Wi-Fi dibuat dengan beberapa jenis enkripsi : 40 bit, 64 bit, 128 bit dan 256 bit. Pengguna WEP akan meningkatkan keamanan data yang ditransfer meskipun konsekuensinya penurunan throughput data.</p>\r\n\r\n<p>5. SSID</p>\r\n\r\n<p>SSID (Service Set IDentifier) merupakan identifikasi atau nama untuk jaringan wireless. Setiap peralatan Wi-Fi harus menggunakan SSID tertentu. Peralatan Wi-Fi dianggap satu jaringan jika mengunakan SSID yang sama. Agar dapat berkomunikasi, setiap perlatan wireless haruslah menggunakan SSID dan channel yang sama. SSID bersifat case-sensitive, penulisan huruf besar dan huruf kecil sangat berpengaruh.</p>\r\n\r\n<p>6. SES</p>\r\n\r\n<p>SES merupakan singkatan dari SecureEasySetup. SES merupakan jawaban terhadap kesulitan setup security jaringan yang selama ini dirasakan sejumlah kalangan. Hanya dengan menekan satu tombol, SES secara otomatis memberikan SSID dan kode security ke router dan adapter serta menerapkan security WPA (Wireless Protected Access). Untuk menggunakan SES, pengguna hanya perlu menekan tombol SES pada router, lalu pada client, dan selanjutnya kedua perangkat akan membuat sebuah jalur komunikasi yang aman.</p>\r\n\r\n<p>Sumber : <a href=\"https://tatyanaksantai.wordpress.com/artilel-wifi/\">https://tatyanaksantai.wordpress.com/artilel-wifi/</a></p>\r\n\r\n<p>Tanggal akses : 16 februari 2017</p>\r\n\r\n<ul style=\"list-style-type:circle\">\r\n	<li>Kekurangan dan kelebihan WI-FI</li>\r\n</ul>\r\n\r\n<ul>\r\n	<li>Kelebihan Wifi</li>\r\n</ul>\r\n\r\n<ol>\r\n	<li>Dapat mengakses internet, mentransfer file, print darimana saja dalam radius 100 meter dari akses poin wifi.</li>\r\n	<li>Mengurangi kekacauan kabel dan kabel belakang desktop / Notebooks</li>\r\n	<li>Jaringan kabel dan socket cenderung memburuk dari waktu ke waktu, sedangkan wifi tidak memiliki kerugian ini.</li>\r\n	<li>Jika anda memiliki lokasi kantor lebih dari 1 dan staf anda melakukan perjalanan antara kantor, Anda cukup menginstal jaringan wifi di setiap lokasi. Tanpa harus mengkonfigurasi ulang pengaturan internet mereka setiap kali berpindah kantor sebagaimana menggunakan kabel konvensional.</li>\r\n	<li>Wi-Fi dikembangkan tanpa kabel dan menggunakan gelombang radio dengan frekuensi 2,4 GHz. Selain itu Wi-Fi dapat mengirim dan menerima kapasitas sampai 54Mbps.</li>\r\n	<li>Wi-Fi menggunakan jalur akses jaringan / hot spot, dapat berkomunikasi ke semua komputer dan laptop.</li>\r\n</ol>\r\n\r\n<ul>\r\n	<li>Kekurangan Wifi</li>\r\n</ul>\r\n\r\n<ol>\r\n	<li>Sangat penting untuk mengamankan koneksi Wifi, jika tidak siapapun yang memiliki komputer Wifi enabled akan dapat mengakses data anda dan koneksi internet.</li>\r\n	<li>Jaringan Wifi sensitif terhadap kekuatan sinyal . Untuk memastikan konektivitas yang baik, anda harus memastikan bahwa semua komputer dan gadget menerima kekuatan sinyal yang memadai setiap saat.</li>\r\n	<li>Sinyal Wifi cenderung terpengaruh oleh kondisi iklim seperti badai.</li>\r\n	<li>Untuk menambah jumlah perangkat pada jaringan anda, dengan menggabungkan titik akses wifi ( ini keharusan untuk wifi ). Anda akan memerlukan soket listrik untuk plugin dan kekuatan akses point Wifi.</li>\r\n	<li>Adanya kelemahan yang terletak pada konfigurasi dan jenis enkripsi. Kelemahan tersbut diakibatkan karena terlalu mudahnya membangun sebuah jaringan wireless.</li>\r\n	<li>Wired Equivalent Privacy (WEP) yang menjadi standart keamanan wireless sebelumnya dapat dengan mudah dipecahkan dengan berbagai tools yang tersedia gratis di internet.</li>\r\n</ol>\r\n\r\n<p>Sumber : <a href=\"https://tutorialku2011.wordpress.com/komputer/kelebihan-dan-kekurangan-wifi/\">https://tutorialku2011.wordpress.com/komputer/kelebihan-dan-kekurangan-wifi/</a></p>\r\n\r\n<p>Tanggal akses : 16 februari 2017</p>\r\n', 0, 1);
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `f_hardware`
---
-
-CREATE TABLE `f_hardware` (
-  `id_pc` int(11) NOT NULL,
-  `no_pc` varchar(11) NOT NULL,
-  `gambar` varchar(100) DEFAULT NULL,
-  `nama_pc` char(100) NOT NULL,
-  `windows` varchar(100) NOT NULL,
-  `processor` varchar(100) NOT NULL,
-  `ram` varchar(100) NOT NULL,
-  `mouse` varchar(100) NOT NULL,
-  `keyboard` varchar(100) NOT NULL,
-  `local_(c:)` varchar(100) NOT NULL,
-  `local_(d:)` varchar(100) NOT NULL,
-  `created_at` timestamp(6) NULL DEFAULT NULL,
-  `updated_at` timestamp(6) NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `f_hardware`
---
-
-INSERT INTO `f_hardware` (`id_pc`, `no_pc`, `gambar`, `nama_pc`, `windows`, `processor`, `ram`, `mouse`, `keyboard`, `local_(c:)`, `local_(d:)`, `created_at`, `updated_at`) VALUES
-(1, '     PC 1', 'excel.jpeg', '                   HP', '                   11 Pro 64-bit', '                   Intel I5-10400', '                   8GB', '                  Acer', '                   HP', '237GB', '931GB', NULL, '2024-02-16 00:58:05.000000'),
-(2, '       PC 2', 'lab8-1.jpeg', '       HP', '       11 Pro 64-bit', '       Intel I5-10400', '     8GB', '       HP', '       HP', '237GB', '931GB', NULL, NULL),
-(3, ' PC 3', 'lpop', ' HP', ' 11 Pro 64-bit', ' Intel I5-10400', '8GB', ' HP', ' HP', '237GB', '931GB', NULL, NULL),
-(4, 'PC 4', 'dsd', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(5, 'PC 5', 'sds', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(6, 'PC 6', 'ds', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(7, 'PC 7', 'dsd', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(8, 'PC 8', 'dsd', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(9, 'PC 9', 'sds', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(10, 'PC 10', 'dsds', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(11, 'PC 11', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(12, 'PC 12', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(13, 'PC 13', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(14, 'PC 14', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(15, 'PC 15', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(16, 'PC 16', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(17, 'PC 17', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', '', 'HP', '237GB', '931GB', NULL, NULL),
-(18, 'PC 18', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(19, 'PC 19', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(20, 'PC 20', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(21, 'PC 21', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(22, 'PC 22', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(23, 'PC 23', '', 'HP', '11 Pro 64-bit', 'Intel I5-10400', '8GB', 'HP', 'HP', '237GB', '931GB', NULL, NULL),
-(24, 'PC 24', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(25, 'PC 25', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'HP', '118GB', '931GB', NULL, NULL),
-(26, 'PC 26', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(27, 'PC 27', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(28, 'PC 28', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(29, 'PC 29', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(30, 'PC 30', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(31, 'PC 31', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(32, 'PC 32', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(33, 'PC 33', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(34, 'PC 34', '', 'Asus Wireless', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'Asus', 'Asus', '118GB', '931GB', NULL, NULL),
-(36, 'PC 35', '', 'HP', 'Windows 10 Pro', 'i7-7100', '8gb', 'dell', 'lenovo', '', '', NULL, NULL),
-(39, 'PC 36', '', 'HP', 'Windows 11 Pro', 'Intel i7-11900', '16gb', 'dell', 'lenovo', '', '', NULL, NULL),
-(49, '   PC 42', 'vscode.jpeg', '  Lenovo', '   Windows 11 Pro 64-bit', '  intel core i5', '32gb', ' Lenovo', '  Lenovo', '', '', NULL, '2024-02-16 00:11:44.000000');
 
 -- --------------------------------------------------------
 
@@ -622,15 +583,6 @@ CREATE TABLE `galeri` (
 --
 
 INSERT INTO `galeri` (`id_galeri`, `foto`, `id_ruangan`) VALUES
-(233, 'lab1-2.jpeg', 9),
-(235, 'lab1-3.jpeg', 9),
-(244, 'lab3.jpeg', 11),
-(246, 'lab4-1.jpeg', 12),
-(248, 'Lab5.jpeg', 13),
-(250, 'lab1-4.jpeg', 9),
-(253, 'lab1.jpeg', 9),
-(256, 'lab8-1.jpeg', 16),
-(257, 'lab5-3.jpeg', 13),
 (268, 'lab_a-1.jpg', 19),
 (269, 'lab_a-2.jpg', 19),
 (270, 'lab_a-3.jpg', 19),
@@ -646,396 +598,35 @@ INSERT INTO `galeri` (`id_galeri`, `foto`, `id_ruangan`) VALUES
 (280, 'lab_d-1.jpg', 22),
 (281, 'lab_d-2.jpg', 22),
 (282, 'lab_d-3.jpg', 22),
-(283, 'lab_d-4.jpg', 22);
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `h_lab2`
---
-
-CREATE TABLE `h_lab2` (
-  `id_pc` int(11) NOT NULL,
-  `no_pc` varchar(11) NOT NULL,
-  `gambar` varchar(300) DEFAULT NULL,
-  `nama_pc` char(100) NOT NULL,
-  `windows` varchar(100) NOT NULL,
-  `processor` varchar(100) NOT NULL,
-  `ram` varchar(100) NOT NULL,
-  `mouse` varchar(100) NOT NULL,
-  `keyboard` varchar(100) NOT NULL,
-  `local_(c:)` varchar(100) NOT NULL,
-  `local_(d:)` varchar(100) NOT NULL,
-  `id_ruangan` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `h_lab2`
---
-
-INSERT INTO `h_lab2` (`id_pc`, `no_pc`, `gambar`, `nama_pc`, `windows`, `processor`, `ram`, `mouse`, `keyboard`, `local_(c:)`, `local_(d:)`, `id_ruangan`) VALUES
-(1, ' PC 1', NULL, ' HP', ' Windows 10 Pro 64-bit', ' Intel I7-7700', ' 8GB', ' HP', ' HP', '223GB', '457GB', 10),
-(2, 'PC 2', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(3, 'PC 3', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(4, 'PC 4', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(5, 'PC 5', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(6, 'PC 6', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(7, 'PC 7', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(8, 'PC 8', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(9, 'PC 9', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(10, 'PC 10', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(11, 'PC 11', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(12, 'PC 12', NULL, 'HP', 'Windows 11 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '247GB', '457GB', 10),
-(13, 'PC 13', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(14, 'PC 14', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(15, 'PC 15', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(16, 'PC 16', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(17, 'PC 17', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(18, 'PC 18', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(19, 'PC 19', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(20, 'PC 20', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(21, 'PC 21', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(22, 'PC 22', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(23, 'PC 23', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(24, 'PC 24', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(25, 'PC 25', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(26, 'PC 26', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(27, 'PC 27', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(28, 'PC 28', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(29, 'PC 29', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(30, 'PC 30', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(31, 'PC 31', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(32, 'PC 32', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(33, 'PC 33', NULL, 'HP', 'Windows 10 Pro 64-bit', 'Intel I7-7700', '8GB', 'HP', 'HP', '223GB', '457GB', 10),
-(34, ' PC 34', NULL, ' HP', ' Windows 10 Pro 64-bit', ' Intel I7-7700', ' 8GB', ' HPP', ' HP', '223GB', '457GB', 10);
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `h_lab3`
---
-
-CREATE TABLE `h_lab3` (
-  `id_pc` int(11) NOT NULL,
-  `no_pc` varchar(11) NOT NULL,
-  `gambar` varchar(300) DEFAULT NULL,
-  `nama_pc` char(100) NOT NULL,
-  `windows` varchar(100) NOT NULL,
-  `processor` varchar(100) NOT NULL,
-  `ram` varchar(100) NOT NULL,
-  `mouse` varchar(100) NOT NULL,
-  `keyboard` varchar(100) NOT NULL,
-  `local_(c:)` varchar(100) NOT NULL,
-  `local_(d:)` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `h_lab3`
---
-
-INSERT INTO `h_lab3` (`id_pc`, `no_pc`, `gambar`, `nama_pc`, `windows`, `processor`, `ram`, `mouse`, `keyboard`, `local_(c:)`, `local_(d:)`) VALUES
-(1, 'PC 1', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'HP', 'Lenovo', '118GB', '931GB'),
-(2, 'PC 2', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(3, 'PC 3', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(4, 'PC 4', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(5, 'PC 5', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(6, 'PC 6', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(7, 'PC 7', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(8, 'PC 8', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(9, 'PC 9', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(10, 'PC 10', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(11, 'PC 11', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(12, 'PC 12', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(13, 'PC 13', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(14, 'PC 14', NULL, 'ASUS', '11 Home Single 64-bit', 'Intel I5-10500', '8GB', 'ASUS', 'ASUS', '118GB', '931GB'),
-(15, 'PC 15', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(16, 'PC 16', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(17, 'PC 17', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(18, 'PC 18', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(19, 'PC 19', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(20, 'PC 20', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(21, 'PC 21', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(22, 'PC 22', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(23, 'PC 23', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(24, 'PC 24', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(25, 'PC 25', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(26, 'PC 26', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(27, 'PC 27', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(28, 'PC 28', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(29, 'PC 29', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(30, 'PC 30', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(31, 'PC 31', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(32, 'PC 32', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(33, 'PC 33', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(34, 'PC 34', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(35, '', NULL, '', '', '', '', '', '', '', ''),
-(36, '', NULL, '', '', '', '', '', '', '', '');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `h_lab4`
---
-
-CREATE TABLE `h_lab4` (
-  `id_pc` int(35) NOT NULL,
-  `no_pc` varchar(11) NOT NULL,
-  `gambar` varchar(300) DEFAULT NULL,
-  `nama_pc` char(100) NOT NULL,
-  `windows` varchar(100) NOT NULL,
-  `processor` varchar(100) NOT NULL,
-  `ram` varchar(100) NOT NULL,
-  `mouse` varchar(100) NOT NULL,
-  `keyboard` varchar(100) NOT NULL,
-  `local_(c:)` varchar(100) NOT NULL,
-  `local_(d:)` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `h_lab4`
---
-
-INSERT INTO `h_lab4` (`id_pc`, `no_pc`, `gambar`, `nama_pc`, `windows`, `processor`, `ram`, `mouse`, `keyboard`, `local_(c:)`, `local_(d:)`) VALUES
-(1, 'PC 1', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(2, 'PC 2', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(3, 'PC 3', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(4, 'PC 4', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(5, 'PC 5', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(6, 'PC 6', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(7, 'PC 7', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(8, 'PC 8', NULL, 'AXIOO', '11 PRO 64-bit', 'Intel I7-12700', '16GB', 'AXIOO', 'AXIOO', '237GB', '931GB'),
-(9, 'PC 9', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(10, 'PC 10', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(11, 'PC 11', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(12, 'PC 12', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(13, 'PC 13', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(14, 'PC 14', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(15, 'PC 15', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(16, 'PC 16', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(17, 'PC 17', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(18, 'PC 18', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(19, 'PC 19', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(20, 'PC 20', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(21, 'PC 21', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(22, 'PC 22', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(23, 'PC 23', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(24, 'PC 24', NULL, 'DELL', 'Windows 10 Pro 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(25, 'PC 25', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(26, 'PC 26', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(27, 'PC 27', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(28, 'PC 28', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(29, 'PC 29', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(30, 'PC 30', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(31, 'PC 31', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(32, 'PC 32', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(33, 'PC 33', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-'),
-(34, 'PC 34', NULL, 'DELL', '11 PRO 64-bit', 'Intel I5-7400', '4GB', 'DELL', 'DELL', '222', '-');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `h_lab5`
---
-
-CREATE TABLE `h_lab5` (
-  `id_pc` int(11) NOT NULL,
-  `no_pc` varchar(11) NOT NULL,
-  `gambar` varchar(300) DEFAULT NULL,
-  `nama_pc` char(100) NOT NULL,
-  `windows` varchar(100) NOT NULL,
-  `processor` varchar(100) NOT NULL,
-  `ram` varchar(100) NOT NULL,
-  `mouse` varchar(100) NOT NULL,
-  `keyboard` varchar(100) NOT NULL,
-  `local_(c:)` varchar(100) NOT NULL,
-  `local_(d:)` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `h_lab5`
---
-
-INSERT INTO `h_lab5` (`id_pc`, `no_pc`, `gambar`, `nama_pc`, `windows`, `processor`, `ram`, `mouse`, `keyboard`, `local_(c:)`, `local_(d:)`) VALUES
-(1, 'Pc 1', NULL, 'HP', '7 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(2, 'Pc 2', NULL, 'HP', '8 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(3, 'Pc 3', NULL, 'HP', '9 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(4, 'Pc 4', NULL, 'HP', '10 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(5, 'Pc 5', NULL, 'HP', '11 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(6, 'Pc 6', NULL, 'HP', '12 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(7, 'Pc 7', NULL, 'HP', '13 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(8, 'Pc 8', NULL, 'HP', '14 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(9, 'Pc 9', NULL, 'HP', '15 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(10, 'Pc 10', NULL, 'HP', '16 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(11, 'Pc 11', NULL, 'HP', '17 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(12, 'Pc 12', NULL, 'HP', '18 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(13, 'Pc 13', NULL, 'HP', '19 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(14, 'Pc 14', NULL, 'HP', '20 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(15, 'Pc 15', NULL, 'HP', '21 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(16, 'Pc 16', NULL, 'HP', '22 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(17, 'Pc 17', NULL, 'HP', '23 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(18, 'Pc 18', NULL, 'HP', '24 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(19, 'Pc 19', NULL, 'HP', '25 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(20, 'Pc 20', NULL, 'HP', '26 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(21, 'Pc 21', NULL, 'HP', '27 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(22, 'Pc 22', NULL, 'HP', '28 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(23, 'Pc 23', NULL, 'HP', '29 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(24, 'Pc 24', NULL, 'HP', '30 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(25, 'Pc 25', NULL, 'HP', '31 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(26, 'Pc 26', NULL, 'HP', '32 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(27, 'Pc 27', NULL, 'HP', '33 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(28, 'Pc 28', NULL, 'HP', '34 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(29, 'Pc 29', NULL, 'HP', '35 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(30, 'Pc 30', NULL, 'HP', '36 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(31, 'Pc 31', NULL, 'HP', '37 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(32, 'Pc 32', NULL, 'HP', '38 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB'),
-(33, 'Pc 33', NULL, 'HP', '39 Professional 32-bit', 'Intel I5-4590', '4GB', 'HP', 'HP', '423GB', '507GB');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `h_lab6`
---
-
-CREATE TABLE `h_lab6` (
-  `id_pc` int(11) NOT NULL,
-  `no_pc` varchar(11) NOT NULL,
-  `gambar` varchar(300) DEFAULT NULL,
-  `nama_pc` char(100) NOT NULL,
-  `windows` varchar(100) NOT NULL,
-  `processor` varchar(100) NOT NULL,
-  `ram` varchar(100) NOT NULL,
-  `mouse` varchar(100) NOT NULL,
-  `keyboard` varchar(100) NOT NULL,
-  `local_(c:)` varchar(100) NOT NULL,
-  `local_(d:)` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `h_lab6`
---
-
-INSERT INTO `h_lab6` (`id_pc`, `no_pc`, `gambar`, `nama_pc`, `windows`, `processor`, `ram`, `mouse`, `keyboard`, `local_(c:)`, `local_(d:)`) VALUES
-(1, 'PC 1', NULL, 'DELL', 'Windows 10 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(2, 'PC 2', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(3, 'PC 3', NULL, 'DELL', 'Windows 10 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(4, 'PC 4', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(5, 'PC 5', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(6, 'PC 6', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(7, 'PC 7', NULL, 'DELL', 'Windows 10 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(8, 'PC 8', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(9, 'PC 9', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(10, 'PC 10', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(11, 'PC 11', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(12, 'PC 12', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(13, 'PC 13', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(14, 'PC 14', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(15, 'PC 15', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(16, 'PC 16', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(17, 'PC 17', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(18, 'PC 18', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(19, 'PC 19', NULL, 'DELL', 'Windows 10 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(20, 'PC 20', NULL, 'DELL', 'Windows 10 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(21, 'PC 21', NULL, 'DELL', 'Windows 10 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(22, 'PC 22', NULL, 'DELL', 'Windows 10 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(23, 'PC 23', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(24, 'PC 24', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(25, 'PC 25', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(26, 'PC 26', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(27, 'PC 27', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(28, 'PC 28', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(29, 'PC 29', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(30, 'PC 30', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(31, 'PC 31', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(32, 'PC 32', NULL, 'DELL', 'Windows 11 pro 64-bit', 'Intel I3-9100', '8GB', 'DELL', 'DELL', '222GB', '-'),
-(33, '', NULL, '', '', '', '', '', '', '', ''),
-(34, '', NULL, '', '', '', '', '', '', '', '');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `h_lab7`
---
-
-CREATE TABLE `h_lab7` (
-  `id_pc` int(11) NOT NULL,
-  `no_pc` varchar(100) NOT NULL,
-  `gambar` varchar(300) DEFAULT NULL,
-  `processor` varchar(100) NOT NULL,
-  `nama_pc` varchar(100) NOT NULL,
-  `windows` varchar(100) NOT NULL,
-  `ram` varchar(100) NOT NULL,
-  `keyboard` varchar(100) NOT NULL,
-  `mouse` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `h_lab7`
---
-
-INSERT INTO `h_lab7` (`id_pc`, `no_pc`, `gambar`, `processor`, `nama_pc`, `windows`, `ram`, `keyboard`, `mouse`) VALUES
-(1, 'PC 1', NULL, 'Intel I7-7700', 'dell 16', '-', '-', ' type 74', 'logitech 10'),
-(2, 'PC 2', NULL, 'Intel I7-7700', 'hp 19', '-', '-', 'type 74', '-'),
-(3, 'PC 3', NULL, 'Intel I7-7700', 'lenovo 19', '-', '-', 'type 74', '-');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `h_lab8`
---
-
-CREATE TABLE `h_lab8` (
-  `id_pc` int(11) NOT NULL,
-  `no_pc` varchar(11) NOT NULL,
-  `gambar` varchar(300) DEFAULT NULL,
-  `nama_pc` char(100) NOT NULL,
-  `windows` varchar(100) NOT NULL,
-  `processor` varchar(100) NOT NULL,
-  `ram` varchar(100) NOT NULL,
-  `mouse` varchar(100) NOT NULL,
-  `keyboard` varchar(100) NOT NULL,
-  `local_(c:)` varchar(100) NOT NULL,
-  `local_(d:)` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `h_lab8`
---
-
-INSERT INTO `h_lab8` (`id_pc`, `no_pc`, `gambar`, `nama_pc`, `windows`, `processor`, `ram`, `mouse`, `keyboard`, `local_(c:)`, `local_(d:)`) VALUES
-(1, 'PC 1', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(2, 'PC 2', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(3, 'PC 3', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(4, 'PC 4', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(5, 'PC 5', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(6, 'PC 6', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(7, 'PC 7', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(8, 'PC 8', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(9, 'PC 9', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(10, 'PC 10', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(11, 'PC 11', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(12, 'PC 12', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-2400', '4GB', 'Dell', 'Dell', '145GB', '319GB'),
-(13, 'PC 13', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-2400', '4GB', 'Dell', 'Dell', '145GB', '319GB'),
-(14, 'PC 14', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-2400', '4GB', 'Dell', 'Dell', '145GB', '319GB'),
-(15, 'PC 15', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(16, 'PC 16', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(17, 'PC 17', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(18, 'PC 18', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(19, 'PC 19', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(20, 'PC 20', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(21, 'PC 21', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(22, 'PC 22', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(23, 'PC 23', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(24, 'PC 24', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(25, 'PC 25', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(26, 'PC 26', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(27, 'PC 27', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(28, 'PC 28', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(29, 'PC 29', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(30, 'PC 30', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(31, 'PC 31', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(32, 'PC 32', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(33, 'PC 33', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB'),
-(34, 'PC 34', NULL, 'HP', 'Windows 7 Profesional 32-bit', 'Intel I5-4590', '4GB', 'Dell', 'Dell', '345GB', '585GB');
+(283, 'lab_d-4.jpg', 22),
+(286, 'lab1-1.jpg', 9),
+(287, 'lab1-2.jpg', 9),
+(288, 'lab1-3.jpg', 9),
+(289, 'lab1-4.jpg', 9),
+(290, 'lab2-1.jpg', 10),
+(291, 'lab2-2.jpg', 10),
+(292, 'lab2-3.jpg', 10),
+(293, 'lab2-4.jpg', 10),
+(294, 'lab3-1.jpg', 11),
+(295, 'lab3-2.jpg', 11),
+(296, 'lab3-3.jpg', 11),
+(297, 'lab3-4.jpg', 11),
+(298, 'lab4-1.jpg', 12),
+(299, 'lab4-2.jpg', 12),
+(300, 'lab4-3.jpg', 12),
+(301, 'lab4-4.jpg', 12),
+(302, 'lab5-1.jpg', 13),
+(303, 'lab5-2.jpg', 13),
+(304, 'lab5-3.jpg', 13),
+(305, 'lab5-4.jpg', 13),
+(306, 'lab6-1.jpg', 14),
+(307, 'lab6-2.jpg', 14),
+(308, 'lab6-3.jpg', 14),
+(309, 'lab6-4.jpg', 14),
+(310, 'lab8-1.jpg', 16),
+(311, 'lab8-2.jpg', 16),
+(312, 'lab8-3.jpg', 16),
+(313, 'lab8-4.jpg', 16);
 
 -- --------------------------------------------------------
 
@@ -1061,194 +652,6 @@ CREATE TABLE `jadwal` (
 --
 
 INSERT INTO `jadwal` (`id_jadwal`, `mk`, `nama_dosen`, `hari`, `tgl`, `jenis`, `kelas`, `id_thn`, `id_ruangan`, `id_prodi`) VALUES
-(2, 'Pemrograman', 'Yana Sudarsa', 'Senin', '', 'REGULER', 'EC-2A', '1', 9, 5),
-(3, '-', 'Ma\'mun', 'Senin', '', 'REGULER', 'AB-D4', '1', 9, 17),
-(4, '-', 'Ghifari M.', 'Senin', '', 'REGULER', 'IG-3B', '1', 9, 25),
-(9, '-', '-', 'Senin', '', 'REGULER', 'KS-1B', '1', 10, 24),
-(10, '-', 'Sudjana', 'Senin', '', 'REGULER', 'AK-3A', '1', 11, 21),
-(14, '-', 'Tarsaya Darso', 'Senin', '', 'REGULER', 'AK.D4-1B', '1', 12, 21),
-(15, '-', 'Ivon Sandya', 'Senin', '', 'REGULER', 'AK-1A', '1', 13, 21),
-(16, '-', 'Ivon Sandya', 'Senin', '', 'REGULER', 'AMP-1A', '1', 13, 23),
-(17, '-', 'M Arman', 'Senin', '', 'REGULER', 'RTU-2B', '1', 13, 15),
-(27, '-', '-', 'Selasa', '', 'REGULER', 'SY-2A', '1', 11, 24),
-(29, '-', '-', 'Selasa', '', 'REGULER', 'ABS-1B', '1', 11, 17),
-(30, '-', 'Tarsaya Darso', 'Selasa', '', 'REGULER', 'AK-1B', '1', 12, 21),
-(31, '-', 'Ivon Sandya', 'Selasa', '', 'REGULER', 'AK-1A', '1', 12, 21),
-(32, '-', '-', 'Selasa', '', 'REGULER', 'SY-D4', '1', 13, 24),
-(33, '-', 'Ivon Sandya', 'Selasa', '', 'REGULER', 'AMP-1A', '1', 12, 23),
-(34, '-', 'Tarsaya Darso', 'Selasa', '', 'REGULER', 'AK.D4-1B', '1', 13, 21),
-(35, '-', '-', 'Selasa', '', 'REGULER', 'TC-2B', '1', 13, 7),
-(38, '-', 'Darya SN', 'Rabu', '', 'REGULER', 'AK.D4-2A', '1', 9, 21),
-(39, '-', '-', 'Rabu', '', 'REGULER', 'EC-2B', '1', 9, 5),
-(40, '-', 'Ma\'mun', 'Rabu', '', 'REGULER', 'AB.D4', '1', 9, 17),
-(42, '-', 'Drs. Destian Arshad', 'Rabu', '', 'REGULER', 'KP-2A', '1', 10, 22),
-(43, '-', '-', 'Rabu', '', 'REGULER', 'KP-1A', '1', 10, 22),
-(44, '-', '-', 'Rabu', '', 'REGULER', 'SY-2A', '1', 11, 24),
-(46, '-', 'Rendra TS', 'Rabu', '', 'REGULER', 'AK.D4-1A', '1', 11, 21),
-(48, '-', 'Rendra TS', 'Rabu', '', 'REGULER', 'AK-1B', '1', 12, 21),
-(50, '-', '-', 'Rabu', '', 'REGULER', 'TOI-2', '1', 12, 10),
-(51, '-', 'Tarsaya Darso', 'Rabu', '', 'REGULER', 'AMP-1B', '1', 13, 19),
-(52, '-', 'Ivon Sandya', 'Rabu', '', 'REGULER', 'AMP-1A', '1', 13, 19),
-(54, '-', 'Didik', 'Rabu', '', 'REGULER', 'MP.D4-1B', '1', 14, 19),
-(55, '-', '-', 'Rabu', '', 'REGULER', 'AK.D4-3A', '1', 14, 21),
-(56, '-', 'Rendra TS', 'Kamis', '', 'REGULER', 'AK.D4-1A', '1', 9, 21),
-(57, '-', 'Darya SN', 'Kamis', '', 'REGULER', 'AK.D4-2A', '1', 9, 21),
-(58, '-', 'Rendra TS', 'Kamis', '', 'REGULER', 'AK.D4-1B', '1', 11, 21),
-(61, '-', '-', 'Kamis', '', 'REGULER', 'EL-3B', '1', 10, 6),
-(62, '-', '-', 'Kamis', '', 'REGULER', 'EL-2B', '1', 12, 6),
-(63, '-', '-', 'Jumat', '', 'REGULER', 'EL-2A', '1', 9, 6),
-(64, '-', 'Sudjana', 'Kamis', '', 'REGULER', 'AK-3B', '1', 10, 21),
-(65, '-', 'Darya SN', 'Kamis', '', 'REGULER', 'AK-2A', '1', 13, 21),
-(66, '-', 'Darya SN', 'Kamis', '', 'REGULER', 'AK-2B', '1', 13, 21),
-(67, '-', 'Darya SN', 'Kamis', '', 'REGULER', 'AMP-2', '1', 10, 19),
-(69, '-', '-', 'Kamis', '', 'REGULER', 'ABS-1A', '1', 11, 17),
-(72, '-', '-', 'Kamis', '', 'REGULER', 'KS-2A', '1', 13, 24),
-(74, '-', '-', 'Kamis', '', 'REGULER', 'RTU-3B', '1', 14, 15),
-(75, '-', 'Tarsaya Darso', 'Jumat', '', 'REGULER', 'AMP-1B', '1', 9, 19),
-(76, '-', '-', 'Jumat', '', 'REGULER', 'AMP-3', '1', 10, 19),
-(78, '-', '-', 'Jumat', '', 'REGULER', 'ME-2B', '1', 11, 11),
-(79, '-', '-', 'Jumat', '', 'REGULER', 'RTU-2A', '1', 12, 15),
-(80, '-', '-', 'Jumat', '', 'REGULER', 'RTU-3A', '1', 12, 15),
-(81, '-', '-', 'Jumat', '', 'REGULER', 'KS-2A', '1', 13, 24),
-(82, '-', '-', 'Jumat', '', 'REGULER', 'KS-2A', '1', 13, 24),
-(83, '-', '-', 'Jumat', '', 'REGULER', 'KS', '1', 13, 24),
-(86, '-', '-', '', '01-11-2016', 'UTS', 'Pemasaran', '', 12, 19),
-(87, '-', '-', '', '01-11-2016', 'UTS', 'Pemasaran', '', 14, 19),
-(88, '-', '-', '', '02-11-2016', 'UTS', 'ABS', '', 11, 17),
-(89, '-', '-', '', '02-11-2016', 'UTS', 'ABS', '', 12, 17),
-(93, '-', '-', '', '01-11-2016', 'UTS', 'Pemasaran', '1', 12, 19),
-(94, '-', '-', '', '01-11-2016', 'UTS', 'Pemasaran', '1', 14, 19),
-(95, '-', '-', '', '02-11-2016', 'UTS', 'ABS', '1', 11, 17),
-(96, '-', '-', '', '02-11-2016', 'UTS', 'ABS', '1', 12, 19),
-(97, 'Ujian Pengadaan Barang dan Jasa', '-', '', '05-11-2016', 'NONREGULER', 'SPI', '', 9, 26),
-(98, 'Ujian Pengadaan Barang dan Jasa', '-', '', '05-11-2016', 'NONREGULER', 'SPI', '', 13, 26),
-(101, 'P. Studi Akuntansi', 'Sudjana', 'Senin', '', 'REGULER', 'AK.D4-1A', '1', 12, 21),
-(102, 'P. Studi Akuntansi', 'Rendra TS', 'Senin', '', 'REGULER', ' AK.D4.1B', '1', 12, 21),
-(111, 'P. Studi Keuangan dan Perbankan', '-', 'Senin', '', 'REGULER', 'KP-2A', '1', 10, 22),
-(115, 'P. Studi Keuangan dan Perbankan', 'Drs. Destian Arshad', 'Senin', '', 'REGULER', 'KP-2B', '1', 10, 22),
-(116, 'P. Studi Akuntansi', '-', 'Senin', '', 'REGULER', 'KP-1B', '1', 10, 22),
-(117, 'Akutansi', '-', 'Senin', '', 'REGULER', 'AK-D4-1B', '1', 11, 21),
-(118, 'P. Studi Akuntansi', 'Rendra TS', 'Senin', '', 'REGULER', 'AK-D4-1A', '1', 11, 21),
-(119, 'P. B. Inggris', '-', 'Senin', '', 'REGULER', 'IG-1B', '1', 14, 25),
-(121, 'P. B. Inggris', '-', 'Senin', '', 'REGULER', 'IG-1B', '1', 14, 25),
-(122, 'P. B. Inggris', '-', 'Senin', '', 'REGULER', 'IG-1A', '1', 14, 25),
-(123, '-', '-', 'Senin', '', 'REGULER', 'RTU-2B', '1', 14, 15),
-(126, 'Akutansi', '-', 'Selasa', '', 'REGULER', 'AK-2A', '1', 9, 21),
-(127, 'P. Studi Akuntansi', '-', 'Selasa', '', 'REGULER', 'AK-2B', '1', 9, 21),
-(128, 'P. Studi Akuntansi', '-', 'Selasa', '', 'REGULER', 'AK-2B', '1', 9, 22),
-(129, 'P. Studi Manajemen Pemasaran', 'Darya SN', 'Selasa', '', 'REGULER', 'AMP-2', '1', 9, 23),
-(131, 'Akutansi', '-', 'Selasa', '', 'REGULER', 'KP-1A', '1', 10, 22),
-(133, 'Akutansi', '-', 'Selasa', '', 'REGULER', 'KP-1B', '1', 10, 21),
-(136, 'P. B. Inggris', '-', 'Selasa', '', 'REGULER', 'IG-1B', '1', 10, 25),
-(137, ' P. Studi Administrasi Bisnis 	', 'Zulfikar Arsyad', 'Selasa', '', 'REGULER', 'ABS-1A', '1', 11, 13),
-(138, 'P. Studi Manajemen Pemasaran', 'Didik', 'Selasa', '', 'REGULER', 'MP.D4-1B', '1', 14, 19),
-(139, 'P. Studi Manajemen Pemasaran', 'Didik', 'Selasa', '', 'REGULER', 'MP.D4-1A', '1', 14, 20),
-(140, 'P. Studi Keuangan dan Perbankan', 'Drs. Destian Arshad', 'Rabu', '', 'REGULER', 'KP-2B', '1', 10, 22),
-(141, 'P. Studi Keuangan dan Perbankan', 'Drs. Destian Arshad', 'Rabu', '', 'REGULER', 'KP-2A', '1', 10, 21),
-(142, 'P. Studi Akuntansi', 'Tarsaya Darso', 'Rabu', '', 'REGULER', 'AK-D4-1B', '1', 11, 21),
-(143, 'P. Studi Akuntansi', 'Rendra TS', 'Rabu', '', 'REGULER', 'AK-D4-1A', '1', 11, 22),
-(144, 'P. Studi Akuntansi', '-', 'Rabu', '', 'REGULER', 'AK-1A', '1', 12, 21),
-(145, 'P. Studi Akuntansi', 'Rendra TS', 'Rabu', '', 'REGULER', 'AK-1B', '1', 12, 21),
-(148, 'P. Studi Manajemen Pemasaran', 'Didik', 'Rabu', '', 'REGULER', 'MP.D4-1A', '1', 14, 19),
-(151, 'P. Studi T. Listrik', '-', 'Kamis', '', 'REGULER', 'EL-3A', '1', 9, 6),
-(152, 'P. Studi Administrasi Bisnis', '-', 'Kamis', '', 'REGULER', 'ABS-1B', '1', 11, 17),
-(153, 'P. Studi Administrasi Bisnis', '-', 'Kamis', '', 'REGULER', 'ABS-1A', '1', 11, 13),
-(156, 'P. B. Inggris', '-', 'Kamis', '', 'REGULER', 'IG-3A', '1', 12, 25),
-(157, 'P. Studi T. Refrigerasi', '-', 'Kamis', '', 'REGULER', 'PTU-2D4', '1', 14, 15),
-(158, 'P. Studi T. Refrigerasi', '-', 'Kamis', '', 'REGULER', 'RTU-3B', '1', 14, 15),
-(159, 'P. Studi Manajemen Pemasaran', '-', 'Rabu', '', 'REGULER', 'MP.D4-1B', '1', 14, 19),
-(160, 'P. Studi T. Listrik', '-', 'Kamis', '', 'REGULER', 'EL-3B', '1', 9, 6),
-(161, 'P. B. Inggris', '-', 'Kamis', '', 'REGULER', 'IG-3B', '1', 12, 25),
-(162, 'Algoritma dan Pemrograman', 'Yana S., Firman P.', 'Senin', '', 'REGULER', '1EK1', '2', 9, 5),
-(163, '-', 'Rendra TS', 'Senin', '', 'REGULER', '2AK-A', '2', 10, 21),
-(164, '-', 'Sudjana', 'Senin', '', 'REGULER', '2AC', '2', 12, 27),
-(165, '-', 'Drs. Destian Arshad', 'Senin', '', 'REGULER', '1KP-A', '2', 11, 22),
-(166, '-', '-', 'Senin', '', 'REGULER', 'TOI', '2', 13, 10),
-(167, '-', 'Dr. Drs. Ma\'mun Sutisna', 'Senin', '', 'REGULER', '1BA', '2', 14, 28),
-(168, '-', 'Yana S., Firman P.', 'Senin', '', 'REGULER', '1EK-2', '2', 9, 5),
-(169, '-', 'Rendra TS', 'Senin', '', 'REGULER', '2AK-B', '2', 10, 21),
-(170, '-', 'Drs. Destian Arshad', 'Senin', '', 'REGULER', '1KP-B', '2', 11, 22),
-(171, '-', 'Ira Siti Sarah', 'Senin', '', 'REGULER', '2ABS-B', '2', 12, 17),
-(172, '-', 'Eril / Mina', 'Senin', '', 'REGULER', '2TCB', '2', 13, 7),
-(173, '-', 'Eril / Mina', 'Senin', '', 'REGULER', '2TC-B', '2', 9, 7),
-(174, '-', 'Adi Irwansyah', 'Senin', '', 'REGULER', '2KP-B', '2', 10, 22),
-(175, '-', '-', 'Senin', '', 'REGULER', '2KS-A', '2', 11, 24),
-(176, '-', 'Iyeh', 'Senin', '', 'REGULER', '1AC-A', '2', 13, 27),
-(177, '-', 'Yana S., Firman P.', 'Selasa', '', 'REGULER', '1TEL-A2', '2', 9, 5),
-(178, '-', 'Adi Irwansyah', 'Selasa', '', 'REGULER', '2KP-A', '2', 10, 22),
-(179, '-', 'Darya SN', 'Selasa', '', 'REGULER', '1AK-A', '2', 11, 21),
-(180, '-', '-', 'Selasa', '', 'REGULER', '2-AMP', '2', 13, 19),
-(181, '-', '-', 'Selasa', '', 'REGULER', '1KS-A', '2', 14, 24),
-(182, '-', 'Hertog N', 'Selasa', '', 'REGULER', '3TCA', '2', 9, 7),
-(183, '-', 'Adi Irwansyah', 'Selasa', '', 'REGULER', '2KP-B', '2', 10, 22),
-(184, '-', 'Ferry S.', 'Selasa', '', 'REGULER', '2TNK', '2', 11, 7),
-(185, '-', 'Yana S., Firman P.', 'Selasa', '', 'REGULER', '1TEL-A1', '2', 12, 5),
-(186, '-', 'Andri / RW.Tri', 'Selasa', '', 'REGULER', '1TCA', '2', 13, 8),
-(187, '-', 'Iyeh', 'Selasa', '', 'REGULER', '1AC-A', '2', 13, 27),
-(188, '-', 'Sri Raharso', 'Selasa', '', 'REGULER', '2ABS-A', '2', 14, 17),
-(189, '-', 'Iwan', 'Selasa', '', 'REGULER', '2BA', '2', 14, 28),
-(190, '-', 'Malayusfi /  Usman', 'Rabu', '', 'REGULER', '3TCA', '2', 9, 8),
-(191, '-', 'Darya SN', 'Rabu', '', 'REGULER', '1AMP-A', '2', 10, 19),
-(192, '-', 'Drs. Destian Arshad', 'Rabu', '', 'REGULER', '1KP-B', '2', 11, 22),
-(193, '-', 'Yana S., Firman P.', 'Rabu', '', 'REGULER', '1TEL-B2', '2', 12, 5),
-(194, '-', 'Andri / RW.Tri', 'Rabu', '', 'REGULER', '1TCB', '2', 13, 8),
-(195, '-', 'Dr. Drs. Ma\'mun Sutisna', 'Rabu', '', 'REGULER', '2ABS-B', '2', 14, 17),
-(196, '-', '-', 'Rabu', '', 'REGULER', 'TOI', '2', 16, 10),
-(197, '-', 'Hertog N', 'Rabu', '', 'REGULER', '4TNK', '2', 9, 7),
-(198, '-', 'Darya SN', 'Rabu', '', 'REGULER', '1AMP-B', '2', 10, 19),
-(199, '-', 'Drs. Destian Arshad', 'Rabu', '', 'REGULER', '1KP-A', '2', 11, 22),
-(200, '-', '-', 'Rabu', '', 'REGULER', '2KS-A', '2', 11, 24),
-(201, '-', 'Yana S., Firman P.', 'Rabu', '', 'REGULER', '1TEL-B1', '2', 12, 5),
-(202, '-', 'Gundur Leo', 'Rabu', '', 'REGULER', '1MP', '2', 12, 19),
-(203, '-', 'Eril / Mina', 'Rabu', '', 'REGULER', '2KP-A', '2', 13, 22),
-(204, '-', 'Eril / Mina', 'Rabu', '', 'REGULER', '2TCA', '2', 13, 8),
-(205, '-', 'Ira Siti Sarah', 'Rabu', '', 'REGULER', '2ABS-A', '2', 14, 17),
-(206, '-', 'Dr. Drs. Ma\'mun Sutisna', 'Rabu', '', 'REGULER', '3BA', '2', 14, 28),
-(207, '-', 'Dr. Drs. Ma\'mun Sutisna', 'Rabu', '', 'REGULER', '1BA', '2', 14, 28),
-(208, '-', 'Drs. Destian Arshad', 'Kamis', '', 'REGULER', '1KS-B', '2', 9, 24),
-(209, '-', 'Sudjana', 'Kamis', '', 'REGULER', '2AC', '2', 10, 27),
-(210, '-', 'Gundur Leo', 'Kamis', '', 'REGULER', '1MP', '2', 11, 19),
-(211, '-', '-', 'Kamis', '', 'REGULER', '1RTU-A', '2', 12, 15),
-(212, '-', 'Rendra TS', 'Kamis', '', 'REGULER', '2AK-B', '2', 13, 21),
-(213, '-', 'Darya SN', 'Kamis', '', 'REGULER', '1AK-B', '2', 14, 21),
-(214, '-', '-', 'Kamis', '', 'REGULER', '1UPW', '2', 11, 18),
-(215, '-', '-', 'Kamis', '', 'REGULER', '1KS A', '2', 9, 24),
-(216, '-', 'Khozin', 'Kamis', '', 'REGULER', '1AC-B', '2', 10, 27),
-(217, '-', '-', 'Kamis', '', 'REGULER', '2AK A', '2', 13, 21),
-(218, '-', 'Darya SN', 'Kamis', '', 'REGULER', '1AK A', '2', 14, 21),
-(219, '-', '-', 'Kamis', '', 'REGULER', '1LI-A', '2', 11, 6),
-(220, '-', 'Malayusfi /  Usman', 'Kamis', '', 'REGULER', '3TCB', '2', 9, 8),
-(221, '-', 'Darya SN', 'Kamis', '', 'REGULER', '1AK A', '2', 10, 21),
-(222, '-', '-', 'Kamis', '', 'REGULER', '1PTU-A', '2', 12, 29),
-(223, '-', 'Tata / Nurkholis', 'Jumat', '', 'REGULER', '4TNK1', '2', 9, 7),
-(224, '-', 'Muhamad, Ir.,M.Eng', 'Jumat', '', 'REGULER', '1TPKM', '2', 10, 30),
-(225, '-', 'Tata / Nurkholis', 'Jumat', '', 'REGULER', '4TNK2', '2', 9, 7),
-(226, '-', 'Khozin', 'Jumat', '', 'REGULER', '1AC B', '2', 11, 27),
-(227, '-', '-', 'Jumat', '', 'REGULER', '1LI-B', '2', 10, 6),
-(228, '-', '-', 'Jumat', '', 'REGULER', '1UPW', '2', 11, 18),
-(229, '-', '-', 'Jumat', '', 'REGULER', '1RTU-B', '2', 12, 15),
-(230, '-', '-', 'Jumat', '', 'REGULER', '2AMP', '2', 13, 19),
-(231, '-', 'Zulkifli Arsyad', 'Jumat', '', 'REGULER', '2BA', '2', 14, 28),
-(232, 'pemrograman', 'Azis', '', '', 'REGULER', 'BK-2A', '', 16, 10),
-(263, 'listrik', 'Azis', 'Senin', '', 'REGULER', 'B3K-A', '2', 9, 11),
-(274, 'listrik-3', 'Unang', 'Senin', '', 'REGULER', 'B3K-A', '2', 20, 11),
-(276, 'listrik-3', 'Unang', 'Senin', '', 'REGULER', 'B3K-A', '2', 9, 11),
-(277, 'listrik-3', 'Unang', 'Senin', '', 'REGULER', 'B3K-A', '2', 21, 11),
-(279, 'listrik-8', 'Unang', 'Selasa', '', 'REGULER', 'B3K-A', '2', 22, 10),
-(280, 'listrik-8', 'Unang', 'Selasa', '', 'REGULER', 'B3K-A', '2', 22, 10),
-(281, 'listrik-8', 'Unang', 'Selasa', '', 'REGULER', 'B3K-A', '2', 22, 10),
-(284, 'pemrograman', 'Azis', 'Senin', '', 'UTS', 'B3K-B', '2', 9, 9),
-(286, 'RPL', 'Azis', 'Senin', '', 'REGULER', 'PLG-2', '2', 20, 20),
-(287, 'RPL', 'Aziss', 'Selasa', '', 'REGULER', 'PLG-2', '2', 20, 20),
-(291, 'Sistem Informasi', 'Ridwan', 'Rabu', '', 'NONREGULER', 'SI-M1', '2', 9, 11),
-(292, 'Sistem Informasi', 'Ridwan', 'Senin', '', 'REGULER', 'SI-M1', '10', 19, 11),
-(293, 'Sistem Informasi', 'Ridwan', 'Senin', '', 'REGULER', 'SI-M2', '10', 9, 11),
-(295, 'Sistem Informasi', 'Azis', 'Senin', '', 'UAS', 'SI-M2', '10', 9, 11),
-(296, 'Sistem Informasi', 'Azis', 'Senin', '', 'UTS', 'SI-M2', '10', 9, 11),
-(297, 'RPL', 'Azis', 'Senin', '', 'REGULER', 'PLG-2', '10', 9, 1),
-(298, 'listrik-3', 'Azis', 'Senin', '', 'UAS', 'B5M-K1', '10', 9, 1),
-(299, 'listrik-3', 'Unang', 'Senin', '', 'UAS', 'B5M-K1', '2', 9, 1),
-(300, 'listrik', 'Azis', 'Senin', '', 'REGULER', 'LSTRK-1', '2', 19, 11),
 (311, 'Teknik Telekomunikasi (D4)', '-', 'Senin', '', 'REGULER', '2A-TNK', '16', 9, 8),
 (312, 'Teknik Telekomunikasi (D4)', '-', 'Senin', '', 'REGULER', '2B-TNK', '16', 9, 8),
 (317, 'Akuntansi (D3)', '-', 'Senin', '', 'REGULER', '1 AK A', '16', 10, 21),
@@ -1263,7 +666,6 @@ INSERT INTO `jadwal` (`id_jadwal`, `mk`, `nama_dosen`, `hari`, `tgl`, `jenis`, `
 (332, 'Administrasi Bisnis (D3)', '-', 'Senin', '', 'REGULER', '1B-ABS', '16', 14, 17),
 (333, 'Administrasi Bisnis (D3)', '-', 'Senin', '', 'REGULER', '1A-ABS', '16', 14, 17),
 (334, 'Administrasi Bisnis (D3)', '-', 'Senin', '', 'REGULER', '2A-ABS', '16', 14, 17),
-(335, 'Usaha Perjalanan Wisata (D3)', '-', 'Senin', '', 'REGULER', 'D3-UPW-1A', '16', 16, 18),
 (336, 'Keuangan dan Perbankan (D3)', '-', 'Selasa', '', 'REGULER', '1KP-A', '16', 9, 22),
 (337, 'Keuangan dan Perbankan (D3)', '-', 'Selasa', '', 'REGULER', '1KP-B', '16', 9, 22),
 (338, 'Administrasi Bisnis (D4)', '-', 'Selasa', '', 'REGULER', '2A-BA', '16', 9, 28),
@@ -1291,13 +693,12 @@ INSERT INTO `jadwal` (`id_jadwal`, `mk`, `nama_dosen`, `hari`, `tgl`, `jenis`, `
 (364, 'Teknik Otomasi Industri (D4)', '-', 'Rabu', '', 'REGULER', 'TOI', '16', 13, 10),
 (366, 'Administrasi Bisnis (D3)', '-', 'Selasa', '', 'REGULER', '2A-ABS', '16', 13, 17),
 (367, 'Administrasi Bisnis (D3)', '-', 'Selasa', '', 'REGULER', '1B-ABS', '16', 13, 17),
-(368, 'Administrasi Bisnis (D3)', '-', 'Rabu', '', 'REGULER', '2A-ABS', '16', 14, 17),
-(369, 'Administrasi Bisnis (D3)', '-', 'Rabu', '', 'REGULER', '2B-ABS', '16', 14, 17),
+(369, 'Administrasi Bisnis (D3)', 'PK MAMUN', 'Rabu', '', 'REGULER', '2B-ABS', '16', 14, 17),
 (370, 'Administrasi Bisnis (D3)', '-', 'Rabu', '', 'REGULER', '1A-ABS', '16', 14, 17),
 (371, 'Administrasi Bisnis (D3)', '-', 'Rabu', '', 'REGULER', '2A-ABS', '16', 14, 17),
 (372, 'Keuangan dan Perbankan (D3)', '-', 'Kamis', '', 'REGULER', '1KP-B', '16', 9, 22),
 (373, 'Keuangan dan Perbankan (D3)', '-', 'Kamis', '', 'REGULER', '1KP-A', '16', 9, 22),
-(374, 'Keuangan Syariah (D4)', '-', 'Kamis', '', 'REGULER', '2KSYA', '16', 9, 24),
+(374, 'Keuangan Syariah (D4)', 'Dayat', 'Kamis', '', 'REGULER', '2KSYA', '16', 9, 24),
 (375, 'Keuangan Syariah (D4)', '-', 'Kamis', '', 'REGULER', '2KSYB', '16', 9, 24),
 (376, 'Keuangan Syariah (D4)', '-', 'Kamis', '', 'REGULER', '3KSYB', '16', 10, 24),
 (377, 'Keuangan Syariah (D4)', '-', 'Kamis', '', 'REGULER', '3KSYA', '16', 10, 24),
@@ -1311,8 +712,8 @@ INSERT INTO `jadwal` (`id_jadwal`, `mk`, `nama_dosen`, `hari`, `tgl`, `jenis`, `
 (386, 'Administrasi Bisnis (D4)', '-', 'Kamis', '', 'REGULER', '2A-BA', '16', 13, 28),
 (387, 'Administrasi Bisnis (D4)', '-', 'Kamis', '', 'REGULER', '2B-BA', '16', 13, 28),
 (388, 'Administrasi Bisnis (D3)', '-', 'Kamis', '', 'REGULER', '2A-ABS', '16', 13, 17),
-(389, 'Teknik Elektronika (D3)', '-', 'Kamis', '', 'REGULER', '1A-TEL', '16', 14, 5),
-(390, 'Teknik Elektronika (D3)', '-', 'Kamis', '', 'REGULER', '1B-TEL', '16', 14, 5),
+(389, 'Teknik Elektronika (D3)', 'Yana', 'Kamis', '', 'REGULER', '1A-TEL', '16', 14, 5),
+(390, 'Teknik Elektronika (D3)', 'Yana', 'Kamis', '', 'REGULER', '1B-TEL', '16', 14, 5),
 (391, 'Teknik Elektronika (D4)', '-', 'Kamis', '', 'REGULER', '1B-EK', '16', 14, 9),
 (392, 'Usaha Perjalanan Wisata (D3)', '-', 'Kamis', '', 'REGULER', 'D3-UPW-1A', '16', 16, 18),
 (393, 'Usaha Perjalanan Wisata (D3)', '-', 'Kamis', '', 'REGULER', 'D3-UPW-1B', '16', 16, 18),
@@ -1328,33 +729,46 @@ INSERT INTO `jadwal` (`id_jadwal`, `mk`, `nama_dosen`, `hari`, `tgl`, `jenis`, `
 (403, 'Administrasi Bisnis (D4)', '-', 'Jumat', '', 'REGULER', '3A-BA', '16', 14, 28),
 (404, 'Administrasi Bisnis (D3)', '-', 'Jumat', '', 'REGULER', '3A-ABS', '16', 16, 17),
 (405, 'Administrasi Bisnis (D3)', '-', 'Jumat', '', 'REGULER', '3B-ABS', '16', 16, 17),
-(408, 'Teknik Perancangan Jalan dan Jembatan (D4)', '-', 'Senin', '', 'REGULER', '1A TPJJ', '16', 19, 3),
-(409, 'Proses Manufaktur (D4)', '-', 'Senin', '', 'REGULER', '1A PM', '16', 20, 33),
-(410, 'Proses Manufaktur (D4)', '-', 'Senin', '', 'REGULER', '1B PM', '16', 20, 33),
-(411, 'Teknik Perawatan dan Perbaikan Gedung (D4)', '-', 'Senin', '', 'REGULER', '1A TPPG', '16', 21, 4),
-(412, 'Teknik Konstruksi Sipil (D3)', '-', 'Senin', '', 'REGULER', '1C KSI', '16', 22, 2),
-(413, 'Teknik Konstruksi Sipil (D3)', '-', 'Selasa', '', 'REGULER', '1A KSI', '16', 19, 2),
-(414, 'Teknik Perancangan dan Konstruksi Mesin (D4)', '-', 'Selasa', '', 'REGULER', '1A TPKM', '16', 20, 30),
-(415, 'Teknik Perancangan dan Konstruksi Mesin (D4)', '-', 'Selasa', '', 'REGULER', '1B TPKM', '16', 20, 30),
-(416, 'Teknik Perawatan dan Perbaikan Gedung (D4)', '-', 'Selasa', '', 'REGULER', '1B TPPG', '16', 21, 4),
-(417, 'Teknik Konstruksi Gedung (D3)', '-', 'Selasa', '', 'REGULER', '1 KGD', '16', 21, 1),
+(408, 'Teknik Perancangan Jalan dan Jembatan (D4)', 'Risna Rismiana Sari', 'Senin', '', 'REGULER', '1A TPJJ', '16', 19, 3),
+(409, 'Proses Manufaktur (D4)', 'Adi Pamungkas', 'Senin', '', 'REGULER', '1A PM', '16', 20, 33),
+(410, 'Proses Manufaktur (D4)', 'Adi Pamungkas', 'Senin', '', 'REGULER', '1B PM', '16', 20, 33),
+(411, 'Teknik Perawatan dan Perbaikan Gedung (D4)', 'Heri Kasyanto', 'Senin', '', 'REGULER', '1A TPPG', '16', 21, 4),
+(412, 'Teknik Konstruksi Sipil (D3)', 'Mulyadi Yuswandono', 'Senin', '', 'REGULER', '1C KSI', '16', 22, 2),
+(413, 'Teknik Konstruksi Sipil (D3)', 'Mulyadi Yuswandono', 'Selasa', '', 'REGULER', '1A KSI', '16', 19, 2),
+(414, 'Teknik Perancangan dan Konstruksi Mesin (D4)', 'Adi Pamungkas', 'Selasa', '', 'REGULER', '1A TPKM', '16', 20, 30),
+(415, 'Teknik Perancangan dan Konstruksi Mesin (D4)', 'Adi Pamungkas', 'Selasa', '', 'REGULER', '1B TPKM', '16', 20, 30),
+(416, 'Teknik Perawatan dan Perbaikan Gedung (D4)', 'Ridho Septian', 'Selasa', '', 'REGULER', '1B TPPG', '16', 21, 4),
+(417, 'Teknik Konstruksi Gedung (D3)', 'Ridho Septian', 'Selasa', '', 'REGULER', '1 KGD', '16', 21, 1),
 (418, 'Teknik Pendingin dan Tata Udara (D3)', '-', 'Selasa', '', 'REGULER', '1B RTU', '16', 22, 15),
-(419, 'Teknik Perancangan Jalan dan Jembatan (D4)', '-', 'Rabu', '', 'REGULER', '1B TPJJ', '16', 19, 3),
-(420, 'Teknik Mesin (D3)', '-', 'Rabu', '', 'REGULER', '1A TM', '16', 20, 11),
-(421, 'Teknik Mesin (D3)', '-', 'Rabu', '', 'REGULER', '1B TM', '16', 20, 11),
-(422, 'Teknik Listrik (D3)', '-', 'Rabu', '', 'REGULER', '1A TLI', '16', 21, 6),
+(419, 'Teknik Perancangan Jalan dan Jembatan (D4)', 'Husnul Fikri', 'Rabu', '', 'REGULER', '1B TPJJ', '16', 19, 3),
+(420, 'Teknik Mesin (D3)', 'Adi Pamungkas', 'Rabu', '', 'REGULER', '1A TM', '16', 20, 11),
+(421, 'Teknik Mesin (D3)', 'Adi Pamungkas', 'Rabu', '', 'REGULER', '1B TM', '16', 20, 11),
+(422, 'Teknik Listrik (D3)', 'Trisna/Sunarto', 'Rabu', '', 'REGULER', '1A TLI', '16', 21, 6),
 (423, 'Teknik Elektronika (D3)', '-', 'Rabu', '', 'REGULER', '1A-TEL', '16', 21, 5),
-(424, 'Teknik Konstruksi Gedung (D3)', '-', 'Rabu', '', 'REGULER', '1A KGE', '16', 22, 1),
-(425, 'Teknik Konstruksi Sipil (D3)', '-', 'Kamis', '', 'REGULER', '1B KSI', '16', 19, 2),
-(426, 'Teknik Perancangan dan Konstruksi Mesin (D4)', '-', 'Kamis', '', 'REGULER', '1C TPKM', '16', 20, 30),
-(427, 'Teknik Pendingin dan Tata Udara (D3)', '-', 'Kamis', '', 'REGULER', '2B D3-TPTU', '16', 20, 15),
-(428, 'Teknik Pendingin dan Tata Udara (D3)', '-', 'Kamis', '', 'REGULER', '2A D3-TPTU', '16', 21, 15),
+(424, 'Teknik Konstruksi Gedung (D3)', 'Mulyadi Yuswandono', 'Rabu', '', 'REGULER', '1A KGE', '16', 22, 1),
+(425, 'Teknik Konstruksi Sipil (D3)', 'Husnul Fikri', 'Kamis', '', 'REGULER', '1B KSI', '16', 19, 2),
+(426, 'Teknik Perancangan dan Konstruksi Mesin (D4)', 'Adi Pamungkas', 'Kamis', '', 'REGULER', '1C TPKM', '16', 20, 30),
+(427, 'Teknik Pendingin dan Tata Udara (D3)', 'Edi Sukamto', 'Kamis', '', 'REGULER', '2B D3-TPTU', '16', 20, 15),
+(428, 'Teknik Pendingin dan Tata Udara (D3)', 'Edi Sukamto', 'Kamis', '', 'REGULER', '2A D3-TPTU', '16', 21, 15),
 (429, 'Teknik Elektronika (D3)', '-', 'Kamis', '', 'REGULER', '1B-TEL', '16', 21, 5),
-(430, 'Teknik Konstruksi Gedung (D3)', '-', 'Kamis', '', 'REGULER', '1B KGE', '16', 22, 1),
-(432, 'Teknik Telekomunikasi (D3)', '-', 'Jumat', '', 'REGULER', 'D3 TELKOM', '16', 19, 7),
-(433, 'Teknik Pendingin dan Tata Udara (D4)', '-', 'Jumat', '', 'REGULER', '2A D4-TPTU', '16', 20, 29),
-(434, 'Teknik Pendingin dan Tata Udara (D4)', '-', 'Jumat', '', 'REGULER', '2B D4-TPTU', '16', 20, 29),
-(435, 'Teknik Listrik (D3)', '-', 'Jumat', '', 'REGULER', '1B TLI', '16', 21, 6);
+(430, 'Teknik Konstruksi Gedung (D3)', 'Heri Kasyanto', 'Kamis', '', 'REGULER', '1B KGE', '16', 22, 1),
+(432, 'Teknik Telekomunikasi (D3)', 'Tata Supriyadi/Yasmin', 'Jumat', '', 'REGULER', 'D3 TELKOM', '16', 19, 7),
+(433, 'Teknik Pendingin dan Tata Udara (D4)', 'Edi Sukamto', 'Jumat', '', 'REGULER', '2A D4-TPTU', '16', 20, 29),
+(434, 'Teknik Pendingin dan Tata Udara (D4)', 'Edi Sukamto', 'Jumat', '', 'REGULER', '2B D4-TPTU', '16', 20, 29),
+(435, 'Teknik Listrik (D3)', 'Trisna/Sunarto', 'Jumat', '', 'REGULER', '1B TLI', '16', 21, 6),
+(441, 'Usaha Perjalanan Wisata (D3)', '-', 'Senin', '', 'REGULER', 'D3-UPW-1A', '16', 13, 18),
+(442, 'Usaha Perjalanan Wisata (D3)', '-', 'Senin', '', 'REGULER', 'D3-UPW-1B', '16', 13, 18),
+(443, 'Administrasi Bisnis (D3)', 'PK MAMUN', 'Rabu', '', 'REGULER', '2A-ABS', '16', 14, 17),
+(448, 'RPL', 'Unang', 'Jumat', '', 'REGULER', 'JMK-48', '16', 21, 1),
+(449, 'RPL', 'Unang', 'Jumat', '', 'REGULER', 'JMK-48', '16', 21, 1),
+(452, 'listrik', '-', 'Jumat', '', 'REGULER', 'B3K-A', '16', 22, 1),
+(456, 'pemrograman', 'Dayat', 'Senin', '', 'UAS', 'PP', '16', 9, 1),
+(461, 'Konstruksi', '-', 'Senin', '', 'NONREGULER', 'KK', '16', 11, 1),
+(463, 'Konstruksi Non', '-', 'Senin', '', 'NONREGULER', 'KN', '16', 9, 1),
+(469, 'KONTRUKSI SS', '-', 'Senin', '', 'NONREGULER', 'KS', '16', 9, 1),
+(473, 'KONTRUKSI MEKANIK', '-', 'Senin', '', 'NONREGULER', 'KM', '16', 9, 1),
+(474, 'KONTRUKSI MEKANIK', '-', 'Senin', '', 'NONREGULER', 'KM', '16', 9, 1),
+(476, 'KONTRUKSI MEKANIK', '-', 'Senin', '', 'NONREGULER', 'KM', '16', 10, 1);
 
 -- --------------------------------------------------------
 
@@ -1373,525 +787,6 @@ CREATE TABLE `jadwal_detail` (
 --
 
 INSERT INTO `jadwal_detail` (`id_jadwal_detail`, `id_jam`, `id_jadwal`) VALUES
-(4, 1, 2),
-(5, 2, 2),
-(6, 3, 2),
-(7, 4, 3),
-(8, 5, 3),
-(9, 6, 3),
-(10, 7, 4),
-(11, 8, 4),
-(12, 9, 4),
-(22, 7, 9),
-(23, 8, 9),
-(24, 1, 10),
-(25, 2, 10),
-(26, 3, 10),
-(27, 4, 10),
-(39, 1, 15),
-(40, 2, 15),
-(41, 3, 16),
-(42, 4, 16),
-(43, 7, 17),
-(44, 8, 17),
-(45, 9, 17),
-(70, 1, 27),
-(71, 2, 27),
-(72, 3, 27),
-(75, 6, 29),
-(76, 7, 29),
-(77, 1, 30),
-(78, 2, 30),
-(79, 3, 30),
-(80, 4, 31),
-(81, 5, 31),
-(82, 6, 31),
-(83, 1, 32),
-(84, 2, 32),
-(85, 10, 33),
-(86, 11, 33),
-(87, 3, 34),
-(88, 4, 34),
-(89, 7, 35),
-(90, 8, 35),
-(91, 9, 35),
-(99, 1, 38),
-(100, 2, 38),
-(101, 3, 38),
-(102, 4, 39),
-(103, 5, 39),
-(104, 6, 39),
-(105, 7, 40),
-(106, 8, 40),
-(113, 7, 43),
-(114, 8, 43),
-(115, 9, 43),
-(116, 1, 44),
-(117, 2, 44),
-(128, 7, 50),
-(129, 8, 50),
-(130, 9, 50),
-(131, 10, 50),
-(132, 11, 50),
-(133, 3, 51),
-(134, 4, 51),
-(135, 5, 51),
-(136, 6, 51),
-(137, 7, 52),
-(138, 8, 52),
-(143, 5, 55),
-(144, 6, 55),
-(145, 7, 55),
-(146, 8, 55),
-(147, 4, 56),
-(148, 5, 56),
-(149, 9, 57),
-(150, 10, 57),
-(151, 11, 57),
-(152, 1, 58),
-(153, 2, 58),
-(160, 5, 61),
-(161, 6, 61),
-(162, 8, 62),
-(163, 9, 62),
-(164, 10, 62),
-(165, 1, 63),
-(166, 2, 63),
-(167, 3, 63),
-(168, 1, 64),
-(169, 2, 64),
-(170, 3, 64),
-(171, 4, 64),
-(172, 1, 65),
-(173, 2, 65),
-(174, 3, 65),
-(175, 4, 65),
-(176, 7, 67),
-(177, 8, 67),
-(191, 5, 72),
-(192, 6, 72),
-(193, 7, 72),
-(194, 8, 72),
-(195, 9, 72),
-(204, 7, 75),
-(205, 8, 75),
-(206, 9, 75),
-(207, 1, 76),
-(208, 2, 76),
-(209, 3, 76),
-(210, 4, 76),
-(219, 1, 79),
-(220, 2, 79),
-(221, 3, 79),
-(222, 7, 79),
-(223, 8, 79),
-(224, 9, 79),
-(225, 1, 81),
-(226, 2, 81),
-(227, 3, 81),
-(228, 4, 81),
-(229, 5, 81),
-(230, 7, 81),
-(231, 8, 81),
-(232, 9, 81),
-(233, 10, 81),
-(240, 4, 86),
-(241, 5, 86),
-(242, 6, 86),
-(243, 4, 87),
-(244, 5, 87),
-(245, 6, 87),
-(246, 4, 88),
-(247, 5, 88),
-(248, 6, 88),
-(249, 4, 89),
-(250, 5, 89),
-(251, 6, 89),
-(261, 4, 86),
-(262, 5, 86),
-(263, 6, 86),
-(264, 4, 87),
-(265, 5, 87),
-(266, 6, 87),
-(267, 4, 88),
-(268, 5, 88),
-(269, 6, 88),
-(270, 4, 86),
-(271, 5, 86),
-(272, 6, 86),
-(273, 2, 97),
-(274, 3, 97),
-(275, 4, 97),
-(276, 5, 97),
-(277, 6, 97),
-(278, 7, 97),
-(279, 8, 97),
-(280, 3, 98),
-(281, 4, 98),
-(282, 5, 98),
-(283, 6, 98),
-(284, 7, 98),
-(285, 8, 98),
-(290, 4, 101),
-(291, 5, 101),
-(292, 6, 101),
-(293, 7, 102),
-(294, 8, 102),
-(295, 9, 102),
-(319, 1, 111),
-(320, 2, 111),
-(328, 3, 115),
-(329, 4, 115),
-(330, 5, 116),
-(331, 6, 116),
-(332, 5, 117),
-(333, 6, 117),
-(334, 7, 118),
-(335, 8, 118),
-(336, 9, 118),
-(341, 1, 119),
-(342, 2, 119),
-(343, 3, 119),
-(344, 4, 119),
-(345, 5, 119),
-(346, 6, 119),
-(347, 7, 123),
-(348, 8, 123),
-(355, 1, 126),
-(356, 2, 126),
-(357, 3, 126),
-(361, 4, 128),
-(362, 5, 128),
-(363, 6, 128),
-(364, 7, 129),
-(365, 8, 129),
-(369, 1, 131),
-(370, 2, 131),
-(373, 3, 133),
-(374, 4, 133),
-(375, 5, 133),
-(380, 6, 136),
-(381, 7, 136),
-(382, 4, 137),
-(383, 5, 137),
-(384, 1, 138),
-(385, 2, 138),
-(386, 3, 138),
-(387, 4, 138),
-(388, 5, 138),
-(389, 6, 139),
-(390, 7, 139),
-(391, 1, 140),
-(392, 2, 140),
-(393, 3, 140),
-(394, 4, 141),
-(395, 5, 141),
-(396, 6, 141),
-(397, 3, 142),
-(398, 4, 142),
-(399, 7, 143),
-(400, 8, 143),
-(401, 1, 144),
-(402, 2, 144),
-(403, 5, 144),
-(404, 6, 144),
-(405, 3, 145),
-(406, 4, 145),
-(411, 1, 148),
-(412, 2, 148),
-(418, 1, 151),
-(419, 2, 151),
-(420, 3, 151),
-(421, 4, 152),
-(422, 5, 152),
-(423, 6, 153),
-(424, 7, 153),
-(425, 9, 153),
-(426, 10, 153),
-(434, 3, 156),
-(435, 4, 156),
-(436, 5, 156),
-(437, 6, 156),
-(438, 7, 156),
-(439, 1, 157),
-(440, 2, 157),
-(441, 3, 157),
-(442, 4, 157),
-(443, 5, 157),
-(444, 6, 157),
-(445, 7, 157),
-(446, 8, 157),
-(447, 3, 159),
-(448, 4, 159),
-(449, 6, 151),
-(450, 7, 151),
-(451, 8, 151),
-(452, 1, 156),
-(453, 2, 156),
-(454, 1, 162),
-(455, 2, 162),
-(456, 3, 162),
-(457, 1, 163),
-(458, 2, 163),
-(459, 3, 163),
-(460, 1, 164),
-(461, 2, 164),
-(462, 1, 165),
-(463, 2, 165),
-(464, 1, 166),
-(465, 2, 166),
-(466, 3, 166),
-(467, 1, 167),
-(468, 2, 167),
-(469, 3, 167),
-(470, 4, 167),
-(471, 5, 167),
-(472, 4, 168),
-(473, 5, 168),
-(474, 6, 168),
-(475, 4, 163),
-(476, 5, 163),
-(477, 6, 163),
-(478, 3, 165),
-(479, 4, 165),
-(480, 4, 171),
-(481, 5, 171),
-(482, 4, 172),
-(483, 5, 172),
-(484, 6, 172),
-(485, 7, 173),
-(486, 8, 173),
-(487, 9, 173),
-(488, 7, 174),
-(489, 8, 174),
-(490, 5, 175),
-(491, 6, 175),
-(492, 7, 175),
-(493, 7, 176),
-(494, 8, 176),
-(495, 9, 176),
-(496, 1, 177),
-(497, 2, 177),
-(498, 3, 177),
-(499, 1, 178),
-(500, 2, 178),
-(501, 3, 178),
-(502, 1, 179),
-(503, 2, 179),
-(504, 3, 179),
-(505, 1, 180),
-(506, 2, 180),
-(507, 3, 180),
-(508, 4, 180),
-(509, 1, 181),
-(510, 2, 181),
-(511, 3, 181),
-(512, 4, 182),
-(513, 5, 182),
-(514, 6, 182),
-(515, 4, 178),
-(516, 5, 178),
-(517, 6, 178),
-(518, 4, 184),
-(519, 5, 184),
-(520, 6, 184),
-(521, 7, 184),
-(522, 8, 184),
-(523, 9, 184),
-(524, 4, 185),
-(525, 5, 185),
-(526, 6, 185),
-(527, 5, 186),
-(528, 6, 186),
-(529, 7, 186),
-(530, 8, 186),
-(531, 9, 187),
-(532, 10, 187),
-(533, 11, 187),
-(534, 8, 188),
-(535, 9, 188),
-(536, 10, 189),
-(537, 11, 189),
-(538, 1, 190),
-(539, 2, 190),
-(540, 3, 190),
-(541, 1, 191),
-(542, 2, 191),
-(543, 3, 191),
-(544, 4, 191),
-(545, 1, 192),
-(546, 2, 192),
-(547, 3, 192),
-(548, 1, 193),
-(549, 2, 193),
-(550, 3, 193),
-(551, 1, 194),
-(552, 2, 194),
-(553, 3, 194),
-(554, 4, 194),
-(555, 1, 195),
-(556, 2, 195),
-(557, 1, 196),
-(558, 2, 196),
-(559, 3, 196),
-(560, 4, 196),
-(561, 5, 196),
-(562, 6, 196),
-(563, 4, 197),
-(564, 5, 197),
-(565, 6, 197),
-(566, 7, 197),
-(567, 5, 191),
-(568, 6, 191),
-(569, 7, 191),
-(570, 8, 191),
-(571, 4, 192),
-(572, 5, 192),
-(573, 6, 192),
-(574, 7, 200),
-(575, 8, 200),
-(576, 9, 200),
-(577, 4, 193),
-(578, 5, 193),
-(579, 6, 193),
-(580, 7, 202),
-(581, 8, 202),
-(582, 5, 203),
-(583, 6, 203),
-(584, 7, 204),
-(585, 8, 204),
-(586, 9, 204),
-(587, 4, 205),
-(588, 5, 205),
-(589, 6, 206),
-(590, 7, 206),
-(591, 8, 206),
-(592, 9, 206),
-(593, 1, 208),
-(594, 2, 208),
-(595, 3, 208),
-(596, 1, 209),
-(597, 2, 209),
-(598, 3, 209),
-(599, 1, 210),
-(600, 2, 210),
-(601, 1, 211),
-(602, 2, 211),
-(603, 3, 211),
-(604, 4, 211),
-(605, 1, 212),
-(606, 2, 212),
-(607, 3, 212),
-(608, 1, 213),
-(609, 2, 213),
-(610, 3, 213),
-(611, 3, 214),
-(612, 4, 214),
-(613, 5, 214),
-(614, 4, 215),
-(615, 5, 215),
-(616, 6, 215),
-(617, 4, 216),
-(618, 5, 216),
-(619, 6, 216),
-(620, 4, 217),
-(621, 5, 217),
-(622, 6, 217),
-(623, 4, 213),
-(624, 5, 213),
-(625, 6, 213),
-(626, 6, 219),
-(627, 7, 219),
-(628, 8, 219),
-(629, 9, 219),
-(630, 10, 219),
-(631, 11, 219),
-(632, 7, 220),
-(633, 8, 220),
-(634, 9, 220),
-(635, 7, 221),
-(636, 8, 221),
-(637, 7, 222),
-(638, 8, 222),
-(639, 9, 222),
-(640, 1, 223),
-(641, 2, 223),
-(642, 3, 223),
-(643, 4, 223),
-(644, 1, 224),
-(645, 2, 224),
-(646, 3, 224),
-(647, 4, 224),
-(648, 8, 223),
-(649, 9, 223),
-(650, 10, 223),
-(651, 11, 223),
-(652, 1, 226),
-(653, 2, 226),
-(654, 3, 226),
-(655, 5, 227),
-(656, 7, 227),
-(657, 8, 227),
-(658, 9, 227),
-(659, 10, 227),
-(660, 11, 227),
-(661, 4, 228),
-(662, 5, 228),
-(663, 7, 228),
-(664, 1, 229),
-(665, 2, 229),
-(666, 3, 229),
-(667, 4, 229),
-(668, 1, 230),
-(669, 2, 230),
-(670, 3, 230),
-(671, 4, 230),
-(672, 3, 231),
-(673, 4, 231),
-(674, 1, 232),
-(675, 1, 232),
-(677, 2, 232),
-(680, 1, 232),
-(684, 1, 232),
-(689, 3, 232),
-(695, 4, 232),
-(698, 5, 232),
-(710, 1, 274),
-(712, 8, 277),
-(713, 10, 279),
-(714, 11, 279),
-(715, 10, 280),
-(716, 11, 280),
-(717, 10, 281),
-(718, 11, 281),
-(722, 1, 284),
-(723, 2, 284),
-(727, 2, 286),
-(728, 3, 286),
-(729, 4, 286),
-(730, 5, 286),
-(731, 4, 287),
-(732, 5, 287),
-(740, 1, 291),
-(741, 2, 291),
-(742, 1, 292),
-(743, 2, 292),
-(744, 1, 293),
-(745, 2, 293),
-(746, 3, 293),
-(749, 1, 295),
-(750, 2, 295),
-(751, 1, 296),
-(752, 2, 296),
-(753, 4, 297),
-(754, 5, 297),
-(755, 3, 298),
-(756, 4, 298),
-(757, 1, 299),
-(758, 2, 299),
-(759, 1, 300),
-(760, 2, 300),
-(761, 3, 300),
 (820, 1, 311),
 (821, 2, 311),
 (822, 3, 311),
@@ -1937,10 +832,6 @@ INSERT INTO `jadwal_detail` (`id_jadwal_detail`, `id_jam`, `id_jadwal`) VALUES
 (896, 7, 334),
 (897, 8, 334),
 (898, 9, 334),
-(899, 1, 335),
-(900, 2, 335),
-(901, 3, 335),
-(902, 4, 335),
 (903, 1, 336),
 (904, 2, 336),
 (905, 3, 336),
@@ -2026,14 +917,10 @@ INSERT INTO `jadwal_detail` (`id_jadwal_detail`, `id_jam`, `id_jadwal`) VALUES
 (1001, 7, 366),
 (1002, 8, 367),
 (1003, 9, 367),
-(1004, 1, 368),
-(1005, 2, 368),
 (1006, 3, 369),
 (1007, 4, 369),
 (1008, 6, 370),
 (1009, 7, 370),
-(1010, 8, 368),
-(1011, 9, 368),
 (1012, 8, 371),
 (1013, 9, 371),
 (1014, 1, 372),
@@ -2283,7 +1170,17 @@ INSERT INTO `jadwal_detail` (`id_jadwal_detail`, `id_jam`, `id_jadwal`) VALUES
 (1268, 1, 435),
 (1269, 2, 435),
 (1270, 3, 435),
-(1271, 4, 435);
+(1271, 4, 435),
+(1284, 1, 441),
+(1285, 2, 441),
+(1286, 3, 441),
+(1287, 4, 441),
+(1288, 9, 442),
+(1289, 10, 442),
+(1290, 11, 442),
+(1291, 1, 443),
+(1292, 2, 443),
+(1313, 2, 461);
 
 -- --------------------------------------------------------
 
@@ -2393,11 +1290,7 @@ CREATE TABLE `kontak` (
 --
 
 INSERT INTO `kontak` (`tanggal`, `id_kontak`, `nama`, `email`, `komentar`) VALUES
-('2024-03-08', 31, 'albert', 'alberto', 'selamat pagi'),
-('2024-03-08', 32, 'Mike', 'mike@gmail.com', 'p'),
-('2024-03-13', 34, 'mursid', 'azizmfadli.04@gmail.com', 'Mursid mantap'),
-('2024-03-13', 35, 'mursid', 'azizmfadli.04@gmail.com', 'Mursid mantap'),
-('2024-03-13', 36, 'unang', 'azizmfadli.04@gmail.com', 'Unang cariu ketua projek');
+('2024-04-29', 1, 'Mike', 'mike@gmail.com', 'Selamat Pagi');
 
 -- --------------------------------------------------------
 
@@ -2426,6 +1319,26 @@ INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `notif`
+--
+
+CREATE TABLE `notif` (
+  `id` int(11) NOT NULL,
+  `notif` varchar(255) NOT NULL,
+  `id_prodi` int(250) NOT NULL,
+  `jenis` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `notif`
+--
+
+INSERT INTO `notif` (`id`, `notif`, `id_prodi`, `jenis`) VALUES
+(3, 'shfpohfspasfhposadfpha', 0, '');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `password_reset_tokens`
 --
 
@@ -2443,7 +1356,8 @@ INSERT INTO `password_reset_tokens` (`email`, `tokens`, `created_at`) VALUES
 ('azizmfadli.04@gmail.com', '284d73ff699c02e46f56798ddc3831700a6b384c1660c971961616cc04e77de5010dca2d03b6bef83e8c630ee770a6198906cd3dc43e597f2d24801df9e8ff9ab1', '2024-03-19 02:27:01'),
 ('unar66@gmail.com', 'e12283e1b8d55b6e1ef3dfecea9717758ae6e4d2a0f16d71809b220d16ef95a5ebbfd31270daa620670d1aeecb40dbc397806654153448b34d069a600800a48e14', '2024-03-19 02:15:40'),
 ('admin2@gmail.com', '3acfd2bed129c93868e0686973bab7104b90be0729afbf8dad27781f237ddeb742dd6705739795425a2675a4d838dfa62d7cb303630acd92088449ad8a478a1c75', '2024-03-21 23:05:33'),
-('adrfirt@gmail.com', 'c77a81ce3728e5c17273f978c81261569eee89ed48153860f2a4bdd5d605d2be9be13d61bad0b8ed46cc11fc6b5f92f9ba4ead7d0aef9da5610454e8f23b53e7bc', '2024-03-21 18:53:56');
+('adrfirt@gmail.com', 'c77a81ce3728e5c17273f978c81261569eee89ed48153860f2a4bdd5d605d2be9be13d61bad0b8ed46cc11fc6b5f92f9ba4ead7d0aef9da5610454e8f23b53e7bc', '2024-03-21 18:53:56'),
+('kged3@polban.ac.id', 'ebda9f85822bd933a14372064876f6af27e45bac19384d31382c307eaa448c82abbb8c5f502634b118823b946c179f2bf26c00f7f6b4ef99c2d185896315f510d2', '2024-04-29 20:59:58');
 
 -- --------------------------------------------------------
 
@@ -2466,24 +1380,75 @@ INSERT INTO `pegawai` (`id`, `nama`, `nip`) VALUES
 (2, 'Yeti Nugraheni', '197804112003122002'),
 (3, 'Yudhi Rachmat Kurnia', '198605162010121009'),
 (4, 'Riand Saputra', '198911112019031012'),
-(5, 'Resha Ramadhan Dwi P', '199503012022031007'),
+(5, ' Resha Ramadhan Dwi ', ' 199503012022031007'),
 (6, 'Tardi', '197507152007011001'),
 (7, 'Mochamad Taufik', '201005003');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pesan`
+-- Struktur dari tabel `pengajuan`
 --
 
-CREATE TABLE `pesan` (
-  `id` int(11) NOT NULL,
-  `subject` varchar(50) NOT NULL,
-  `nama` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `isi` text NOT NULL,
-  `tglpesan` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+CREATE TABLE `pengajuan` (
+  `id_jadwal` int(50) NOT NULL,
+  `mk` varchar(255) NOT NULL,
+  `nama_dosen` varchar(255) NOT NULL,
+  `hari` varchar(255) NOT NULL,
+  `tgl` varchar(255) DEFAULT NULL,
+  `jenis` varchar(255) NOT NULL,
+  `kelas` varchar(255) NOT NULL,
+  `id_thn` int(200) NOT NULL,
+  `id_ruangan` int(200) NOT NULL,
+  `id_prodi` int(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `pengajuan`
+--
+
+INSERT INTO `pengajuan` (`id_jadwal`, `mk`, `nama_dosen`, `hari`, `tgl`, `jenis`, `kelas`, `id_thn`, `id_ruangan`, `id_prodi`) VALUES
+(7, 'RPL', 'mrs Sri', 'Jumat', NULL, 'REGULER', 'PLG-2', 16, 22, 1),
+(8, 'RPL', 'Unang', 'Jumat', NULL, 'REGULER', 'JMK-48', 16, 21, 1),
+(20, 'listrik', '-', 'Jumat', NULL, 'REGULER', 'B3K-A', 16, 22, 1),
+(24, 'listrik', 'Unang', 'Jumat', NULL, 'NONREGULER', 'B3K-A', 16, 22, 1),
+(25, 'RPL', 'Azis', 'Jumat', NULL, 'NONREGULER', 'JMK-48', 16, 22, 1),
+(26, 'Pemrograman', 'Dayat', 'Senin', NULL, 'UTS', 'PP', 16, 9, 1),
+(27, 'pemrograman', 'Dayat', 'Senin', NULL, 'UAS', 'PP', 16, 9, 1),
+(28, 'pemrograman', 'Mimi', 'Senin', NULL, 'REGULER', 'PP', 16, 22, 1),
+(29, 'pemrograman', 'mrs Sri', 'Senin', NULL, 'REGULER', 'B2K-A', 16, 21, 1),
+(30, 'pemrograman', 'Dayat', 'Jumat', NULL, 'UTS', 'PP', 16, 22, 1),
+(31, 'listrik-3', 'Dayat', 'Jumat', NULL, 'REGULER', 'B3K-A', 16, 22, 1),
+(32, 'listrik-3', 'Dayat', 'Jumat', NULL, 'REGULER', 'B3K-A', 16, 22, 1),
+(33, 'listrik-3', 'Dayat', 'Jumat', NULL, 'REGULER', 'B3K-A', 16, 21, 1),
+(34, 'listrik-3', 'Dayat', 'Jumat', NULL, 'REGULER', 'B3K-A', 16, 22, 1),
+(35, 'listrik', 'Unang12', 'Selasa', NULL, 'UTS', 'B5M-K', 16, 22, 1),
+(36, 'Konstruksi', '-', 'Senin', NULL, 'NONREGULER', 'KK', 16, 11, 1),
+(37, 'Konstruksi', '-', 'Senin', NULL, 'NONREGULER', 'KKM', 16, 9, 1),
+(38, 'Konstruksi Non', '-', 'Senin', NULL, 'NONREGULER', 'KN', 16, 9, 1),
+(39, 'Konstruksi Non', '-', 'Senin', NULL, 'NONREGULER', 'KN', 16, 9, 1),
+(40, 'Konstruksi Non', '-', 'Senin', NULL, 'NONREGULER', 'KN', 16, 9, 1),
+(41, 'UAS KONSTRUKSI', '-', 'Senin', NULL, 'UAS', 'UAS KK', 16, 9, 1),
+(42, 'KONTRUKSI SS', '-', 'Senin', NULL, 'NONREGULER', 'KS', 16, 10, 1),
+(43, 'KONTRUKSI NON', '-', 'Senin', NULL, 'NONREGULER', 'KN', 16, 9, 1),
+(44, 'KONTRUKSI NON', '-', 'Senin', NULL, 'NONREGULER', 'KN', 16, 9, 1),
+(45, 'KONTRUKSI SS', '-', 'Senin', NULL, 'NONREGULER', 'KS', 16, 9, 1),
+(46, 'KONTRUKSI MEKANIK', '-', 'Senin', NULL, 'NONREGULER', 'KM', 16, 9, 1),
+(47, 'KONTRUKSI MEKANIK', '-', 'Senin', NULL, 'NONREGULER', 'KM', 16, 9, 1),
+(48, 'KONTRUKSI MEKANIK', '-', 'Senin', NULL, 'NONREGULER', 'KM', 16, 9, 1),
+(49, 'KONTRUKSI MEKANIK', '-', 'Senin', NULL, 'NONREGULER', 'KM', 16, 10, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pengajuan_detail`
+--
+
+CREATE TABLE `pengajuan_detail` (
+  `id_jadwal_detail` int(50) NOT NULL,
+  `id_jam` int(255) NOT NULL,
+  `id_jadwal` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -2539,7 +1504,7 @@ INSERT INTO `program_studi` (`id_prodi`, `kode_prodi`, `nama_prodi`, `id_jurusan
 (34, 'TPTL', 'Teknik Pembangkit Tenaga Listrik', 7, 'D4'),
 (35, 'TKE', 'Teknik Konservasi Energi', 7, 'D4'),
 (36, 'KPB', 'Teknik Kimia Produksi Bersih', 5, 'D4'),
-(37, 'TI4', 'Teknik Komputer dan Informatika', 1, 'D4'),
+(37, 'TI', 'Teknik Komputer dan Informatika', 1, 'D4'),
 (38, 'MTRI', 'Rekayasa Infrastruktur', 2, 'S2'),
 (39, 'KPSY', 'Keuangan dan Perbankan Syariah Terapan', 9, 'S2');
 
@@ -2586,96 +1551,38 @@ CREATE TABLE `siswa` (
   `nama_lengkap` varchar(30) NOT NULL,
   `jenis_kelamin` varchar(12) NOT NULL,
   `juruusan_pkl` varchar(11) NOT NULL,
-  `asal_sekolah` varchar(30) NOT NULL
+  `asal_sekolah` varchar(30) NOT NULL,
+  `id_ruangan` int(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `siswa`
 --
 
-INSERT INTO `siswa` (`id`, `nama_lengkap`, `jenis_kelamin`, `juruusan_pkl`, `asal_sekolah`) VALUES
-(1, 'Adrian Firman Tadarus', 'L', 'RPL', 'SMK BINA PUTRA'),
-(2, 'Azis Muhammad Fadli', 'L', 'RPL', 'SMK BINA PUTRA'),
-(3, 'Celsi Amelia Pratama', 'P', 'RPL', 'SMK BINA PUTRA'),
-(4, 'Siti Hana Khoirunnisa', 'P', 'RPL', 'SMK BINA PUTRA'),
-(5, 'Sri Fani Faujiah', 'P', 'RPL', 'SMK BINA PUTRA'),
-(6, 'Emilio Septaguna', 'L', 'TKJ', 'SMK TI GARUDA'),
-(7, 'Fikri Ali Al Ihsani', 'L', 'TKJ', 'SMK TI GARUDA'),
-(8, 'Muhammad Zaki Roihan', 'L ', 'TKJ', 'SMK TI GARUDA'),
-(9, 'Wahyu Mulyawan', 'L', 'TKJ', 'SMK TI GARUDA'),
-(10, ' Muhamad Rahin Almassyah Putra', ' L', ' RPL', ' SMKN 1 SUBANG'),
-(11, 'Osep Maulana', 'L', 'RPL', 'SMKN 1 SUBANG'),
-(12, 'Yuga Zainal Lanov', 'L', 'RPL', 'SMKN 1 SUBANG'),
-(13, 'Wanda Ramdani', 'L', 'RPL', 'SMKN 1 SUBANG'),
-(18, ' Kangkang Asyadulloh', ' L ', ' TKJ', ' SMK INDONESIA RAYA'),
-(19, ' Muhamad Radit Maulana', ' L ', ' TKJ', ' SMK INDONESIA RAYA'),
-(20, ' Ardiansyah', ' L ', ' TKJ', ' SMK INDONESIA RAYA'),
-(21, ' Mohammad Ilham Nurhakim', ' L ', ' TKJ', ' SMK INDONESIA RAYA'),
-(22, '  Riza Pamungkas', '  L ', '  TKJ', '  SMKN 11 BANDUNG'),
-(23, ' Ilham Ferdiansyah', ' L ', ' TKJ', ' SMKN 11 BANDUNG');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `s_labd`
---
-
-CREATE TABLE `s_labd` (
-  `id` int(4) NOT NULL,
-  `no_pc` varchar(10) NOT NULL,
-  `excel` varchar(100) NOT NULL,
-  `word` varchar(100) NOT NULL,
-  `autocad` varchar(100) NOT NULL,
-  `blue_j` varchar(100) NOT NULL,
-  `visio` varchar(100) NOT NULL,
-  `code_blocks` varchar(100) NOT NULL,
-  `chrome` varchar(100) NOT NULL,
-  `tekla_structure` varchar(100) NOT NULL,
-  `tekla_bim` varchar(100) NOT NULL,
-  `worksharing` varchar(100) NOT NULL,
-  `revit` varchar(100) NOT NULL,
-  `autodesk_recap` varchar(100) NOT NULL,
-  `id_ruangan` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `s_labd`
---
-
-INSERT INTO `s_labd` (`id`, `no_pc`, `excel`, `word`, `autocad`, `blue_j`, `visio`, `code_blocks`, `chrome`, `tekla_structure`, `tekla_bim`, `worksharing`, `revit`, `autodesk_recap`, `id_ruangan`) VALUES
-(1, 'Pc 1', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(2, 'Pc 2', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(3, 'Pc 3', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(4, 'Pc 4', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(5, 'Pc 5', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(6, 'Pc 6', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(7, 'Pc 7', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(8, 'Pc 8', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(9, 'Pc 9', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(10, 'Pc 10', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(11, 'Pc 11', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(12, 'Pc 12', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(13, 'Pc 13', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(14, 'Pc 14', 'Excell 365', '', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(15, 'Pc 15', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(16, 'Pc 16', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(17, 'Pc 17', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(18, 'Pc 18', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(19, 'Pc 19', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(20, 'Pc 20', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(21, 'Pc 21', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(22, 'Pc 22', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(23, 'Pc 23', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(24, 'Pc 24', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(25, 'Pc 25', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(26, 'Pc 26', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(27, 'Pc 27', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(28, 'Pc 28', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(29, 'Pc 29', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(30, 'Pc 30', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(31, 'Pc 31', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(32, 'Pc 32', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22),
-(33, 'Pc 33', 'Excell 365', 'Word 365', 'AutoCad 2020', 'Blue J', 'Visio 2010', 'CodeBlocks', 'Chrome', 'Tekla Structures', 'Tekla BIM', 'Worksharing', 'Revit2020', 'AutoDesk ReCap', 22);
+INSERT INTO `siswa` (`id`, `nama_lengkap`, `jenis_kelamin`, `juruusan_pkl`, `asal_sekolah`, `id_ruangan`) VALUES
+(1, 'Adrian Firman Tadarus', 'L', 'RPL', 'SMK BINA PUTRA', 16),
+(2, 'Azis Muhammad Fadli', 'L', 'RPL', 'SMK BINA PUTRA', 16),
+(3, 'Celsi Amelia Pratama', 'P', 'RPL', 'SMK BINA PUTRA', 10),
+(4, 'Siti Hana Khoirunnisa', 'P', 'RPL', 'SMK BINA PUTRA', 10),
+(5, 'Sri Fani Faujiah', 'P', 'RPL', 'SMK BINA PUTRA', 11),
+(6, 'Emilio Septaguna', 'L', 'TKJ', 'SMK TI GARUDA', 12),
+(7, 'Fikri Ali Al Ihsani', 'L', 'TKJ', 'SMK TI GARUDA', 10),
+(8, 'Muhammad Zaki Roihan', 'L ', 'TKJ', 'SMK TI GARUDA', 12),
+(9, 'Wahyu Mulyawan', 'L', 'TKJ', 'SMK TI GARUDA', 14),
+(10, '  Muhamad Rahin Almassyah Putr', '  L', '  RPL', '  SMKN 1 SUBANG', 15),
+(11, 'Osep Maulana', 'L', 'RPL', 'SMKN 1 SUBANG', 16),
+(12, 'Yuga Zainal Lanov', 'L', 'RPL', 'SMKN 1 SUBANG', 15),
+(13, 'Wanda Ramdani', 'L', 'RPL', 'SMKN 1 SUBANG', 20),
+(18, ' Kangkang Asyadulloh', ' L ', ' TKJ', ' SMK INDONESIA RAYA', 21),
+(19, ' Muhamad Radit Maulana', ' L ', ' TKJ', ' SMK INDONESIA RAYA', 22),
+(20, ' Ardiansyah', ' L ', ' TKJ', ' SMK INDONESIA RAYA', 20),
+(21, ' Mohammad Ilham Nurhakim', ' L ', ' TKJ', ' SMK INDONESIA RAYA', 19),
+(22, '  Riza Pamungkas', '  L ', '  TKJ', '  SMKN 11 BANDUNG', 12),
+(23, ' Ilham Ferdiansyah', ' L ', ' TKJ', ' SMKN 11 BANDUNG', 11),
+(24, 'Aditya Mulawarman', 'L ', 'RPL', 'SMK AL FALAH BANDUNG', 10),
+(25, ' Fikha Erlangga Darmawan', ' L ', ' RPL', ' SMK AL FALAH BANDUNG', 9),
+(26, ' Revan Irwansyah', ' L ', ' RPL', ' SMK AL FALAH BANDUNG', 9),
+(27, 'Alifha Bayu Ramdhani', 'L ', 'RPL', 'SMK AL FALAH BANDUNG', 9);
 
 -- --------------------------------------------------------
 
@@ -2752,16 +1659,16 @@ CREATE TABLE `unit` (
 --
 
 INSERT INTO `unit` (`id_unit`, `kode_unit`, `nama_unit`) VALUES
-(1, 'UPT-S', 'Unit Pelaksana Teknis Sipil'),
-(2, 'UPT-E', 'Unit Pelaksana Teknis Elektro'),
-(3, 'UPT-M', 'Unit Pelaksana Teknis Mesin'),
-(4, 'UPT-K', 'Unit Pelaksana Teknis Komputer'),
-(5, 'UPT-KM', 'Unit Pelaksana Teknis Kimia'),
-(6, 'UPT-RT', 'Unit Pelaksana Teknik Refregasi Tata Udara'),
-(7, 'UPT-KE', 'Unit Pelaksana Teknis Konversi Energi'),
-(8, 'UP-AG', 'Unit Pelaksana Administrasi Niaga'),
-(9, 'UP-AK', 'Unit Pelaksana Akutansi'),
-(10, 'UP-BI', 'Unit Pelaksana Bahasa Inggris');
+(1, 'UP-BI', 'Unit Pelaksana Bahasa Inggris'),
+(2, 'UPT-S', 'Unit Pelaksana Teknis Sipil'),
+(3, 'UPT-E', 'Unit Pelaksana Teknis Elektro'),
+(4, 'UPT-M', 'Unit Pelaksana Teknis Mesin'),
+(5, 'UPT-K', 'Unit Pelaksana Teknis Komputer'),
+(6, 'UPT-KM', 'Unit Pelaksana Teknis Kimia'),
+(7, 'UPT-RT', 'Unit Pelaksana Teknik Refregasi Tata Udara'),
+(8, 'UPT-KE', 'Unit Pelaksana Teknis Konversi Energi'),
+(9, 'UP-AG', 'Unit Pelaksana Administrasi Niaga'),
+(10, 'UP-AK', 'Unit Pelaksana Akutansi');
 
 -- --------------------------------------------------------
 
@@ -2799,45 +1706,44 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `nama_user`, `username`, `password`, `email`, `status`, `no_telp`, `id_prodi`) VALUES
-(9, 'a', 'ArifDelusion', '$2y$10$haO427jKVUCTl2XGGP/7jOVdXci3rFYrBaQ8PiUvjr.Ti4p7OJewm', 'arif.delusion@gmail.com', 'aktif', '089676217828', 1),
-(10, 'Teknik Sipil', 'kge', '$2y$10$dSUpL8D.2mdcxVvBtWM9XOjrbKnzS7jZuNulfMvbFGNLazp/.9CmW', 'sipil@polban.ac.id', 'aktif', '022-2013789', 1),
-(11, 'Teknik Sipil', 'ksi', '$2y$10$dSUpL8D.2mdcxVvBtWM9XOjrbKnzS7jZuNulfMvbFGNLazp/.9CmW', 'sipil@polban.ac.id', 'aktif', '022-2013789', 2),
-(12, 'Teknik Sipil', 'tpjj', '$2y$10$dSUpL8D.2mdcxVvBtWM9XOjrbKnzS7jZuNulfMvbFGNLazp/.9CmW', 'sipil@polban.ac.id', 'aktif', '022-2013789', 3),
-(13, 'Teknik Sipil', 'tppg', '$2y$10$dSUpL8D.2mdcxVvBtWM9XOjrbKnzS7jZuNulfMvbFGNLazp/.9CmW', 'sipil@polban.ac.id', 'aktif', '022-2013789', 4),
-(14, 'Teknik Elektro', 'tel', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 5),
-(15, 'Teknik Elektro', 'tli', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 6),
-(16, 'Teknik Elektro', 'tte', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 7),
-(17, 'Teknik Elektro', 'tnk', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 8),
-(18, 'Teknik Elektro', 'ek', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 9),
-(19, 'Teknik Elektro', 'toi', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 10),
-(20, 'Teknik Mesin', 'tme', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 11),
-(22, 'Teknik Mesin', 'aer', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 12),
-(23, 'Teknik Komputer dan Informatika', 'jtk', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 13),
-(24, 'Teknik Kimia', 'tki', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 14),
-(25, 'Teknik Refrigerasi dan Tata Udara', 'rtu', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 15),
-(26, 'Teknik Konversi Energi', 'ten', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 16),
-(27, 'Administrasi Niaga', 'abs', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 17),
-(28, 'Administrasi Niaga', 'upw', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 18),
-(29, 'Administrasi Niaga', 'mpe', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 19),
-(30, 'Administrasi Niaga', 'mas', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 20),
-(31, 'Akuntansi', 'aku', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 21),
-(32, 'Akuntansi', 'kpn', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 22),
-(33, 'Akuntansi', 'amp', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 23),
-(34, 'Akuntansi', 'ks', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 24),
-(36, 'Bahasa Inggris', 'ing', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 25),
-(39, 'Administrasi Niaga', 'im', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '022-2013789', 26),
-(41, 'Akuntansi', 'ac', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'Polban@polban.ac.id', 'aktif', '-', 27),
-(42, 'Administrasi Niaga', 'ba', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'Polban@polban.ac.id', 'aktif', '-', 28),
-(44, 'Refrigerasi dan Tata Udara', 'ptu', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'Polban@polban.ac.id', 'aktif', '-', 29),
-(45, 'Teknik Mesin', 'tpkm', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'Polban@polban.ac.id', 'aktif', '-', 30),
-(51, 'Teknik Kimia', 'ank', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '', 32),
-(52, 'Teknik Mesin', 'pma', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '', 33),
-(53, 'Teknik Konversi Energi', 'tptl', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '', 34),
-(54, 'Teknik Konversi Energi', 'tke', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '', 35),
-(55, 'Teknik Kimia', 'kpb', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '', 36),
-(56, 'Teknik Informatika', 'ti4', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '', 37),
-(57, 'Teknik Sipil', 'mtri', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '', 38),
-(58, 'Akuntansi', 'kpsy', '$2y$10$V/PaXAaPr6is9uF5/lGsfeyqqiFOTPEPAIMixWWBVrJ4vqrkUWLAG', 'polban@polban.ac.id', 'aktif', '', 39);
+(10, 'Teknik Sipil', 'kge', '$2y$10$XffFpi3nu2uRm7tUUP.DNeNeo1qZAS/LZIYoN7lx7z4sh3e4blQYu', 'kged3@polban.ac.id', 'aktif', '022-2013789', 1),
+(11, 'Teknik Sipil', 'ksi', '$2y$10$6KdOWMkVFuBGlJll8Ctuluoj1PpdmUcEA84NcnLSidjb.ea2w5tme', 'ksid3@polban.ac.id', 'aktif', '022-2013789', 2),
+(12, 'Teknik Sipil', 'tpjj', '$2y$10$wIinhBr/U60SYeEdeunNf.See9wl6AEL5jKM0RFRj0.0WJkBeAZ2W', 'tpjjd4@polban.ac.id', 'aktif', '022-2013789', 3),
+(13, 'Teknik Sipil', 'tppg', '$2y$10$iUnEYcLtH8RsOjTtanvkvOGnTgXlObydt2JWV2bPADG2RQTzlCVCy', 'tppgd4@polban.ac.id', 'aktif', '022-2013789', 4),
+(14, 'Teknik Elektro', 'tel', '$2y$10$cinZJmLTcmNpS6Go5eJCDO5cwO7wIrEm4eJiw7kFCyktf08UQ6kPS', 'teld3@polban.ac.id', 'aktif', '022-2013789', 5),
+(15, 'Teknik Elektro', 'tli', '$2y$10$EyJcA6BmX5hVdEfQRafnAuvQmKMUzlTr1IorRsnsmVgVYSUSdZO3S', 'tlid3@polban.ac.id', 'aktif', '022-2013789', 6),
+(16, 'Teknik Elektro', 'tte', '$2y$10$YlVWE1YGzYQ3h2Hp8cY1SuwoQ.ZVqb6og2ree1R.AcGbfrqUvk4gm', 'tted3@polban.ac.id', 'aktif', '022-2013789', 7),
+(17, 'Teknik Elektro', 'tnk', '$2y$10$DPEKUZoFSjFV4Mmy/gwZ1esKBCsIZwd3abc63025cQ29x4PqfLr.W', 'tnkd4@polban.ac.id', 'aktif', '022-2013789', 8),
+(18, 'Teknik Elektro', 'ek', '$2y$10$cEb.FetS1SgN3O0EWOE85.c8gMEReXW9raCYUD59RznG6hiR4tnI6', 'ekd4@polban.ac.id', 'aktif', '022-2013789', 9),
+(19, 'Teknik Elektro', 'toi', '$2y$10$EZDMha5B0myheq8vAUtqL.WROJY6CMSCCZhM5az7HFApKCrqcD0LC', 'toid4@polban.ac.id', 'aktif', '022-2013789', 10),
+(20, 'Teknik Mesin', 'tme', '$2y$10$F/AIks7YA0w.4J3pqdRU4.8LtNmIiapggNWdkpUevCAvdKNhkv6uK', 'tmed3@polban.ac.id', 'aktif', '022-2013789', 11),
+(22, 'Teknik Mesin', 'aer', '$2y$10$mxnxSpwV1ErI8aJWsib0vO/9Ixk.TMMvZ6Jv5WVMOqfh1IEvZIsKa', 'aerd3@polban.ac.id', 'aktif', '022-2013789', 12),
+(23, 'Teknik Komputer dan Informatika', 'jtk', '$2y$10$uRLi8ccLcJWBf2VnFVdmC.dUHE1jKT4NBa/OvcNBYDX62f3x93OEC', 'jtkd3@polban.ac.id', 'aktif', '022-2013789', 13),
+(24, 'Teknik Kimia', 'tki', '$2y$10$3rLY79JgY0j2SGIk3skcWO4Hx.SygNYC//15yeSkv1dGKA7AuSMuG', 'tkid3@polban.ac.id', 'aktif', '022-2013789', 14),
+(25, 'Teknik Refrigerasi dan Tata Udara', 'rtu', '$2y$10$5.Qx05/b0.m1cwMReaa1iuPZg3d/cqJss.yLaC41YyF1HOMIE.9le', 'rtud3@polban.ac.id', 'aktif', '022-2013789', 15),
+(26, 'Teknik Konversi Energi', 'ten', '$2y$10$R.ttvjY0qaHWJZvA23gab.bS8Yxl9L34BpfCrO8UCMWPNsFKk/kie', 'tend3@polban.ac.id', 'aktif', '022-2013789', 16),
+(27, 'Administrasi Niaga', 'abs', '$2y$10$QUZRJSQjL2kdcuEer3PmduxzQHKBPDrgPofZQslHYRHI2VdiZGJ8a', 'absd3@polban.ac.id', 'aktif', '022-2013789', 17),
+(28, 'Administrasi Niaga', 'upw', '$2y$10$Kf.mrFjKw8F7hz1kddEUuOtCJ8R2ahihDT7Gbqr.vpxhqM1biWsdW', 'upwd3@polban.ac.id', 'aktif', '022-2013789', 18),
+(29, 'Administrasi Niaga', 'mpe', '$2y$10$C4wXqfLCbtVXcGsMsvvMiO4YeB3u2FizPxUnuQPBobEPYepjG8RQe', 'mped3@polban.ac.id', 'aktif', '022-2013789', 19),
+(30, 'Administrasi Niaga', 'mas', '$2y$10$KhEOHvq/iJCxdc.bJaKafe/p827r.eymFRcmbBjfr.wvFKaSY45Tu', 'masd4@polban.ac.id', 'aktif', '022-2013789', 20),
+(31, 'Akuntansi', 'aku', '$2y$10$1iENRvsz9El2aQ6hZklQI.2L8JimGD1ma5QYnNg.dTEZC8yeWuA6C', 'akud3@polban.ac.id', 'aktif', '022-2013789', 21),
+(32, 'Akuntansi', 'kpn', '$2y$10$f.L62X8hjM6daALDhBdQSehgWZSVV5.cr25ZP55UFiuPZXv4yhEme', 'kpnd3@polban.ac.id', 'aktif', '022-2013789', 22),
+(33, 'Akuntansi', 'amp', '$2y$10$pjis66zpEKRKsaJnRX0hLOvGZf9NYRcGrA8Q.sXAcv04NYc7fMxju', 'ampd4@polban.ac.id', 'aktif', '022-2013789', 23),
+(34, 'Akuntansi', 'ks', '$2y$10$q.HebSDzQ08VVDadh/BtvubsRroFI4jY1xsqFG0BmV.JoL/rvzDzm', 'ksd4@polban.ac.id', 'aktif', '022-2013789', 24),
+(36, 'Bahasa Inggris', 'ing', '$2y$10$m7O0/L4hfkWtH/2bW6NzDuOEjIf0FmB6oPZOnvjF2C9hAnf53u.Le', 'ingd3@polban.ac.id', 'aktif', '022-2013789', 25),
+(39, 'Administrasi Niaga', 'im', '$2y$10$Flc9NeF/V3CZgm60rtwmxuu8YhjuqlL9W2NZiVMOUzXb7SzoTjhYG', 'imd4@polban.ac.id', 'aktif', '022-2013789', 26),
+(41, 'Akuntansi', 'ac', '$2y$10$2G0DrNFOXpS4pBH3ufhQTeBWE9TFp2HpVVuAs82NqruVBohrkKoEG', 'acd4@polban.ac.id', 'aktif', '-', 27),
+(42, 'Administrasi Niaga', 'ba', '$2y$10$ESIOBBC4pg9RREZgIhee2usthkn8z2XGrqZgkc3UO8BBJlHAYhTKe', 'bad4@polban.ac.id', 'aktif', '-', 28),
+(44, 'Refrigerasi dan Tata Udara', 'ptu', '$2y$10$Xtbp4H/89UULiwWVy0.h4esVoHdn0rdBcMrqRONKjGO82s0kydiXe', 'ptud4@polban.ac.id', 'aktif', '-', 29),
+(45, 'Teknik Mesin', 'tpkm', '$2y$10$bjeK8p7Hisansgbr7yxtzeJ9iukqUgR30pO8BUxzoDz4tCK2fCBRm', 'tpkmd4@polban.ac.id', 'aktif', '-', 30),
+(51, 'Teknik Kimia', 'ank', '$2y$10$SKak/mPsFtcL8DlMlUTyG.5JfsVneT4b3g276bPTpLZoOGQRGf5yK', 'ankd3@polban.ac.id', 'aktif', '-', 32),
+(52, 'Teknik Mesin', 'pma', '$2y$10$SsfYrxO3poLeGKr29EVVLO4a76V8uX3xi2zsvdxmg1nX8eobBmZt.', 'pmad4@polban.ac.id', 'aktif', '-', 33),
+(53, 'Teknik Konversi Energi', 'tptl', '$2y$10$8qgAqhjK10u97ZXeICLauu0U2HlS9Y35kQFkWg/4I6yDM6rfzemTa', 'tptld4@polban.ac.id', 'aktif', '-', 34),
+(54, 'Teknik Konversi Energi', 'tke', '$2y$10$cF7HEZ9fMQEGV4FbU0nqcew8WIFVcmc2WW0fAgoudtplXExxYSJVS', 'tked4@polban.ac.id', 'aktif', '-', 35),
+(55, 'Teknik Kimia', 'kpb', '$2y$10$tyV.YKyokAdX1F7OQMOUNuNpUhBV9rOpADOCpfYUPfje4jvHAcwaS', 'kpbd4@polban.ac.id', 'aktif', '-', 36),
+(56, 'Teknik Informatika', 'ti', '$2y$10$AvRa7GkoGcVAhZyc4uQw2ObfNmgVO0WF/HNVEBJ0BVeSBjudzgeCG', 'tid4@polban.ac.id', 'aktif', '-', 37),
+(57, 'Teknik Sipil', 'mtri', '$2y$10$sZIbNq4O1GJRIcvmWMOeyOHpaUud8/1pOA5UgAPCyegtcN8sTkO56', 'mtris2@polban.ac.id', 'aktif', '-', 38),
+(58, 'Akuntansi', 'kpsy', '$2y$10$BKVfgaeb5Pifwg6dvE0xmO.Pu9zXCmA9WSlFsJuWfiL7mkiDTeX7C', 'kpsys2@polban.ac.id', 'aktif', '-', 39);
 
 --
 -- Indexes for dumped tables
@@ -2875,12 +1781,6 @@ ALTER TABLE `berita`
   ADD KEY `id_admin` (`id_admin`);
 
 --
--- Indeks untuk tabel `f_hardware`
---
-ALTER TABLE `f_hardware`
-  ADD PRIMARY KEY (`id_pc`);
-
---
 -- Indeks untuk tabel `f_hardware_b`
 --
 ALTER TABLE `f_hardware_b`
@@ -2898,48 +1798,6 @@ ALTER TABLE `f_software`
 ALTER TABLE `galeri`
   ADD PRIMARY KEY (`id_galeri`),
   ADD KEY `id_ruangan` (`id_ruangan`);
-
---
--- Indeks untuk tabel `h_lab2`
---
-ALTER TABLE `h_lab2`
-  ADD PRIMARY KEY (`id_pc`);
-
---
--- Indeks untuk tabel `h_lab3`
---
-ALTER TABLE `h_lab3`
-  ADD PRIMARY KEY (`id_pc`);
-
---
--- Indeks untuk tabel `h_lab4`
---
-ALTER TABLE `h_lab4`
-  ADD PRIMARY KEY (`id_pc`);
-
---
--- Indeks untuk tabel `h_lab5`
---
-ALTER TABLE `h_lab5`
-  ADD PRIMARY KEY (`id_pc`);
-
---
--- Indeks untuk tabel `h_lab6`
---
-ALTER TABLE `h_lab6`
-  ADD PRIMARY KEY (`id_pc`);
-
---
--- Indeks untuk tabel `h_lab7`
---
-ALTER TABLE `h_lab7`
-  ADD PRIMARY KEY (`id_pc`);
-
---
--- Indeks untuk tabel `h_lab8`
---
-ALTER TABLE `h_lab8`
-  ADD PRIMARY KEY (`id_pc`);
 
 --
 -- Indeks untuk tabel `jadwal`
@@ -2996,16 +1854,28 @@ ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `notif`
+--
+ALTER TABLE `notif`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `pegawai`
 --
 ALTER TABLE `pegawai`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `pesan`
+-- Indeks untuk tabel `pengajuan`
 --
-ALTER TABLE `pesan`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `pengajuan`
+  ADD PRIMARY KEY (`id_jadwal`);
+
+--
+-- Indeks untuk tabel `pengajuan_detail`
+--
+ALTER TABLE `pengajuan_detail`
+  ADD PRIMARY KEY (`id_jadwal_detail`);
 
 --
 -- Indeks untuk tabel `program_studi`
@@ -3029,12 +1899,6 @@ ALTER TABLE `ruangan`
 -- Indeks untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indeks untuk tabel `s_labd`
---
-ALTER TABLE `s_labd`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -3079,7 +1943,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `artikel`
@@ -3091,19 +1955,13 @@ ALTER TABLE `artikel`
 -- AUTO_INCREMENT untuk tabel `aset`
 --
 ALTER TABLE `aset`
-  MODIFY `id_aset` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=835;
+  MODIFY `id_aset` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=867;
 
 --
 -- AUTO_INCREMENT untuk tabel `berita`
 --
 ALTER TABLE `berita`
   MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
-
---
--- AUTO_INCREMENT untuk tabel `f_hardware`
---
-ALTER TABLE `f_hardware`
-  MODIFY `id_pc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT untuk tabel `f_hardware_b`
@@ -3121,61 +1979,19 @@ ALTER TABLE `f_software`
 -- AUTO_INCREMENT untuk tabel `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=285;
-
---
--- AUTO_INCREMENT untuk tabel `h_lab2`
---
-ALTER TABLE `h_lab2`
-  MODIFY `id_pc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
-
---
--- AUTO_INCREMENT untuk tabel `h_lab3`
---
-ALTER TABLE `h_lab3`
-  MODIFY `id_pc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
-
---
--- AUTO_INCREMENT untuk tabel `h_lab4`
---
-ALTER TABLE `h_lab4`
-  MODIFY `id_pc` int(35) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
-
---
--- AUTO_INCREMENT untuk tabel `h_lab5`
---
-ALTER TABLE `h_lab5`
-  MODIFY `id_pc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
-
---
--- AUTO_INCREMENT untuk tabel `h_lab6`
---
-ALTER TABLE `h_lab6`
-  MODIFY `id_pc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
-
---
--- AUTO_INCREMENT untuk tabel `h_lab7`
---
-ALTER TABLE `h_lab7`
-  MODIFY `id_pc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT untuk tabel `h_lab8`
---
-ALTER TABLE `h_lab8`
-  MODIFY `id_pc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=314;
 
 --
 -- AUTO_INCREMENT untuk tabel `jadwal`
 --
 ALTER TABLE `jadwal`
-  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=436;
+  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=477;
 
 --
 -- AUTO_INCREMENT untuk tabel `jadwal_detail`
 --
 ALTER TABLE `jadwal_detail`
-  MODIFY `id_jadwal_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1272;
+  MODIFY `id_jadwal_detail` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1329;
 
 --
 -- AUTO_INCREMENT untuk tabel `jam`
@@ -3205,7 +2021,7 @@ ALTER TABLE `komentar`
 -- AUTO_INCREMENT untuk tabel `kontak`
 --
 ALTER TABLE `kontak`
-  MODIFY `id_kontak` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_kontak` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `migrations`
@@ -3214,16 +2030,28 @@ ALTER TABLE `migrations`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT untuk tabel `notif`
+--
+ALTER TABLE `notif`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
+--
 -- AUTO_INCREMENT untuk tabel `pegawai`
 --
 ALTER TABLE `pegawai`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT untuk tabel `pesan`
+-- AUTO_INCREMENT untuk tabel `pengajuan`
 --
-ALTER TABLE `pesan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `pengajuan`
+  MODIFY `id_jadwal` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+
+--
+-- AUTO_INCREMENT untuk tabel `pengajuan_detail`
+--
+ALTER TABLE `pengajuan_detail`
+  MODIFY `id_jadwal_detail` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 
 --
 -- AUTO_INCREMENT untuk tabel `program_studi`
@@ -3241,13 +2069,7 @@ ALTER TABLE `ruangan`
 -- AUTO_INCREMENT untuk tabel `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
-
---
--- AUTO_INCREMENT untuk tabel `s_labd`
---
-ALTER TABLE `s_labd`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_admin`
@@ -3265,7 +2087,7 @@ ALTER TABLE `thn_ajaran`
 -- AUTO_INCREMENT untuk tabel `unit`
 --
 ALTER TABLE `unit`
-  MODIFY `id_unit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_unit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT untuk tabel `upload`

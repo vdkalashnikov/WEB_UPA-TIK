@@ -25,6 +25,4 @@ class galeriModel extends Model
     {
         return $this->orderBy('galeri.id_ruangan', 'ASC');
     }
-
-    
 }
