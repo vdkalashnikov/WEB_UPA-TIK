@@ -36,10 +36,10 @@
         <div class="row text-center">
             <div class="col-lg-14 col-md-12 col-sm-12 tab">
                 <h3 class="tengah">Jadwal Praktikum <?= $jenis; ?> Lab UPA-TIK Semester <?php if ($semester == 2) {
-                                                                                        echo "Genap";
-                                                                                    } else {
-                                                                                        echo "Ganjil";
-                                                                                    } ?>
+                                                                                            echo "Genap";
+                                                                                        } else {
+                                                                                            echo "Ganjil";
+                                                                                        } ?>
                     Tahun Ajaran <?= $thn_awal; ?> -
                     <?= $thn_akhir; ?>
                     Politeknik Negeri Bandung

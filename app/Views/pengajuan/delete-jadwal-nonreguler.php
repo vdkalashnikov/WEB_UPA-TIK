@@ -36,7 +36,7 @@
     <?php $i = 1; ?>
 
     <tbody>
-
+        <?php var_dump($jadwalProdi); ?>
         <?php foreach ($jadwalProdi as $jadwal): ?>
             <tr class="text-center">
                 <td scope="row">

@@ -588,8 +588,6 @@ class Jadwal extends BaseController
     }
 
 
-
-
     public function ajukanJadwal()
     {
         $jadwal = new JadwalModel();

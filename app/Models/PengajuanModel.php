@@ -59,7 +59,6 @@ class PengajuanModel extends Model
             ->orderBy('pengajuan_detail.id_jadwal', 'DESC');
     }
 
-
     public function getPengajuanById($id)
     {
         // Mendapatkan data jadwal berdasarkan ID dari tabel 'approval'
@@ -80,11 +79,10 @@ class PengajuanModel extends Model
         }
     }
 
-
     public function insertApprovedSchedule($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi)
     {
-
-        $jadwalreg = [
+        $total = [];
+        $jadwalret = [
             'mk' => $mk,
             'nama_dosen' => $nama_dosen,
             'jenis' => $jenis,
@@ -94,39 +92,68 @@ class PengajuanModel extends Model
             'id_prodi' => $id_prodi,
             'hari' => $hari
         ];
-        // Insert data ke tabel jadwal
-        $input = $this->db->table('jadwal')->insert($jadwalreg);
-
-        if ($input) {
-            $id_jadwal = $this->db->table('jadwal')
-                ->select('jadwal.id_jadwal')
-                ->where('nama_dosen', $nama_dosen)
-                ->where('jenis', $jenis)
-                ->where('id_ruangan', $id_ruangan)
-                ->where('id_prodi', $id_prodi)
-                ->where('id_thn', $id_thn)
-                ->where('hari', $hari)
-                ->where('mk', $mk)
-                ->where('kelas', $kelas)
-                ->get()
-                ->getRowArray();
-            if ($id_jadwal) {
-                $id_jadwalreg = $id_jadwal['id_jadwal'];
-                if (!is_array($jam)) {
-                    $jam = array($jam);
-                }
-
-                // Sekarang jalankan loop foreach
-                foreach ($jam as $j) {
-                    $query = $this->db->query("INSERT INTO jadwal_detail (id_jadwal, id_jam) VALUES ('$id_jadwalreg', '$j')");
-                }
-                echo "<script>alert('Data Telah Disimpan')</script>";
-                return redirect()->to('jadwal');
-            } else {
-                echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
-                return redirect()->back();
-            }
+        $insert = $this->db->table('jadwal')->insert($jadwalret);
+        if ($insert) {
+            $id_jd = $this->db->insertID();
+            $insertJam = $this->db->query("INSERT INTO jadwal_detail (id_jam, id_jadwal) VALUES ('$jam', '$id_jd')");
+            $total[] = $this->db->affectedRows() > 0;
+        } else {
+            $total[] = false;
         }
+        $totalSuccess = !in_array(false, $total);
+        if ($totalSuccess){
+            echo "<script>alert('Data Telah Disimpan')</script>";
+            return redirect()->to('jadwal');
+        } else {
+            echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
+                return redirect()->back();
+        }
+
+        // $jadwalreg = [
+        //     'mk' => $mk,
+        //     'nama_dosen' => $nama_dosen,
+        //     'jenis' => $jenis,
+        //     'kelas' => $kelas,
+        //     'id_thn' => $id_thn,
+        //     'id_ruangan' => $id_ruangan,
+        //     'id_prodi' => $id_prodi,
+        //     'hari' => $hari
+        // ];
+        // // Insert data ke tabel jadwal
+        // $input = $this->db->table('jadwal')->insert($jadwalreg);
+
+        
+
+        // if ($input) {
+        //     $id_jadwal = $this->db->table('jadwal')
+        //         ->select('jadwal.id_jadwal')
+        //         ->where('nama_dosen', $nama_dosen)
+        //         ->where('jenis', $jenis)
+        //         ->where('id_ruangan', $id_ruangan)
+        //         ->where('id_prodi', $id_prodi)
+        //         ->where('id_thn', $id_thn)
+        //         ->where('hari', $hari)
+        //         ->where('mk', $mk)
+        //         ->where('kelas', $kelas)
+        //         ->get()
+        //         ->getRowArray();
+        //     if ($id_jadwal) {
+        //         $id_jadwalreg = $id_jadwal['id_jadwal'];
+        //         if (!is_array($jam)) {
+        //             $jam = array($jam);
+        //         }
+
+        //         // Sekarang jalankan loop foreach
+        //         foreach ($jam as $j) {
+        //             $query = $this->db->query("INSERT INTO jadwal_detail (id_jadwal, id_jam) VALUES ('$id_jadwalreg', '$j')");
+        //         }
+        //         echo "<script>alert('Data Telah Disimpan')</script>";
+        //         return redirect()->to('jadwal');
+        //     } else {
+        //         echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
+        //         return redirect()->back();
+        //     }
+        // }
     }
 
 
@@ -138,49 +165,86 @@ class PengajuanModel extends Model
 
     public function simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi)
     {
-        $jadwalreg = [
-            'mk' => $mk,
-            'nama_dosen' => $nama_dosen,
-            'jenis' => $jenis,
-            'kelas' => $kelas,
-            'id_thn' => $id_thn,
-            'id_ruangan' => $id_ruangan,
-            'id_prodi' => $id_prodi,
-            'hari' => $hari
-        ];
+        $total = [];
 
-        // Lakukan operasi penyimpanan jadwal reguler menggunakan data yang diterima dari controller
-        $input = $this->db->table('pengajuan')->insert($jadwalreg);
-
-        if ($input) {
-            $id_jadwal = $this->db->table('pengajuan')
-                ->select('id_jadwal')
-                ->where('nama_dosen', $nama_dosen)
-                ->where('jenis', $jenis)
-                ->where('id_ruangan', $id_ruangan)
-                ->where('id_prodi', $id_prodi)
-                ->where('id_thn', $id_thn)
-                ->where('hari', $hari)
-                ->where('mk', $mk)
-                ->where('kelas', $kelas)
-                ->get()
-                ->getResult();
-
-            foreach ($id_jadwal as $jadwal) {
-                $id_jadwalreg = $jadwal->id_jadwal;
-                foreach ($jam as $j) {
-                    $query = $this->db->query("INSERT INTO pengajuan_detail VALUES (NULL, '$j', '$id_jadwalreg')");
-                    $cek = "1";
-                }
-            }
-            if ($cek == "1") {
-                echo "<script>alert('Data Telah Disimpan')</script>";
-                return redirect()->to('jadwal');
-            } elseif ($cek == "0") {
-                echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
-                return redirect()->back();
+        foreach($jam as $jm) {
+            $jadwalret = [
+                'mk' => $mk,
+                'nama_dosen' => $nama_dosen,
+                'jenis' => $jenis,
+                'kelas' => $kelas,
+                'id_thn' => $id_thn,
+                'id_ruangan' => $id_ruangan,
+                'id_prodi' => $id_prodi,
+                'hari' => $hari
+            ];
+            $insert = $this->db->table('pengajuan')->insert($jadwalret);
+            if ($insert) {
+                $id_jd = $this->db->insertID();
+                $insertJam = $this->db->query("INSERT INTO pengajuan_detail VALUES (NULL, '$jm', '$id_jd')");
+                $total[] = $this->db->affectedRows() > 0;
+            } else {
+                $total[] = false;
             }
         }
+        $totalSuccess = !in_array(false, $total);
+        if ($totalSuccess){
+            echo "<script>alert('Data Telah Disimpan')</script>";
+            return redirect()->to('jadwal');
+        } else {
+            echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
+                return redirect()->back();
+        }
+        // $jadwalreg = [
+        //     'mk' => $mk,
+        //     'nama_dosen' => $nama_dosen,
+        //     'jenis' => $jenis,
+        //     'kelas' => $kelas,
+        //     'id_thn' => $id_thn,
+        //     'id_ruangan' => $id_ruangan,
+        //     'id_prodi' => $id_prodi,
+        //     'hari' => $hari
+        // ];
+
+        //ll
+        // var_dump($jam);
+        
+        // var_dump($total);
+        // die;
+        //ll
+
+        // Lakukan operasi penyimpanan jadwal reguler menggunakan data yang diterima dari controller
+        // $input = $this->db->table('pengajuan')->insert($jadwalreg);
+
+        // if ($input) {
+        //     $id_jadwal = $this->db->table('pengajuan')
+        //         ->select('id_jadwal')
+        //         ->where('nama_dosen', $nama_dosen)
+        //         ->where('jenis', $jenis)
+        //         ->where('id_ruangan', $id_ruangan)
+        //         ->where('id_prodi', $id_prodi)
+        //         ->where('id_thn', $id_thn)
+        //         ->where('hari', $hari)
+        //         ->where('mk', $mk)
+        //         ->where('kelas', $kelas)
+        //         ->get()
+        //         ->getResult();
+
+        //     foreach ($id_jadwal as $jadwal) {
+        //         $id_jadwalreg = $jadwal->id_jadwal;
+        //         foreach ($jam as $j) {
+        //             $query = $this->db->query("INSERT INTO pengajuan_detail VALUES (NULL, '$j', '$id_jadwalreg')");
+        //             $cek = "1";
+        //         }
+        //     }
+        //     if ($cek == "1") {
+        //         echo "<script>alert('Data Telah Disimpan')</script>";
+        //         return redirect()->to('jadwal');
+        //     } elseif ($cek == "0") {
+        //         echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
+        //         return redirect()->back();
+        //     }
+        // }
     }
 
     public function getIdProdi()

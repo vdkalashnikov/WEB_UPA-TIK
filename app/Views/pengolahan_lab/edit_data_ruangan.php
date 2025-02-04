@@ -25,7 +25,7 @@
                         </button>
                     </div>
                 <?php endif; ?>
-                <input type="hidden" class="form-control" id="id" name="id" value="value=" <?= $ruangan['id_ruangan']; ?>">
+                <input type="hidden" class="form-control" id="id" name="id" value="value=" <?= $ruangan['id_ruangan']; ?>>
                 <div class=" row mb-3">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nama Ruangan</label>
                     <div class="col-sm-10">
