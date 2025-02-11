@@ -25,7 +25,6 @@ class SiswaModel extends Model
         $pegawai = new RuanganModel();
         return $this->join('ruangan', 'ruangan.id_ruangan = siswa.id_ruangan', 'left');
     }
-    
 }
 
     // Dates
@@ -51,4 +50,3 @@ class SiswaModel extends Model
     // protected $afterFind      = [];
     // protected $beforeDelete   = [];
     // protected $afterDelete    = [];
-

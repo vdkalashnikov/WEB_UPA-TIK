@@ -17,5 +17,4 @@ class PegawaiModel extends Model
     ];
 
     protected bool $allowEmptyInserts = false;
-
 }

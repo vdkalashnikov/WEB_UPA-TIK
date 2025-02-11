@@ -19,7 +19,6 @@ class NotifModel extends Model
         'jenis'
     ];
 
-
     // Dates
     protected $useTimestamps = false;
 

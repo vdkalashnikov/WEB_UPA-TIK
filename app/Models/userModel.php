@@ -29,13 +29,7 @@ class userModel extends Model
     {
         // Array hari-hari dari jadwal
         $status = ['aktif', 'tidak aktif'];
-
         // Jika parameter filter tidak kosong, filter array berdasarkan hari yang dipilih
-    
-        
-
         return $status;
     }
-
 }
-

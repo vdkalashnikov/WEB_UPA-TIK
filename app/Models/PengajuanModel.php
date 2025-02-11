@@ -101,12 +101,12 @@ class PengajuanModel extends Model
             $total[] = false;
         }
         $totalSuccess = !in_array(false, $total);
-        if ($totalSuccess){
+        if ($totalSuccess) {
             echo "<script>alert('Data Telah Disimpan')</script>";
             return redirect()->to('jadwal');
         } else {
             echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
-                return redirect()->back();
+            return redirect()->back();
         }
 
         // $jadwalreg = [
@@ -122,7 +122,7 @@ class PengajuanModel extends Model
         // // Insert data ke tabel jadwal
         // $input = $this->db->table('jadwal')->insert($jadwalreg);
 
-        
+
 
         // if ($input) {
         //     $id_jadwal = $this->db->table('jadwal')
@@ -167,8 +167,8 @@ class PengajuanModel extends Model
     {
         $total = [];
 
-        foreach($jam as $jm) {
-            $jadwalret = [
+        foreach ($jam as $jm) {
+            $jadwalreq = [
                 'mk' => $mk,
                 'nama_dosen' => $nama_dosen,
                 'jenis' => $jenis,
@@ -178,7 +178,7 @@ class PengajuanModel extends Model
                 'id_prodi' => $id_prodi,
                 'hari' => $hari
             ];
-            $insert = $this->db->table('pengajuan')->insert($jadwalret);
+            $insert = $this->db->table('pengajuan')->insert($jadwalreq);
             if ($insert) {
                 $id_jd = $this->db->insertID();
                 $insertJam = $this->db->query("INSERT INTO pengajuan_detail VALUES (NULL, '$jm', '$id_jd')");
@@ -188,12 +188,12 @@ class PengajuanModel extends Model
             }
         }
         $totalSuccess = !in_array(false, $total);
-        if ($totalSuccess){
+        if ($totalSuccess) {
             echo "<script>alert('Data Telah Disimpan')</script>";
             return redirect()->to('jadwal');
         } else {
             echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
-                return redirect()->back();
+            return redirect()->back();
         }
         // $jadwalreg = [
         //     'mk' => $mk,
@@ -208,7 +208,7 @@ class PengajuanModel extends Model
 
         //ll
         // var_dump($jam);
-        
+
         // var_dump($total);
         // die;
         //ll
@@ -252,7 +252,4 @@ class PengajuanModel extends Model
         $result = $this->select('program_studi.id_prodi as id_prodi')->joinProdi()->first();
         return $result ? $result['id_prodi'] : null;
     }
-
-
 }
-

@@ -17,7 +17,6 @@ class PengajuanDetailModel extends Model
     protected bool $allowEmptyInserts = false;
 
 
-
     public function getJadwalByJam($hari_ini, $jam_id)
     {
         return $this->select('ruangan.nama_ruangan, program_studi.nama_prodi, jadwal.kelas, jadwal.nama_dosen')

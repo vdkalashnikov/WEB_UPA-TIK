@@ -16,4 +16,3 @@ class th_ajarModel extends Model
         'status',
     ];
 }
-

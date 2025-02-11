@@ -14,9 +14,6 @@ class prodiModel extends Model
         'nama_prodi',
         'id_jurusan',
         'program',
-        
-        
-
     ];
 
     public function joinJurusan()
@@ -25,5 +22,3 @@ class prodiModel extends Model
         return $this->join('jurusan', 'jurusan.id_jurusan = program_studi.id_jurusan', 'left');
     }
 }
-
-
