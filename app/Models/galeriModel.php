@@ -17,7 +17,6 @@ class galeriModel extends Model
 
     public function joinRuangan()
     {
-        $ruangan = new RuanganModel();
         return $this->join('ruangan', 'ruangan.id_ruangan = galeri.id_ruangan', 'left');
     }
 

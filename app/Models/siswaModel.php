@@ -22,7 +22,6 @@ class SiswaModel extends Model
 
     public function joinRuangan()
     {
-        $pegawai = new RuanganModel();
         return $this->join('ruangan', 'ruangan.id_ruangan = siswa.id_ruangan', 'left');
     }
 }

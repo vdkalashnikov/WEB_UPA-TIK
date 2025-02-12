@@ -18,7 +18,6 @@ class prodiModel extends Model
 
     public function joinJurusan()
     {
-        $jurusan = new JurusanModel();
         return $this->join('jurusan', 'jurusan.id_jurusan = program_studi.id_jurusan', 'left');
     }
 }

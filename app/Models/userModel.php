@@ -21,7 +21,6 @@ class userModel extends Model
 
     public function joinProdi()
     {
-        $prodi = new ProdiModel();
         return $this->join('program_studi', 'program_studi.id_prodi = user.id_prodi', 'left');
     }
 
