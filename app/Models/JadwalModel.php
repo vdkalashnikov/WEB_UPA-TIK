@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Controllers\Ta;
 use CodeIgniter\Model;
 
 class JadwalModel extends Model
@@ -25,7 +24,6 @@ class JadwalModel extends Model
         'id_prodi'
     ];
 
-
     protected bool $allowEmptyInserts = false;
 
     // Dates
@@ -40,45 +38,38 @@ class JadwalModel extends Model
         return $this->findAll();
     }
 
-
-
     public function joinRuangan()
     {
-        $pegawai = new RuanganModel();
         return $this->join('ruangan', 'ruangan.id_ruangan = jadwal.id_ruangan', 'left');
     }
+
     public function joinTA()
     {
-        $pegawai = new th_ajarModel();
         return $this->join('thn_ajaran', 'thn_ajaran.id_thn = jadwal.id_thn', 'left')
             ->where('thn_ajaran.status', 'AKTIF');
     }
 
-
     public function joinProdi()
     {
-        $pegawai = new prodiModel();
         return $this->join('program_studi', 'program_studi.id_prodi = jadwal.id_prodi', 'left');
     }
+
     public function joinProdi1($idProdi)
     {
-        $pegawai = new prodiModel();
         return $this->join('program_studi', 'program_studi.id_prodi = jadwal.id_prodi', 'left')
             ->where('user.id_prodi', $idProdi);
     }
 
     public function joinJam()
     {
-        $jadwal = new JadwalDetailModel();
-        $jam = new JamModel();
         return $this->join('jadwal_detail', 'jadwal_detail.id_jadwal = jadwal.id_jadwal')
             ->join('jam', 'jam.id = jadwal_detail.id_jam', 'left')
             ->orderBy('jadwal_detail.id_jadwal', 'DESC');
     }
+
     public function joinJam1()
     {
-        $jadwal = new JadwalDetailModel();
-        $jam = new JamModel();
+
         return $this->join('jadwal_detail', 'jadwal_detail.id_jadwal = jadwal.id_jadwal')
             ->join('jam', 'jam.id = jadwal_detail.id_jam', 'left');
     }
@@ -86,7 +77,6 @@ class JadwalModel extends Model
 
     public function joinDetail()
     {
-        $jadwal = new JadwalDetailModel();
         return $this->join('jadwal_detail', 'jadwal_detail.id_jadwal = jadwal.id_jadwal');
     }
 
@@ -155,9 +145,6 @@ class JadwalModel extends Model
             ->getResult();
     }
 
-
-
-
     public function data_thn()
     {
         // Lakukan query untuk mendapatkan tahun ajaran aktif
@@ -171,8 +158,6 @@ class JadwalModel extends Model
 
         return $tahun;
     }
-
-
 
     //save jadwal reguler
     public function simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi)

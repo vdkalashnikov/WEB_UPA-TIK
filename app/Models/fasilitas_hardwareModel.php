@@ -17,7 +17,6 @@ class fasilitas_hardwareModel extends Model
 
     public function joinRuangan()
     {
-        $ruangan = new RuanganModel();
         return $this->join('ruangan', 'ruangan.id_ruangan = f_hardware_b.id_ruangan', 'left');
     }
     public function orderByRuangan()

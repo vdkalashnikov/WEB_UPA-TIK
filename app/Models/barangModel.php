@@ -26,7 +26,6 @@ class barangModel extends Model
 
     public function joinRuangan()
     {
-        $ruangan = new RuanganModel();
         return $this->join('ruangan', 'ruangan.id_ruangan = aset.id_ruangan', 'left');
     }
 

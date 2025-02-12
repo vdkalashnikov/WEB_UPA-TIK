@@ -33,27 +33,21 @@ class PengajuanModel extends Model
 
     public function joinRuangan()
     {
-        $pegawai = new RuanganModel();
         return $this->join('ruangan', 'ruangan.id_ruangan = pengajuan.id_ruangan', 'left');
     }
     public function joinTA()
     {
-        $pegawai = new th_ajarModel();
         return $this->join('thn_ajaran', 'thn_ajaran.id_thn = pengajuan.id_thn', 'left')
             ->where('thn_ajaran.status', 'AKTIF');
     }
 
-
     public function joinProdi()
     {
-        $pegawai = new prodiModel();
         return $this->join('program_studi', 'program_studi.id_prodi = pengajuan.id_prodi', 'left');
     }
 
     public function joinJam()
     {
-        $pengajuan = new PengajuanDetailModel();
-        $jam = new JamModel();
         return $this->join('pengajuan_detail', 'pengajuan_detail.id_jadwal = pengajuan.id_jadwal')
             ->join('jam', 'jam.id = pengajuan_detail.id_jam', 'left')
             ->orderBy('pengajuan_detail.id_jadwal', 'DESC');
