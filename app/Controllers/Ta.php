@@ -19,8 +19,6 @@ class Ta extends BaseController
             'pager' => $thjrModel->pager,
         ];
 
-
-
         return view('data_akademik/ta', $data);
     }
 
@@ -81,9 +79,6 @@ class Ta extends BaseController
         }
     }
 
-
-
-
     public function toggleStatus($id_thn)
     {
         $th_ajarModel = new th_ajarModel();
@@ -112,9 +107,6 @@ class Ta extends BaseController
         return redirect()->to('/admin/data_akademik');
     }
 
-
-
-
     public function jurusan()
     {
         $ta = new jurusanModel();
@@ -136,7 +128,6 @@ class Ta extends BaseController
         // Pass the validation object to the view
         return view('data_akademik/add_data_jurusan', ['pageTitle' => 'Tambah Data Jurusan', 'validation' => $validation]);
     }
-
 
     public function save_data_jurusan()
     {
@@ -242,8 +233,6 @@ class Ta extends BaseController
 
     public function save_data_prodi()
     {
-
-
         // Ambil data dari form
         $postData = $this->request->getPost();
 
@@ -406,12 +395,12 @@ class Ta extends BaseController
 
     public function unit()
     {
-        $ta = new unitModel();
-        $unit = $ta->paginate(10, 'unit');
+        $unitModel = new unitModel();
+        $unit = $unitModel->paginate(10, 'unit');
         $data = [
             'unit' => $unit,
             'pageTitle' => "Unit",
-            'pager' => $ta->pager,
+            'pager' => $unitModel->pager,
         ];
 
         return view('data_akademik/unit', $data);
@@ -419,7 +408,6 @@ class Ta extends BaseController
 
     public function add_data_unit()
     {
-        $unitModel = new unitModel;
         return view('data_akademik/add_data_unit', ['pageTitle' => 'Tambah Data Unit']);
     }
 
@@ -510,10 +498,7 @@ class Ta extends BaseController
             return view('data_akademik/edit_data_unit', $data);
         }
 
-
-
         $data = $this->request->getPost();
-
         $unitModel->update($id_unit, $data);
         return redirect()->to('admin/unit')->with('success', 'Data unit berhasil diperbarui.');
     }

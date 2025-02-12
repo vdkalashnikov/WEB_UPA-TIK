@@ -23,7 +23,6 @@ class Jadwal extends BaseController
         return redirect()->to($_SERVER['HTTP_REFERER'])->with('success', 'Data berhasil dihapus.');
     }
 
-
     // <-------------------------USER JADWAL------------------------------>
 
     public function reguler_jadwal()
@@ -55,8 +54,6 @@ class Jadwal extends BaseController
 
         return view('users-jadwal/v_jadwal', $data);
     }
-
-
 
     //Views non reguler
     public function nonReguler_jadwal()
@@ -148,7 +145,6 @@ class Jadwal extends BaseController
         return view('users-jadwal/v_uts', $data);
     }
 
-
     //Add Jadwal
 
     public function add_jadwal($idProdi)
@@ -189,8 +185,6 @@ class Jadwal extends BaseController
         $idProdi1 = $idProdi;
         $tahun = $jadwalModel->data_thn();
         $semester = $jadwalModel->getSemester();
-
-
 
         $data = [
             'ruangan' => $ruangan->findAll(),
@@ -244,7 +238,6 @@ class Jadwal extends BaseController
         $tahun = $jadwalModel->data_thn();
         $semester = $jadwalModel->getSemester();
 
-
         $data = [
             'ruangan' => $ruangan->findAll(),
             'hari' => $hari,
@@ -293,7 +286,6 @@ class Jadwal extends BaseController
         $modelNotif->notifSimpan($notif, $id_prodi, $jenis);
 
         // Panggil metode di model untuk menyimpan jadwal
-        $modelJadwal = new JadwalModel();
         $modelpengajuan = new PengajuanModel();
         $modelpengajuan->simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
 
@@ -337,7 +329,6 @@ class Jadwal extends BaseController
         $modelNotif->notifSimpan($notif, $id_prodi, $jenis);
 
         // Panggil metode di model untuk menyimpan jadwal
-        $modelJadwal = new JadwalModel();
         $modelpengajuan = new PengajuanModel();
         $modelpengajuan->simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
 
@@ -380,7 +371,6 @@ class Jadwal extends BaseController
         $modelNotif->notifSimpan($notif, $id_prodi, $jenis);
 
         // Panggil metode di model untuk menyimpan jadwal
-        $modelJadwal = new JadwalModel();
 
         $modelpengajuan = new PengajuanModel();
         $modelpengajuan->simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
@@ -388,7 +378,6 @@ class Jadwal extends BaseController
         // Data berhasil disimpan
         return redirect()->to('user/jadwal-prodi-uas/' . $id_prodi)->with('success', 'Data jadwal berhasil di ajukan');
     }
-
 
     public function save_uts()
     {
@@ -424,7 +413,6 @@ class Jadwal extends BaseController
         $modelNotif->notifSimpan($notif, $id_prodi, $jenis);
 
         // Panggil metode di model untuk menyimpan jadwal
-        $modelJadwal = new JadwalModel();
         $modelpengajuan = new PengajuanModel();
         $modelpengajuan->simpan_jadwal($mk, $kelas, $id_ruangan, $jam, $nama_dosen, $jenis, $id_thn, $hari, $id_prodi);
 
@@ -590,7 +578,6 @@ class Jadwal extends BaseController
 
     public function ajukanJadwal()
     {
-        $jadwal = new JadwalModel();
         $idProdi = session()->get('idProdi');
         $data = [
             'idProdi' => $idProdi,

@@ -20,8 +20,6 @@ class User extends BaseController
             'status' => $usrModel->getStatus()
         ];
 
-
-
         return view('users/user', $data);
     }
 
@@ -246,12 +244,9 @@ class User extends BaseController
         }
     }
 
-
-
     public function delete_user($id)
     {
         $userModel = new UserModel();
-
         $user = $userModel->find($id);
 
         if (!$user) {
@@ -277,8 +272,6 @@ class User extends BaseController
 
         return view('users/kritik', $data);
     }
-
-
 
     public function add_data_kritik()
     {

@@ -9,11 +9,10 @@ use App\Models\PegawaiModel;
 class Usdatapg extends BaseController
 {
     public function index()
-{
-    $pegawaiModel = new PegawaiModel();
-    $pegawai = $pegawaiModel->findAll(); // Mengambil data pegawai dari model
+    {
+        $pegawaiModel = new PegawaiModel();
+        $pegawai = $pegawaiModel->findAll(); // Mengambil data pegawai dari model
 
-    return view('view-users/usdatapg', ['pegawai' => $pegawai]); // Mengirim data pegawai ke view
-}
-
+        return view('view-users/usdatapg', ['pegawai' => $pegawai]); // Mengirim data pegawai ke view
+    }
 }

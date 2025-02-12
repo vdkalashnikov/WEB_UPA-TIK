@@ -38,7 +38,6 @@ class Usfasilitas extends BaseController
             $ruangan[$idRuangan]['fasilitas'][] = $gambar;
         }
 
-
         // Kelompokkan data fasilitas hardware berdasarkan id ruangan
         foreach ($fasilitashw as $gambarhw) {
             $idRuangan = $gambarhw['id_ruangan'];
@@ -46,8 +45,6 @@ class Usfasilitas extends BaseController
             // Tambahkan data fasilitas ke dalam array ruangan yang sesuai
             $ruangan[$idRuangan]['fasilitashw'][] = $gambarhw;
         }
-
-
 
         // Kelompokkan data barang berdasarkan id ruangan
         foreach ($barang as $databrg) {
@@ -68,5 +65,4 @@ class Usfasilitas extends BaseController
             'ruanganData' => $ruanganData
         ]);
     }
-
 }

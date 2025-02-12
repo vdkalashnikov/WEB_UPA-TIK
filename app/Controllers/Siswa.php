@@ -23,7 +23,6 @@ class Siswa extends BaseController
 
     public function add_data_siswa()
     {
-        $siswa = new SiswaModel;
         return view('Pengolahan_data/add_data_siswa', ['pageTitle' => 'Tambah Data Siswa']);
     }
 

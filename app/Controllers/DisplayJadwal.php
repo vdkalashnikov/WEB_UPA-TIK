@@ -121,7 +121,6 @@ class DisplayJadwal extends BaseController
     // Endpoint to fetch updated jadwal data based on current time
     public function getJadwalData()
     {
-        $jadwalModel = new JadwalModel();
         $jadwalDetail = new JadwalDetailModel();
 
         // Initialize variables

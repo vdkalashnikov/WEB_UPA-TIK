@@ -24,8 +24,6 @@ class Pegawai extends BaseController
 
     public function add_data_pegawai()
     {
-        $pegawaiModel = new PegawaiModel();
-
         return view('Pengolahan_data/add_data_pegawai', ['pageTitle' => 'Tambah Data Pegawai']);
     }
 
