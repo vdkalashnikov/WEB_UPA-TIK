@@ -19,12 +19,12 @@ class Pegawai extends BaseController
             'pager' => $pegawaiModel->pager
         ];
 
-        return view('Pengolahan_data/pegawai', $data);
+        return view('pengolahan_data/pegawai', $data);
     }
 
     public function add_data_pegawai()
     {
-        return view('Pengolahan_data/add_data_pegawai', ['pageTitle' => 'Tambah Data Pegawai']);
+        return view('pengolahan_data/add_data_pegawai', ['pageTitle' => 'Tambah Data Pegawai']);
     }
 
     public function save_pegawai()

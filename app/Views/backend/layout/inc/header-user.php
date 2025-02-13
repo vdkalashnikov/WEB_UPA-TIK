@@ -12,13 +12,15 @@
                     </div>
                     <!-- logo -->
 
+                    <?php $tes = true; ?>
+
                     <?php if (session()->has('success')) : ?>
                         <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert">
                             <?= session('success') ?>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="alert"></button>
                         </div>
                     <?php endif ?>
-
+        
                     <!-- menu start -->
                     <nav class="main-menu">
                         <ul>
@@ -44,7 +46,11 @@
                                     <li><a href="<?= route_to('user.uas'); ?>">UAS</a></li>
                                     <li><a href="<?= route_to('user.uts'); ?>">UTS</a></li>
                                     <li><a href="<?= route_to('user.ajukan'); ?>">Pengajuan</a></li>
-                                    <li><a href="<?= route_to('user.logout'); ?>">Logout</a></li>
+                    
+                                    <?php if (session()->has('idProdi')) : ?>
+                                        <li><a href="<?= route_to('user.logout'); ?>">Logout</a></li>
+                                    <?php endif; ?>
+                                  
                                 </ul>
                             </li>
                             <li><a href="#">Data</a>

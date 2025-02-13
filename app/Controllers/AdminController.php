@@ -32,6 +32,7 @@ class AdminController extends BaseController
     }
     public function logoutUserHandler()
     {
+        session()->remove(['idProdi', 'namaProdi', 'program']);
         CiAuth::forgetOn();
         return redirect()->route('user.login.form')->with('fail', 'You Are Logged Out!');
     }

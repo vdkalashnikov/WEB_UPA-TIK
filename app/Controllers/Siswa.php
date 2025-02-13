@@ -18,12 +18,12 @@ class Siswa extends BaseController
             'pager' => $siswaModel->pager
         ];
 
-        return view('Pengolahan_data/siswa', $data);
+        return view('pengolahan_data/siswa', $data);
     }
 
     public function add_data_siswa()
     {
-        return view('Pengolahan_data/add_data_siswa', ['pageTitle' => 'Tambah Data Siswa']);
+        return view('pengolahan_data/add_data_siswa', ['pageTitle' => 'Tambah Data Siswa']);
     }
 
     public function save_data_siswa()
