@@ -24,42 +24,39 @@
 </div>
 <!-- end hero area -->
 <div class="container6">
-<h2 class="my-5">Kontak</h2>
+    <h2 class="my-5">Kontak</h2>
 </div>
 <center>
     <div class="containerkk">
-    <div class="containerk">
-        <div class="headingk">Kontak Kami</div>
-        <form action="<?= base_url('user/save_data_kritik') ?>" method="POST" class="form">
-        <?php $validation = \Config\Services::validation(); ?>
-            
-            <input required="" class="input" type="text" name="nama" id="nama" placeholder="Nama Lengkap">
-            <?php if ($validation->getError('nama')): ?>
+        <div class="containerk">
+            <div class="headingk">Kontak Kami</div>
+            <form action="<?= base_url('user/save_data_kritik') ?>" method="POST" class="form">
+                <?php $validation = \Config\Services::validation(); ?>
+
+                <input required="" class="input" type="text" name="nama" id="nama" placeholder="Nama Lengkap">
+                <?php if ($validation->getError('nama')): ?>
                     <div class="d-block text-danger " style="margin-top:5px;margin-left:5px;">
                         <?= $validation->getError('nama'); ?>
                     </div>
                 <?php endif; ?>
-            <input required="" class="input" type="text" name="email" id="email" placeholder="Email">
-            <?php if ($validation->getError('email')): ?>
+                <input required="" class="input" type="text" name="email" id="email" placeholder="Email">
+                <?php if ($validation->getError('email')): ?>
                     <div class="d-block text-danger " style="margin-top:5px;margin-left:5px;">
                         <?= $validation->getError('email'); ?>
                     </div>
                 <?php endif; ?>
-            <input required="" class="input3" type="text" name="komentar" id="komentar" placeholder="Komentar">
-            <?php if ($validation->getError('komentar')): ?>
+                <input required="" class="input3" type="text" name="komentar" id="komentar" placeholder="Komentar">
+                <?php if ($validation->getError('komentar')): ?>
                     <div class="d-block text-danger " style="margin-top:5px;margin-left:5px;">
                         <?= $validation->getError('komentar'); ?>
                     </div>
                 <?php endif; ?>
 
-            <input class="login-button" type="submit">
+                <input class="login-button" type="submit">
 
-        </form>        
-    </div>
+            </form>
+        </div>
     </div>
 </center>
-
-
-
 
 <?= $this->endSection(); ?>

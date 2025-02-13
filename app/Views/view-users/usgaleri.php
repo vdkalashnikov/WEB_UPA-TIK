@@ -51,23 +51,4 @@
         </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?= $this->endSection(); ?>

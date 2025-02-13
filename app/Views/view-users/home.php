@@ -298,11 +298,7 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-
-
 </div>
 
 <?= $this->endSection(); ?>

@@ -22,8 +22,6 @@
 </div>
 <!-- end hero area -->
 
-
-
 <div class="container6">
   <h2>Fasilitas
   </h2>
@@ -79,11 +77,7 @@
         <?php endforeach; ?>
       </div>
 
-
-
-
     </div>
-
 
     <div class="cont_accord2">
 
@@ -130,7 +124,6 @@
 
     </div>
 
-
     <div class="cont_accord3">
 
       <div class="accordion accordion3" id="accordionPanelsStayOpenExample">
@@ -171,10 +164,6 @@
 
     </div>
 
-
-
-
-
   </div>
 </section>
 
@@ -182,14 +171,14 @@
 </script>
 
 <script>
-  $(document).ready(function () {
+  $(document).ready(function() {
     // Saat tombol accordion diklik
-    $('.accordion-button').click(function () {
+    $('.accordion-button').click(function() {
       // Ambil posisi scroll sebelum collapse
       var scrollPos = $(window).scrollTop();
 
       // Tunggu sedikit sebelum mengatur kembali posisi scroll setelah collapse selesai
-      setTimeout(function () {
+      setTimeout(function() {
         // Atur kembali posisi scroll ke posisi sebelum collapse
         $(window).scrollTop, (scrollPos);
       }, 300); // Sesuaikan dengan durasi animasi collapse, jika menggunakan animasi
