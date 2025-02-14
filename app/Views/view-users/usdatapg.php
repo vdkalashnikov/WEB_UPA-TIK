@@ -22,7 +22,7 @@
 </div>
 <!-- end hero area -->
 <div class="container6">
-<h2 class="my-5">Data Pegawai UPA-TIK</h2>
+    <h2 class="my-5">Data Pegawai UPA-TIK</h2>
 </div>
 <section class="usdata">
     <table class=" table table-bordered table-hover my-3">
@@ -34,7 +34,8 @@
             </tr>
         </thead>
         <tbody>
-            <?php $i = 1; // Initialize counter ?>
+            <?php $i = 1; // Initialize counter 
+            ?>
             <?php foreach ($pegawai as $fasilitas): ?>
                 <tr class="text-center">
                     <td scope="row">

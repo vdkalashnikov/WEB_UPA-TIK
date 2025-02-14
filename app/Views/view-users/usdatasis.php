@@ -21,23 +21,24 @@
 </div>
 <!-- end hero area -->
 <div class="container6">
-<h2 class="my-5">Data Siswa PKL</h2>
+    <h2 class="my-5">Data Siswa PKL</h2>
 </div>
 <section class="usdata">
-<table class=" table table-bordered table-hover my-3">
-    <thead class="thead-dark">
-        <tr class="text-center">
-            <th scope="col">No</th>
-            <th scope="col">Nama</th>
-            <th scope="col">Jenis Kelamin</th>
-            <th scope="col">Jurusan</th>
-            <th scope="col">Asal Sekolah</th>
-            <th scope="col">Ruangan</th>
-            
-        </tr>
+    <table class=" table table-bordered table-hover my-3">
+        <thead class="thead-dark">
+            <tr class="text-center">
+                <th scope="col">No</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Jenis Kelamin</th>
+                <th scope="col">Jurusan</th>
+                <th scope="col">Asal Sekolah</th>
+                <th scope="col">Ruangan</th>
+
+            </tr>
 
         <tbody>
-            <?php $i = 1; // Initialize counter ?>
+            <?php $i = 1; // Initialize counter 
+            ?>
             <?php foreach ($siswa as $fasilitas): ?>
                 <tr class="text-center">
                     <td scope="row">
@@ -61,8 +62,8 @@
                 </tr>
             <?php endforeach; ?>
         </tbody>
-</table>
-        </section>
+    </table>
+</section>
 
 
 <?= $this->endSection(); ?>

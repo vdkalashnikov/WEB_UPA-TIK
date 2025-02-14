@@ -189,56 +189,6 @@ class PengajuanModel extends Model
             echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
             return redirect()->back();
         }
-        // $jadwalreg = [
-        //     'mk' => $mk,
-        //     'nama_dosen' => $nama_dosen,
-        //     'jenis' => $jenis,
-        //     'kelas' => $kelas,
-        //     'id_thn' => $id_thn,
-        //     'id_ruangan' => $id_ruangan,
-        //     'id_prodi' => $id_prodi,
-        //     'hari' => $hari
-        // ];
-
-        //ll
-        // var_dump($jam);
-
-        // var_dump($total);
-        // die;
-        //ll
-
-        // Lakukan operasi penyimpanan jadwal reguler menggunakan data yang diterima dari controller
-        // $input = $this->db->table('pengajuan')->insert($jadwalreg);
-
-        // if ($input) {
-        //     $id_jadwal = $this->db->table('pengajuan')
-        //         ->select('id_jadwal')
-        //         ->where('nama_dosen', $nama_dosen)
-        //         ->where('jenis', $jenis)
-        //         ->where('id_ruangan', $id_ruangan)
-        //         ->where('id_prodi', $id_prodi)
-        //         ->where('id_thn', $id_thn)
-        //         ->where('hari', $hari)
-        //         ->where('mk', $mk)
-        //         ->where('kelas', $kelas)
-        //         ->get()
-        //         ->getResult();
-
-        //     foreach ($id_jadwal as $jadwal) {
-        //         $id_jadwalreg = $jadwal->id_jadwal;
-        //         foreach ($jam as $j) {
-        //             $query = $this->db->query("INSERT INTO pengajuan_detail VALUES (NULL, '$j', '$id_jadwalreg')");
-        //             $cek = "1";
-        //         }
-        //     }
-        //     if ($cek == "1") {
-        //         echo "<script>alert('Data Telah Disimpan')</script>";
-        //         return redirect()->to('jadwal');
-        //     } elseif ($cek == "0") {
-        //         echo "<script>alert('Terjadi kesalahan dalam pengisian!')</script>";
-        //         return redirect()->back();
-        //     }
-        // }
     }
 
     public function getIdProdi()
